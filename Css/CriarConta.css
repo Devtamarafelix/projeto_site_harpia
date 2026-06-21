@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: sans-serif;
+    background-color: #F5F1E8;
+}
+
+.countainer {
+    display: flex;
+    flex-direction: row; 
+    width: 100%;
+    min-height: 100vh;   
+}
+
+/* ================= LADO ESQUERDO ================= */
+.lado-esquerdo {
+    flex: 1;
+    background-color: #ECE4D3;  
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.Logo {
+    display: flex;
+    flex-direction: row;      
+    align-items: center;  
+}
+
+.Logo img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.texto-logo {
+    display: flex;
+    flex-direction: column;   
+}
+
+.texto-logo h1 {
+    font-size: 3rem;   
+    line-height: 1.1;    
+    font-weight: bold;
+    color: #1B4332; 
+}
+
+.texto-logo p {
+    font-size: 1.4rem;          
+    color: gray;
+}
+
+#Dialogo {
+    margin-top: 40px; 
+    color: #1B4332;  
+}
+
+#Dialogo h2 {
+    font-size: 3.2rem; 
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#Dialogo p {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #1B4332; 
+}
+
+.mascote-container {
+    margin-top: 30px; 
+    display: flex;
+    justify-content: center;
+}
+
+.img-mascote {
+    width: 100%;
+    max-width: 400px; 
+    height: auto;
+    object-fit: contain;
+}
+
+/* ================= LADO DIREITO ================= */
+.lado-direito {
+    flex: 1;                    
+    background-color: #F5F1E8; 
+    padding: 60px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+}
+
+.CriarConta {
+    width: 100%;
+    max-width: 460px; 
+}
+
+.form-header {
+    margin-bottom: 24px;
+}
+
+.form-header h2 {
+    font-size: 2.2rem;
+    color: #1B4332;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-header p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px; 
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: #1B4332;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #A2B5AC; 
+    border-radius: 8px;       
+    background-color: #EFECE6; 
+    font-size: 0.95rem;
+    color: #333;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #1B4332; 
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+.alerta-seguranca {
+    background-color: #EFECE6;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin: 5px 0 15px 0;
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 1.4;
+    border-left: 4px solid #A2B5AC;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.form-checkbox input {
+    margin-top: 2px;
+    accent-color: #1B4332;
+}
+
+.form-checkbox a {
+    color: #C49A45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-criar {
+    width: 100%;
+    background-color: #1B4332;
+    color: #FFF;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divisor {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.divisor::before, .divisor::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #DDD;
+}
+
+.divisor:not(:empty)::before { margin-right: .8em; }
+.divisor:not(:empty)::after { margin-left: .8em; }
+
+.btn-google {
+    width: 100%;
+    background-color: #FFF;
+    color: #1B4332;
+    border: 1px solid #A2B5AC;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.form-footer a {
+    color: #C49A45;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ================= RESPONSIVIDADE ================= */
+/* Quando a tela for menor que 1024px de largura (Notebooks pequenos, Tablets e Celulares) */
+@media (max-width: 1024px) {
+    .countainer {
+        flex-direction: column; 
+    }
+
+    .lado-esquerdo {
+        padding: 30px;
+        justify-content: center;
+    }
+
+    .Logo img {
+        width: 90px; 
+    }
+
+    .texto-logo h1 {
+        font-size: 2.2rem;
+    }
+
+    #Dialogo {
+        margin-top: 25px;
+    }
+
+    #Dialogo h2 {
+        font-size: 2.2rem; 
+    }
+
+    #Dialogo p {
+        font-size: 1.1rem;
+    }
+
+    .img-mascote {
+        max-width: 250px; 
+        margin-top: 15px;
+    }
+
+    .lado-direito {
+        padding: 40px 20px; 
+    }
+
+    .form-row {
+        grid-template-columns: 1fr; 
+        gap: 0;
+    }
+}

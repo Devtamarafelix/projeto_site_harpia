@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Login</title>
-    <link rel="stylesheet" href="Css/login.css">
+
+    <link rel="stylesheet" href="Css/login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main class="login-container">
@@ -20,60 +28,63 @@
 
         <div class="banner-pluma">
           <h2>
-            Aprender do <br />
-            Seu Jeito.
+            Aprender do seu Jeito.
           </h2>
           <p>
-            Uma plataforma que se adapta a você <br />
-            e transforma seus estudos em conquista
+            Uma plataforma que se adapta a você e transforma seus estudos em conquistas.
           </p>
           <img src="assets/imgs/Pluma.png" alt="Mascote Pluma" />
         </div>
       </section>
 
       <section class="lado-direito">
+        <div class="login-conta">
+          <div class="form-header">
+            <h2>Bem vindo de volta (a)!</h2>
+            <p>
+              Entre com sua conta para continuar sua jornada de aprendizagem.
+            </p>
+          </div>
 
-<div class="LoginConta">
-        
-<div class="form-header">
-<h2>Bem Vindo de Volta (a)!</h2>
-<p>Entre com sua conta para continuar sua jornada 
-de aprendizagem.</p>
-</div>
+          <form action="">
+            <div class="form-group">
+              <label for="usuario">Email ou Nome de Usuário:</label>
+                <input
+                  type="text"
+                  id="usuario"
+                  placeholder="Digite seu email ou user"
+                  required
+                />
+            </div>
 
-<form action="">
+              <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input
+                  type="password"
+                  id="senha"
+                  placeholder="Digite sua senha"
+                  required
+                />
+                <a href="#" class="link-esqueceu-senha">Esqueceu sua senha?</a>
+              </div>
 
-<div class="form-group">
-<label for="usuário">Email ou Nome de Usuário:</label>
-<div class="input-container">
-<input type="text" id="usuário" placeholder="digite seu email ou user">
+            <button type="submit" class="btn-entrar">Entrar</button>
 
-</div>
-</div>
+            <div class="divisor">
+              <span>ou</span>
+            </div>
 
-<div class="form-row">
-<div class="form-group">
-<label for="senha">Senha:</label>
-<input type="password" id="senha" placeholder="Digite sua senha">
-  <a href="#" class="link-esqueceu-senha">Esqueceu sua senha?</a>
-</div>
-</div>
+            <button type="button" class="btn-google">
+              <img src="assets/icon-google.svg" alt="logo do Google" class="icon-google">
+              Entrar com o Google
+            </button>
 
-<button type="submit" class="btn-criar">Entrar</button>
-            
-<div class="divisor">
-<span>ou</span>
-</div>
-            
-<button type="button" class="btn-google"> Entrar conta com o Google</button>
-
-<p class="form-footer">Não tem uma conta? <a href="index.html">Crie sua conta</a></p>
-</form>
-
-</div>
-
-</section>
-
+            <p class="form-footer">
+              Não tem uma conta? <a href="index.html">Crie sua conta</a>
+            </p>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>

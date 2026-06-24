@@ -254,6 +254,10 @@ body {
         min-height: auto;
     }
 
+    body:has([vw].enabled).login-container {
+        padding-bottom: 180px;
+    }
+
     .lado-esquerdo {
         padding: 30px 20px;
         gap: 40px;
@@ -261,5 +265,16 @@ body {
 
     .lado-direito {
         padding: 40px 20px;
+    }
+
+    /* estilos para plugin acessibilidade */
+    .asw-container .asw-menu {
+        width: calc(100% - 24px) !important;
+        height: 65vh !important;
+        top: 80px !important;
+        left: 12px !important;
+        border-radius: 16px !important;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
+        overflow: hidden !important;
     }
 }

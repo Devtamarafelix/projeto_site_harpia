@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
-html, body {
+html{
+height: 100%;
+    
+}
+body {
     min-height: 100%;
-    font-family: sans-serif;
-    background-color: #d6ae5df3;
+    font-family: 'Inter';
+    background-color: #95948fde;
     padding: 20px;
     
 }
@@ -20,6 +24,7 @@ html, body {
     margin: auto;
     border-radius: 20px;
     overflow: hidden;
+    
 }
 
 /* ================= LADO ESQUERDO ================= */
@@ -244,6 +249,11 @@ html, body {
     gap: 10px;
 }
 
+.icon-google {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
 .form-footer {
     text-align: center;
     margin-top: 20px;

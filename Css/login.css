@@ -5,13 +5,14 @@
 }
 
 body {
-    background-color: #95948fde;
+    background-color: #D1D5DB;
     font-family: 'Inter';
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    
 }
 
 .login-container {

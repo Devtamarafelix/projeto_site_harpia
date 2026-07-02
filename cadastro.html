@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Criar Conta</title>
+<link rel="stylesheet" href="Css/CriarConta.css">
+
+</head>
+
+<body>
+
+<main class="countainer">
+
+<section class="lado-esquerdo">
+<header>
+<div class="Logo">
+<img src="assets/imgs/Logo_HARPIA.png" alt="Logo">
+<div class="texto-logo">
+<h1>H.A.R.P.I.A</h1>
+<p>Aprenda Do Seu Jeito</p>
+</div>
+</div>
+</header>
+
+<div id="Dialogo">
+<h2>Crie sua conta e comece sua Jornada!</h2>
+<p>Personalizamos sua experiência para que você aprenda do seu jeito, no seu ritmo.</p>
+</div>
+
+<div class="mascote-container">
+<img src="assets/imgs/Pluma.png" alt="Mascote Harpia" class="img-mascote">
+</div>
+</section>
+
+<section class="lado-direito">
+
+<div class="CriarConta">
+        
+<div class="form-header">
+<h2>Criar conta</h2>
+<p>Preencha os campos abaixo para criar sua conta no HARPIA.</p>
+</div>
+
+<form action="">
+
+<div class="form-row">
+<div class="form-group">
+<label for="text">Nome completo</label>
+<input type="text" id="text" placeholder="Digite seu nome completo">
+</div>
+<div class="form-group">
+<label for="DTN">Data de nascimento</label>
+<input type="date" id="DTN">
+</div>
+</div>
+
+<div class="form-group">
+<label for="email">E-mail</label>
+<input type="email" id="email" placeholder="Digite seu e-mail">
+</div>
+
+<div class="form-group">
+<label for="usuário">Nome de usuário</label>
+<div class="input-container">
+<input type="text" id="usuário" placeholder="Escolha um nome de usuário">
+
+</div>
+</div>
+
+<div class="form-row">
+<div class="form-group">
+<label for="senha">Senha</label>
+<input type="password" id="senha" placeholder="Crie uma senha">
+</div>
+<div class="form-group">
+<label for="csenha">Confirme sua senha</label>
+<input type="password" id="csenha" placeholder="Confirme sua senha">
+</div>
+</div>
+
+<div class="alerta-seguranca">
+<p><strong>Sua segurança é importante para nós.</strong><br>
+Use pelo menos 8 caracteres com letras, números e símbolos.</p>
+ </div>
+
+<div class="form-checkbox">
+<input type="checkbox" id="termos" required>
+<label for="termos">Li e concordo com os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a></label>
+</div>
+
+<button type="submit" class="btn-criar">Criar minha conta</button>
+            
+<div class="divisor">
+<span>ou</span>
+</div>
+            
+<button type="button" class="btn-google"> 
+<img src="assets/icon-google.svg" alt="logo do Google" class="icon-google"> Criar conta com o Google</button>
+
+<p class="form-footer">Já tem uma conta? <a href="login.html">Faça login</a></p>
+</form>
+
+</div>
+
+</section>
+
+</main>
+
+<!-- Plugin VLibras -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="JavaScript/criar-conta.js"></script>
+
+    <!-- plugin acessibiidade -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+</body>
+
+</html>

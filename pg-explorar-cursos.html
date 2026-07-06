@@ -35,7 +35,7 @@
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="pg-usuario.html">
               <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
               Meu Perfil
             </a>
@@ -131,7 +131,7 @@
         <ul class="categorias-container">
           <!-- Card 1 -->
           <li class="categorias-cards">
-            <article>
+            <a href="#" class="categoria-link-block">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-programação.svg"
@@ -143,11 +143,11 @@
                 Aprenda lógica de programação e desenvolva suas habilidades.
               </p>
               <span class="quantidade-cursos">3 cursos</span>
-            </article>
+            </a>
           </li>
           <!-- Card 2 -->
           <li class="categorias-cards">
-            <article>
+            <a href="materia-portugues.html" class="categoria-link-block">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-portugues.svg"
@@ -159,11 +159,11 @@
                 Melhore sua leitura, escrita e interpretação de texto.
               </p>
               <span class="quantidade-cursos">2 cursos</span>
-            </article>
+            </a>
           </li>
           <!-- Card 3 -->
           <li class="categorias-cards">
-            <article>
+            <a href="materia-matematica.html" class="categoria-link-block">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-matematica.svg"
@@ -175,11 +175,11 @@
                 Aprenda o essencial da matemática de forma prática.
               </p>
               <span class="quantidade-cursos">1 curso</span>
-            </article>
+            </a>
           </li>
           <!-- Card 4 -->
           <li class="categorias-cards">
-            <article>
+            <a href="" class="categoria-link-block"">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-ciencias.svg"
@@ -191,11 +191,11 @@
                 Explore o mundo ao seu redor e descubra como ele funciona.
               </p>
               <span class="quantidade-cursos">1 curso</span>
-            </article>
+            </a>
           </li>
           <!-- Card 5 -->
           <li class="categorias-cards">
-            <article>
+            <a href="" class="categoria-link-block"">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-ingles.svg"
@@ -207,11 +207,11 @@
                 Aprenda inglês de forma gradual e contextualizada.
               </p>
               <span class="quantidade-cursos">1 curso</span>
-            </article>
+            </a>
           </li>
           <!-- Card 6 -->
           <li class="categorias-cards">
-            <article>
+            <a href="" class="categoria-link-block">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-educ-finan.svg"
@@ -223,11 +223,11 @@
                 Aprenda a cuidar do dinheiro e tomar boas decisões financeiras.
               </p>
               <span class="quantidade-cursos">1 curso</span>
-            </article>
+            </a>
           </li>
           <!-- card 7 -->
           <li class="categorias-cards">
-            <article>
+            <a href="" class="categoria-link-block">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-desenv-pessoal.svg"
@@ -239,8 +239,9 @@
                 Desenvolva hábitos, se organize e alcance seus objetivos.
               </p>
               <span class="quantidade-cursos">1 curso</span>
-            </article>
+            </a>
           </li>
+          <!-- Mascote Pluma -->
           <li class="mascote-pluma">
             <div class="pluma-container">
               <div class="balao-dica" role="status" aria-live="polite">
@@ -255,6 +256,147 @@
                 class="img-pluma"
               />
             </div>
+          </li>
+        </ul>
+      </section>
+      
+      <!-- seção cursos em destaque -->
+      <section class="cursos-destaque">
+        <h2 id="titulo-destaque">Cursos em destaque</h2>
+
+        <ul class="destaque-container">
+          <li class="destaque-cards">
+            <article>
+
+              <button type="button" class="btn-favoritar" aria-label="adicionar lógica de programação aos favoritos.">
+                <img src="assets/icons-explorar-cursos/icon-favoritar.svg" alt="icone de estrela" aria-hidden="true">
+              </button>
+
+              <div class="destaque-icon">
+                <img src="assets/icons-explorar-cursos/icon-categ-programação.svg" alt="imagem de um computador ligado" aria-hidden="true">
+              </div>
+
+              <div class="destaque-conteudo">
+                <h3>Lógica de Programação</h3>
+
+              <a href="" class="link-ver-curso" aria-label="acessar curso lógica de programação">
+                Acessar curso
+                <img src="assets/icons-explorar-cursos/setinha-link.svg" alt="" class="img-setinha-link" aria-hidden="true">
+              </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- card 2 -->
+          <li class="destaque-cards">
+            <article>
+
+              <button type="button" class="btn-favoritar" aria-label="adicionar html e css aos favoritos.">
+                <img src="assets/icons-explorar-cursos/icon-favoritar-selecionado.svg" alt="" aria-hidden="true">
+              </button>
+
+              <div class="destaque-icon">
+                <img src="assets/icons-explorar-cursos/icon-html.svg" alt="" aria-hidden="true">
+              </div>
+
+              <div class="destaque-conteudo">
+                <h3>Html e Css</h3>
+
+              <a href="" class="link-ver-curso" aria-label="acessar curso de html e css">
+                Acessar curso
+                <img src="assets/icons-explorar-cursos/setinha-link.svg" alt="" class="img-setinha-link" aria-hidden="true">
+              </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- card 3 -->
+          <li class="destaque-cards">
+            <article>
+
+              <button type="button" class="btn-favoritar" aria-label="adicionar matemática básica aos favoritos.">
+                <img src="assets/icons-explorar-cursos/icon-favoritar.svg" alt="" aria-hidden="true">
+              </button>
+
+              <div class="destaque-icon">
+                <img src="assets/icons-explorar-cursos/icon-categ-matematica.svg" alt="" aria-hidden="true">
+              </div>
+
+              <div class="destaque-conteudo">
+                <h3>Matamática Básica</h3>
+
+              <a href="" class="link-ver-curso" aria-label="acessar curso de matamática básica">
+                Acessar curso
+                <img src="assets/icons-explorar-cursos/setinha-link.svg" alt="" class="img-setinha-link" aria-hidden="true">
+              </a>
+              </div>
+            </article>
+          </li>
+          <!-- card 4 -->
+          <li class="destaque-cards">
+            <article>
+
+              <button type="button" class="btn-favoritar" aria-label="adicionar português aos favoritos.">
+                <img src="assets/icons-explorar-cursos/icon-favoritar.svg" alt="" aria-hidden="true">
+              </button>
+
+              <div class="destaque-icon">
+                <img src="assets/icons-explorar-cursos/icon-categ-portugues.svg" alt="" aria-hidden="true">
+              </div>
+
+              <div class="destaque-conteudo">
+                <h3>Português</h3>
+
+              <a href="" class="link-ver-curso" aria-label="acessar curso de português">
+                Acessar curso
+                <img src="assets/icons-explorar-cursos/setinha-link.svg" alt="" class="img-setinha-link" aria-hidden="true">
+              </a>
+              </div>
+            </article>
+          </li>
+          <!-- card 5 -->
+          <li class="destaque-cards">
+            <article>
+
+              <button type="button" class="btn-favoritar" aria-label="adicionar inglês básico aos favoritos.">
+                <img src="assets/icons-explorar-cursos/icon-favoritar.svg" alt="" aria-hidden="true">
+              </button>
+
+              <div class="destaque-icon">
+                <img src="assets/icons-explorar-cursos/icon-categ-ingles.svg" alt="" aria-hidden="true">
+              </div>
+
+              <div class="destaque-conteudo">
+                <h3>Inglês Básico</h3>
+
+              <a href="" class="link-ver-curso" aria-label="acessar curso de Inglês básico">
+                Acessar curso
+                <img src="assets/icons-explorar-cursos/setinha-link.svg" alt="" class="img-setinha-link" aria-hidden="true">
+              </a>
+              </div>
+            </article>
+          </li>
+          <!-- card 5 -->
+          <li class="destaque-cards">
+            <article>
+
+              <button type="button" class="btn-favoritar" aria-label="adicionar Educação Financeira aos favoritos.">
+                <img src="assets/icons-explorar-cursos/icon-favoritar.svg" alt="" aria-hidden="true">
+              </button>
+
+              <div class="destaque-icon">
+                <img src="assets/icons-explorar-cursos/icon-categ-educ-finan.svg" alt="" aria-hidden="true">
+              </div>
+
+              <div class="destaque-conteudo">
+                <h3>Educação Financeira</h3>
+
+              <a href="" class="link-ver-curso" aria-label="acessar curso de educação financeira">
+                Acessar curso
+                <img src="assets/icons-explorar-cursos/setinha-link.svg" alt="" class="img-setinha-link" aria-hidden="true">
+              </a>
+              </div>
+            </article>
           </li>
         </ul>
       </section>

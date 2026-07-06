@@ -368,7 +368,7 @@ nav a:nth-of-type(4) {
   gap: 80px;
   overflow: hidden;
 
-  background-color: var(--fundo-pluma);
+  background-image: url("../assets/img-início/fundo.png");
 }
 
 .imagem-pluma img{
@@ -380,18 +380,51 @@ nav a:nth-of-type(4) {
 }
 
 .tag-pluma {
-  display: inline-block;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   min-width: 175px;
   height: 30px;
-  padding: 0 22px;
-  border: 1px solid var(--verde);
+  padding: 8px 18px;
+  border: 1px solid var(--verde-floresta);
   border-radius: 999px;
   font-size: 13px;
-  color: var(--verde);
-  margin-bottom: 24px;
+  color: var(--verde-floresta);
+  margin-bottom: 20px;
+  font-weight: 700;
 }
+
+.pluma-texto h2 {
+  font-size: 42px;
+  line-height: 1.15;
+  color: var(--verde-floresta);
+  margin-bottom: 18px;
+}
+
+.pluma-texto > p {
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--verde-floresta);
+  margin-bottom: 14px;
+}
+
+.pluma-lista {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 46px;
+}
+
+.pluma-lista p {
+  position: relative;
+  padding-left: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--verde-floresta);
+}
+
+
+
 
 
 
@@ -473,6 +506,7 @@ nav a:nth-of-type(4) {
     grid-template-columns: 1fr;
     padding: 40px 24px;
     text-align: center;
+    background-color: var(--fundo-pluma);
   }
 
   .imagem-pluma img {
@@ -559,6 +593,10 @@ nav a:nth-of-type(4) {
 
   .pedaco-do-recurso h2 {
     font-size: 24px;
+  }
+
+  .pluma{
+    background-color: var(--fundo-pluma);
   }
 }
 

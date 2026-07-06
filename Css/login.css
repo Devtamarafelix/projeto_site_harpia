@@ -38,6 +38,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     padding: 50px, 40px;
+    position: relative;
 }
 
 .logo {
@@ -63,15 +64,39 @@ body {
     letter-spacing: 2px;
 }
 
-.titulo-container span {
+h1 span {
+    color: #D4A64F;
+}
+
+.subtitulo {
     font-size: 0.85rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .banner-pluma {
     color: #1B4332;
     width: 100%;
     margin-top: 30px;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.onda-verde {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.banner-pluma .mascote-pluma {
+    max-width: 270px;
+    height: auto;
+    display: block;
+    margin: 25px auto 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
 .banner-pluma h2 {
@@ -84,13 +109,6 @@ body {
     font-size: 0.85rem;
     line-height: 1.4;
     color: #2d5a45;
-}
-
-.banner-pluma img {
-    max-width: 270px;
-    height: auto;
-    display: block;
-    margin: 25px auto;
 }
 
 .lado-direito {                   

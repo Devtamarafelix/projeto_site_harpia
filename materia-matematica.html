@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>H.A.R.P.I.A - Matemática</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/materia-matematica.css">
+</head>
+
+<body>
+
+  <div class="app subject-app">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="logo">
+          <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A">
+          <div class="logo-text">
+            <h2 class="logo-title">H.<b>A</b>.R.P.I.<b>A</b></h2>
+            <p>Aprenda do seu jeito</p>
+          </div>
+        </div>
+
+        <nav class="menu">
+          <a href="#"><img src="assets/icons/SVG.png" alt=""><span>Início</span></a>
+          <a href="#"><img src="assets/icons/Container.png" alt=""><span>Meu Perfil</span></a>
+          <a href="#"><img src="assets/icons/coracao.png" alt=""><span>Acessibilidade</span></a>
+          <a href="#" class="active"><img src="assets/icons/materias.png" alt=""><span>Meus Cursos</span></a>
+          <a href="#"><img src="assets/icons/Container (1).png" alt=""><span>Meu Progresso</span></a>
+          <a href="#"><img src="assets/icons/conquistas.png" alt=""><span>Conquistas</span></a>
+          <a href="#"><img src="assets/icons/explorar.png" alt=""><span>Explorar cursos</span></a>
+          <a href="#"><img src="assets/icons/Container (3).png" alt=""><span>Ajuda</span></a>
+        </nav>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="user-box">
+          <img src="assets/img-materia-portugues/Profile.png" alt="Maria Silva" class="user-avatar-img">
+          <div class="user-info">
+            <strong>Maria Silva</strong>
+            <p>1.300 XP · Nível Iniciante</p>
+          </div>
+        </div>
+        <button class="logout">↪ Sair</button>
+      </div>
+    </aside>
+
+    <main class="main subject-main">
+      <header class="topbar">
+        <div class="hello">
+          <h1>Matemática</h1>
+          <p>Aplique a lógica matemática no seu cotidiano.</p>
+        </div>
+
+        <div class="search-area">
+          <input type="text" placeholder="Buscar cursos...">
+          <img src="assets/icons/lupa.png" alt="Pesquisar" class="search-icon">
+        </div>
+      </header>
+
+      <section class="current-class-card">
+        <div class="current-icon">
+          <img src="assets/icons-materia-matematica/quebra-cabeça.png" alt="Desafios de lógica">
+        </div>
+
+        <div class="current-info">
+          <small>Matemática</small>
+          <h2>Desafios de Lógica</h2>
+          <p>Desenvolva seu raciocínio rápido e resolução de problemas.</p>
+
+          <div class="lesson-progress">
+            <span>Aula 9 de 12</span>
+            <div class="mini-bar">
+              <div class="mini-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <button class="gold-btn">▷ Continuar aula</button>
+      </section>
+
+      <section class="modules-grid">
+        <article class="module-card">
+          <div class="module-icon">
+            <img src="assets/icons-materia-matematica/grafico.png" alt="Estatística">
+          </div>
+          <h2>Noções de Estatística<br>Básica</h2>
+          <p>Entenda médias, modas, medianas e descubra como ler e interpretar dados em gráficos de forma simples.</p>
+          <button>▷ Ver curso</button>
+        </article>
+
+        <article class="module-card">
+          <div class="module-icon">
+            <img src="assets/icons-materia-matematica/balança (1).png" alt="Regra de três">
+          </div>
+          <h2>Regra de Três no<br>Cotidiano</h2>
+          <p>Aplique proporções simples para resolver problemas do dia a dia, como descontos, receitas e finanças.</p>
+          <button>▷ Ver curso</button>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="JavaScript/pg-usuario.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
+</body>
+</html>

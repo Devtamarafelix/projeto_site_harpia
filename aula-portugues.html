@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>H.A.R.P.I.A - Matemática</title>
+
+  <title>H.A.R.P.I.A - Interpretação de Textos Não-Verbais</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Css/materia-matematica.css">
-  <link rel="stylesheet" href="Css/chatbox.css">
+
+  <link rel="stylesheet" href="Css/aula-portugues.css">
+    <link rel="stylesheet" href="Css/chatbox.css">
   <script src="JavaScript/chatbox.js" defer></script>
 </head>
 
 <body>
-
-  <div class="app subject-app">
+  <div class="app lesson-app">
     <aside class="sidebar">
       <div class="sidebar-top">
         <div class="logo">
@@ -38,84 +41,80 @@
       </div>
 
       <div class="sidebar-bottom">
+
         <div class="user-box">
-          <img src="assets/img-materia-portugues/Profile.png" alt="Maria Silva" class="user-avatar-img">
+
+          <img src="assets/img-materia-portugues/Profile.png" alt="Foto de Maria Silva" class="user-avatar">
+
           <div class="user-info">
             <strong>Maria Silva</strong>
             <p>1.300 XP · Nível Iniciante</p>
           </div>
+
         </div>
+
         <button class="logout">↪ Sair</button>
+
       </div>
     </aside>
 
-    <main class="main subject-main">
-      <header class="topbar">
-        <div class="hello">
-          <h1>Matemática</h1>
-          <p>Aplique a lógica matemática no seu cotidiano.</p>
-        </div>
-
-        <div class="search-area">
-          <input type="text" placeholder="Buscar cursos...">
-          <img src="assets/icons/lupa.png" alt="Pesquisar" class="search-icon">
-        </div>
+    <main class="lesson-main">
+      <header class="lesson-header">
+        <p>Meus Cursos &gt; Português</p>
+        <h1>Interpretação de Textos Não-Verbais</h1>
       </header>
 
-      <section class="current-class-card">
-        <div class="current-icon">
-          <img src="assets/icons-materia-matematica/quebra-cabeça.png" alt="Desafios de lógica">
+      <nav class="lesson-tabs">
+        <button class="tab active">▷ Leitura</button>
+        <button class="tab">▷ Exercícios</button>
+      </nav>
+
+      <section class="lesson-content">
+        <h2>O que é Linguagem Não-Verbal?</h2>
+        <p class="intro">Consiste em entender mensagens que não usam palavras escritas ou faladas.</p>
+
+        <p>
+          O conteúdo é transmitido totalmente por elementos visuais: <strong>cores,
+            formas, expressões faciais, gestos, postura</strong> e a disposição dos
+          objetos. Encontramos esse modelo no nosso dia a dia em:
+        </p>
+
+        <div class="examples-row">
+          <span>● Charges e tirinhas</span>
+          <span>● Propagandas e anúncios visuais</span>
+          <span>● Memes e infográficos</span>
         </div>
 
-        <div class="current-info">
-          <small>Matemática</small>
-          <h2>Desafios de Lógica</h2>
-          <p>Desenvolva seu raciocínio rápido e resolução de problemas.</p>
-
-          <div class="lesson-progress">
-            <span>Aula 9 de 12</span>
-            <div class="mini-bar">
-              <div class="mini-fill" style="width: 75%;"></div>
-            </div>
-          </div>
+        <div class="example-box">
+          <h3>Exemplo:</h3>
+          <p>
+            Imagine que você entra na cozinha e vê seu amigo olhando para a geladeira
+            vazia, com os ombros caídos e um bico enorme no rosto. Ele não disse uma
+            única palavra, mas você interpretou o texto não-verbal perfeitamente:
+            ele está triste e decepcionado porque não achou nada para comer.
+          </p>
         </div>
 
-        <button class="gold-btn">▷ Continuar aula</button>
+        <section class="learn-section">
+          <h2>Assista e Aprenda</h2>
+          <button class="gold-btn">▷ Vídeo Aula</button>
+        </section>
       </section>
 
-      <section class="modules-grid">
-        <article class="module-card">
-          <div class="module-icon">
-            <img src="assets/icons-materia-matematica/grafico.png" alt="Estatística">
-          </div>
-          <h2>Noções de Estatística<br>Básica</h2>
-          <p>Entenda médias, modas, medianas e descubra como ler e interpretar dados em gráficos de forma simples.</p>
-          <button>▷ Ver curso</button>
-        </article>
-
-        <article class="module-card">
-          <div class="module-icon">
-            <img src="assets/icons-materia-matematica/balança (1).png" alt="Regra de três">
-          </div>
-          <h2>Regra de Três no<br>Cotidiano</h2>
-          <p>Aplique proporções simples para resolver problemas do dia a dia, como descontos, receitas e finanças.</p>
-          <button>▷ Ver curso</button>
-        </article>
-      </section>
+      <aside class="pluma-tip">
+        <div class="tip-icon">💡</div>
+        <div>
+          <strong>Dica da Pluma</strong>
+          <p>Para fechar esse tema com chave de ouro, guarde essa regra: imagens exigem observação!</p>
+        </div>
+        <img src="assets/imgs/pluma-joia.png" alt="Pluma">
+      </aside>
     </main>
-  </div>
-
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
   </div>
 
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
   <script src="JavaScript/pg-usuario.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
-
 
   <!--chatbox -->
 <div class="chat-icone" id="chat-icone">💬</div>
@@ -145,4 +144,5 @@
 </div>
 
 </body>
+
 </html>

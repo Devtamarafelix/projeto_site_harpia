@@ -3,7 +3,7 @@
     --cor-dourado: #D4A64F;
     --cor-verde-escuro: #1B4332;
     --cor-bordas: color-mix(in srgb, var(--cor-verde-escuro) 30%, transparent);
-    --font-family: "Inter", sans-serif;
+    --font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -104,7 +104,7 @@
     color: var(--cor-verde-escuro);
     font-size: 0.95rem;
     font-weight: 500;
-    transition: background-color 0.2s, color 0.2s;
+    transition: backgraound-color 0.2s, color 0.2s;;
  }
 
  .sidebar-nav a:hover {
@@ -170,6 +170,7 @@
    color: var(--cor-verde-escuro);
    font-size: 0.9rem;
    font-weight: 700;
+   text-decoration: none;
    cursor: pointer;
  }
 
@@ -334,7 +335,7 @@
     padding: 8px 12px;
     margin-bottom: 4px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
     width: 100%;
     max-width: 200px;
   }
@@ -373,4 +374,269 @@
     object-fit: contain;
     margin-top: -10px;
     transition: transform 0.3s ease;
+}
+
+/* seção cursos em destaques */
+.cursos-destaque {
+  margin-bottom: 32px;
+}
+
+#titulo-destaque {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--cor-verde-escuro);
+}
+
+.destaque-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-bordas);
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  flex-shrink: 0;
+}
+
+.destaque-icon img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.destaque-conteudo h3 {
+  color: var(--cor-verde-escuro);
+  font-size: 1rem;
+}
+
+.destaque-container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.destaque-cards article {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  border: 1.4px solid var(--cor-bordas);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.126);
+  transition: transform 0.3s ease;
+}
+
+.destaque-cards article:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.btn-favoritar {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.destaque-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding-right: 32px;
+}
+
+.link-ver-curso {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.80rem;
+  font-weight: 600;
+  color: var(--cor-dourado);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link-ver-curso:hover {
+  color: #b58635;
+}
+
+.setinha-link {
+  width: 12px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* RESPONSIVIDADE */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .main-container {
+    padding: 32px 24px;
+  }
+
+  .categorias-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destaque-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  }
+
+  .sidebar-header {
+    margin-bottom: 20px;
+  }
+
+  .sidebar-nav ul {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 8px;
+  }
+
+  .sidebar-nav a {
+    white-space: nowrap;
+    padding: 10px 14px;
+  }
+
+  .user-perfil {
+    margin-top: 20px;
+  }
+
+  .main-container {
+    height: auto;
+    padding: 28px 18px;
+    overflow: visible;
+  }
+
+  .main-header {
+    margin-bottom: 28px;
+  }
+
+  .textos-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .categorias-container {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .destaque-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .categorias-cards {
+    padding: 20px;
+  }
+
+  .categoria-icon {
+    width: 78px;
+    height: 78px;
+  }
+
+  .categoria-icon img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .mascote-pluma {
+    padding-top: 20px;
+    
+  }
+
+  .img-pluma {
+    width: 135px;
+  }
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 14px;
+  }
+
+  .sidebar-header img {
+    width: 48px;
+  }
+
+  .logo-titulo {
+    font-size: 1rem;
+  }
+
+  .logo-subtitulo {
+    font-size: 0.55rem;
+  }
+
+  .main-container {
+    padding: 22px 14px;
+  }
+
+  .textos-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .textos-header p {
+    font-size: 0.78rem;
+  }
+
+  #titulo-categorias {
+    font-size: 1.25rem;
+  }
+
+  .search-container input {
+    width: 100%;
+    font-size: 0.85rem;
+  }
+
+  .user-perfil {
+    grid-template-columns: auto 1fr;
+    padding: 14px;
+  }
+
+  .btn-sair {
+    padding: 10px 18px;
+  }
 }

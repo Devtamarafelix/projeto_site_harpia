@@ -489,6 +489,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .destaque-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
   .main-header {
     flex-direction: column;
     align-items: flex-start;
@@ -556,6 +561,12 @@
     gap: 18px;
   }
 
+  .destaque-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+  }
+
   .categorias-cards {
     padding: 20px;
   }
@@ -572,6 +583,7 @@
 
   .mascote-pluma {
     padding-top: 20px;
+    
   }
 
   .img-pluma {

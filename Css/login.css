@@ -264,36 +264,84 @@ h1 span {
 }
 
 @media (max-width: 768px) {
-    body {
+   body {
         padding: 10px;
+        align-items: flex-start;
+        overflow-y: auto;
+        background-color: #F5F1E8; 
     }
 
     .login-container {
+        display: flex;
         flex-direction: column;
-        min-height: auto;
+        box-shadow: none;
+        background-color: transparent;
+        border-radius: 0;
+        height: auto;
+        min-height: auto; 
+        padding: 16px;
+        width: 100%;
     }
 
-    body:has([vw].enabled).login-container {
-        padding-bottom: 180px;
+    .lado-esquerdo, 
+    .lado-direito {
+        flex: none;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 0;
+        background-color: transparent;
     }
 
     .lado-esquerdo {
-        padding: 30px 20px;
-        gap: 40px;
+        margin-bottom: 24px;
+    }
+
+    .lado-esquerdo .logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .lado-esquerdo .banner-pluma {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .banner-pluma .mascote-pluma {
+        max-width: 160px;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        position: static;
+    }
+
+    .lado-esquerdo .banner-pluma h2,
+    .lado-esquerdo .banner-pluma p,
+    .lado-esquerdo .onda-verde {
+        display: none;
     }
 
     .lado-direito {
-        padding: 40px 20px;
+        margin-top: 0;
     }
 
-    /* estilos para plugin acessibilidade */
+    .login-conta {
+        max-width: 100%;
+    }
+
+    body:has([vw].enabled) .login-container {
+        padding-bottom: 180px;
+    }
+
     .asw-container .asw-menu {
         width: calc(100% - 24px) !important;
         height: 65vh !important;
         top: 80px !important;
         left: 12px !important;
         border-radius: 16px !important;
-        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3) !important;
-        overflow: hidden !important;
     }
 }

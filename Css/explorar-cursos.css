@@ -3,7 +3,7 @@
     --cor-dourado: #D4A64F;
     --cor-verde-escuro: #1B4332;
     --cor-bordas: color-mix(in srgb, var(--cor-verde-escuro) 30%, transparent);
-    --font-family: "Inter", sans-serif;
+    --font-family: "Poppins", sans-serif;
 }
 
 * {
@@ -170,6 +170,7 @@
    color: var(--cor-verde-escuro);
    font-size: 0.9rem;
    font-weight: 700;
+   text-decoration: none;
    cursor: pointer;
  }
 
@@ -334,7 +335,7 @@
     padding: 8px 12px;
     margin-bottom: 4px;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.30);
     width: 100%;
     max-width: 200px;
   }

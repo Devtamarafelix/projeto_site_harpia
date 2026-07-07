@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explorar cursos</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="Css/explorar-cursos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin >
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/explorar-cursos.css">
+    
+    <link rel="stylesheet" href="Css/chatbox.css">
+    <script src="JavaScript/chatbox.js" defer></script>
   </head>
+
   <body>
     <aside class="sidebar">
       <header class="sidebar-header">
-        <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA" />
+        <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA">
 
         <div class="logo-container">
           <p class="logo-titulo">
@@ -30,61 +30,44 @@
         <ul>
           <li>
             <a href="#">
-              <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+              <img src="assets/icons-explorar-cursos/inicio.svg" alt="">
               inicio
             </a>
           </li>
           <li>
             <a href="pg-usuario.html">
-              <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+              <img src="assets/icons-explorar-cursos/perfil.svg" alt="">
               Meu Perfil
             </a>
           </li>
 
           <li>
             <a href="#">
-              <img
-                src="assets/icons-explorar-cursos/acessibilidade.svg"
-                alt=""
-              />
-              Acessibilidade
-            </a>
+              <img src="assets/icons-explorar-cursos/acessibilidade.svg"alt="">Acessibilidade</a>
           </li>
+
+          <li>
+            <a href="#"><img src="assets/icons-explorar-cursos/meus-cursos.svg" alt="">Meus Cursos</a>
+          </li>
+
           <li>
             <a href="#">
-              <img src="assets/icons-explorar-cursos/meus-cursos.svg" alt="" />
-              Meus Cursos
-            </a>
+              <img src="assets/icons-explorar-cursos/meu-progresso.svg"alt="">Meu Progresso</a>
           </li>
+
           <li>
             <a href="#">
-              <img
-                src="assets/icons-explorar-cursos/meu-progresso.svg"
-                alt=""
-              />
-              Meu Progresso
-            </a>
+              <img src="assets/icons-explorar-cursos/conquistas.svg" alt="">Conquistas</a>
           </li>
-          <li>
-            <a href="#">
-              <img src="assets/icons-explorar-cursos/conquistas.svg" alt="" />
-              Conquistas
-            </a>
-          </li>
+
           <li>
             <a href="#" class="active">
-              <img
-                src="assets/icons-explorar-cursos/explorar-cursos.svg"
-                alt=""
-              />
-              Explorar Cursos
-            </a>
+              <img src="assets/icons-explorar-cursos/explorar-cursos.svg"alt="">Explorar Cursos </a>
           </li>
+
           <li>
             <a href="#">
-              <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
-              Ajuda
-            </a>
+              <img src="assets/icons-explorar-cursos/ajuda.svg" alt="">Ajuda</a>
           </li>
         </ul>
       </nav>
@@ -93,8 +76,7 @@
         <img
           src="assets/img-explorar-cursos/avatar.jpg"
           alt="avatar do aluno"
-          class="img-avatar"
-        />
+          class="img-avatar">
 
         <div class="user-texto">
           <p class="user-nome">Maria Silva</p>
@@ -102,7 +84,7 @@
         </div>
 
         <button type="button" class="btn-sair">
-          <img src="assets/icons-explorar-cursos/sair.svg" alt="sair" />
+          <img src="assets/icons-explorar-cursos/sair.svg" alt="sair">
           Sair
         </button>
       </div>
@@ -115,12 +97,11 @@
         </div>
 
         <div class="search-container">
-          <input type="search" placeholder="Buscar cursos..." />
+          <input type="search" placeholder="Buscar cursos...">
           <img
             src="assets/icons-explorar-cursos/lupa-pesquisa.svg"
             alt="lupa de pesquisa"
-            class="lupa-icon"
-          />
+            class="lupa-icon">
         </div>
       </header>
 
@@ -135,8 +116,7 @@
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-programação.svg"
-                  alt="Ícone de um monitor representando programação"
-                />
+                  alt="Ícone de um monitor representando programação">
               </div>
               <h3>Programação</h3>
               <p class="categoria-descricao">
@@ -145,15 +125,16 @@
               <span class="quantidade-cursos">3 cursos</span>
             </a>
           </li>
+
           <!-- Card 2 -->
           <li class="categorias-cards">
             <a href="materia-portugues.html" class="categoria-link-block">
               <div class="categoria-icon">
                 <img
                   src="assets/icons-explorar-cursos/icon-categ-portugues.svg"
-                  alt="Ícone de um livro representando português"
-                />
+                  alt="Ícone de um livro representando português">
               </div>
+
               <h3>Português</h3>
               <p class="categoria-descricao">
                 Melhore sua leitura, escrita e interpretação de texto.
@@ -418,5 +399,33 @@
       async
     ></script>
     <script src="JavaScript/explorar-cursos.js"></script>
-  </body>
+
+<!--chatbox -->
+<div class="chat-icone" id="chat-icone">💬</div>
+
+<div class="chat-container" id="chat-container">
+<div class="chat-header">
+<div class="header-perfil">
+<img src="\assets\icons-chatbox\avatar-pluma.png" class="header-img" alt="Pluma">
+<div class="header-info">
+<span class="header-nome">Chat com a Pluma IA</span>
+<span class="header-status"><span class="ponto-online">●</span> Online</span>
+</div>
+</div>
+<span class="btn-fechar" id="btn-fechar">✖</span>
+</div>
+  
+<div class="chat-box" id="chat-box">
+<div class="message bot">Olá! Como posso te ajudar hoje?</div>
+</div>
+  
+<div class="input-area">
+<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+<button id="btn-enviar">
+<img src="\assets\icons-chatbox\ic-enviar.png" class="btn-enviar-img" alt="Enviar">
+</button>
+</div>
+</div>
+
+</body>
 </html>

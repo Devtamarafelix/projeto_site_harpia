@@ -1,0 +1,457 @@
+:root {
+  --cor-de-fundo: #F5F1E8;
+  --cor-dourado: #D4A64F;
+  --cor-verde-escuro: #1B4332;
+  --cor-bordas: color-mix(in srgb, var(--cor-verde-escuro) 30%, transparent);
+  --font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+/* SIDEBAR PADRÃO */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.345);
+  overflow-y: auto;
+  scrollbar-width: none;
+  flex-shrink: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 32px;
+}
+
+.sidebar-header img {
+  width: 60px;
+  height: auto;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.logo-titulo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--cor-verde-escuro);
+  letter-spacing: 1px;
+  line-height: 1.1;
+}
+
+.logo-titulo span {
+  color: var(--cor-dourado);
+}
+
+.logo-subtitulo {
+  font-size: 0.65rem;
+  color: var(--cor-verde-escuro);
+  margin-top: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-nav img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  color: var(--cor-verde-escuro);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.sidebar-nav a:hover {
+  background-color: var(--cor-dourado);
+  color: var(--cor-verde-escuro);
+  font-weight: 540;
+  transform: translateX(4px);
+}
+
+.sidebar-nav .active {
+  background-color: var(--cor-dourado);
+  color: var(--cor-verde-escuro);
+  font-weight: 600;
+}
+
+.user-perfil {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: color-mix(in srgb, var(--cor-dourado) 20%, transparent);
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: auto;
+  gap: 16px 12px;
+}
+
+.user-perfil .img-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--cor-dourado);
+}
+
+.user-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+}
+
+.user-nome {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--cor-verde-escuro);
+}
+
+.user-xp {
+  font-size: 0.8rem;
+  color: var(--cor-verde-escuro);
+}
+
+.btn-sair {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  gap: 8px;
+  background-color: transparent;
+  border: 1.5px solid var(--cor-dourado);
+  border-radius: 24px;
+  color: var(--cor-verde-escuro);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-sair img {
+  width: 18px;
+  height: 18px;
+}
+
+.btn-sair:hover {
+  background-color: var(--cor-dourado);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.btn-sair:active {
+  transform: scale(0.96);
+}
+
+/* MAIN */
+.main-container {
+  flex: 1;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 0;
+  background-color: var(--cor-de-fundo);
+}
+
+/* CABEÇALHO DA AULA */
+.aula-header {
+  background-color: var(--cor-dourado);
+  padding: 34px 42px 30px;
+  color: var(--cor-verde-escuro);
+  border-bottom-left-radius: 18px;
+}
+
+.aula-caminho {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.aula-header h1 {
+  font-size: 1.85rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+/* ABAS */
+.abas-aula {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+  border-bottom: 2px solid var(--cor-bordas);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.aba-aula {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--cor-verde-escuro);
+  padding: 12px 34px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aba-aula:hover,
+.aba-aula.active {
+  background-color: var(--cor-dourado);
+}
+
+.aba-aula:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.aba-aula:active {
+  transform: scale(0.96);
+}
+
+/* PROGRESSO */
+.progresso-exercicio {
+  width: min(820px, calc(100% - 80px));
+  margin: 34px auto 22px;
+}
+
+.progresso-textos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--cor-verde-escuro);
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.barra-progresso {
+  width: 100%;
+  height: 10px;
+  border: 1.5px solid var(--cor-verde-escuro);
+  border-radius: 100px;
+  overflow: hidden;
+  background-color: color-mix(in srgb, var(--cor-dourado) 12%, white);
+}
+
+.barra-preenchida {
+  width: 66%;
+  height: 100%;
+  background-color: var(--cor-dourado);
+}
+
+/* CARD DO EXERCÍCIO */
+.card-exercicio {
+  width: min(860px, calc(100% - 80px));
+  min-height: 500px;
+  margin: 0 auto 40px;
+  padding: 62px 42px 42px;
+  background-color: white;
+  border-radius: 16px;
+  border: 1.4px solid var(--cor-bordas);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.126);
+
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 52px;
+  align-items: center;
+}
+
+.imagem-exercicio {
+  width: 340px;
+  height: 280px;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.imagem-exercicio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.conteudo-exercicio {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.conteudo-exercicio h2 {
+  color: var(--cor-verde-escuro);
+  font-size: 1rem;
+  line-height: 1.45;
+  font-weight: 800;
+  margin-bottom: 28px;
+}
+
+.alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.opcao-resposta {
+  width: 100%;
+  min-height: 58px;
+  padding: 13px 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-dourado);
+  color: var(--cor-verde-escuro);
+  font-family: var(--font-family);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.opcao-resposta strong {
+  margin-right: 8px;
+}
+
+.opcao-resposta:hover {
+  transform: translateY(-4px);
+  filter: brightness(0.96);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.opcao-resposta:focus-visible,
+.btn-confirmar:focus-visible,
+.aba-aula:focus-visible,
+.btn-sair:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--cor-dourado) 70%, white);
+  outline-offset: 3px;
+}
+
+.opcao-resposta:active {
+  transform: scale(0.98);
+}
+
+.btn-confirmar {
+  align-self: flex-end;
+  margin-top: 42px;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--cor-dourado);
+  color: var(--cor-verde-escuro);
+  font-family: var(--font-family);
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-confirmar:hover {
+  transform: translateY(-4px);
+  filter: brightness(0.95);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.btn-confirmar:active {
+  transform: scale(0.96);
+}
+
+/* RESPONSIVO */
+@media (max-width: 1000px) {
+  body {
+    overflow: auto;
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-container {
+    height: auto;
+    overflow: visible;
+  }
+
+  .abas-aula {
+    gap: 32px;
+  }
+
+  .card-exercicio {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-exercicio {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .aula-header {
+    padding: 28px 24px;
+  }
+
+  .aula-header h1 {
+    font-size: 1.45rem;
+  }
+
+  .abas-aula {
+    height: auto;
+    padding: 18px;
+    flex-direction: column;
+  }
+
+  .progresso-exercicio,
+  .card-exercicio {
+    width: calc(100% - 32px);
+  }
+
+  .card-exercicio {
+    padding: 28px 20px;
+  }
+
+  .imagem-exercicio {
+    height: 220px;
+  }
+
+  .btn-confirmar {
+    align-self: stretch;
+  }
+}

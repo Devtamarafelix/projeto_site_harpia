@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Login</title>
 
-    <link rel="stylesheet" href="Css/login.css" />
+    <link rel="stylesheet" href="Css/EsqueceuSenha.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,16 +22,13 @@
 
           <div class="titulo-container">
             <h1>H.<span>A</span>.R.<span>P</span>.I.<span>A</span></h1>
-            <p class="subtitulo">aprenda do seu jeito</p>
+            <p class="subtitulo">Aprenda do seu jeito</p>
           </div>
         </div>
 
         <div class="banner-pluma">
           <h2>Aprender do seu Jeito.</h2>
-          <p>
-            Uma plataforma que se adapta a você e transforma seus estudos em
-            conquistas.
-          </p>
+          <p> Uma plataforma que se adapta a você e transforma seus estudos em conquistas.</p>
 
           <img
             src="assets/imgs/Pluma.png"
@@ -51,64 +48,38 @@
             class="onda-verde"
             aria-hidden="true"
           >
-            <path
-              d="M277.428 106.238C135.92 -54.5083 62.3672 -21.7213 0.5 135.459V399.5H610.5V44.4795C572.559 199.224 499.843 295.701 332.055 154.281L277.428 106.238Z"
-              fill="#1B4332"
-              fill-opacity=""
-              stroke="#1B4332"
-              stroke-opacity="0.71"
-            />
+            <path d="M277.428 106.238C135.92 -54.5083 62.3672 -21.7213 0.5 135.459V399.5H610.5V44.4795C572.559 199.224 499.843 295.701 332.055 154.281L277.428 106.238Z" fill="#1B4332" fill-opacity="" stroke="#1B4332" stroke-opacity="0.71">
           </svg>
       </section>
 
       <section class="lado-direito">
         <div class="login-conta">
           <div class="form-header">
-            <h2>Bem vindo(a) de volta!</h2>
-            <p>
-              Entre com sua conta para continuar sua jornada de aprendizagem.
-            </p>
-          </div>
+            <h2>Esqueceu sua Senha?</h2>
+            <p>Informe seu E-mail ou nome de Usuário no campo abaixo, caso a mesma corresponda a uma conta do H.A.R.P.I.A, você receberá um email de recuperação de senha em sua caixa de entrada em até 5 minutos.</p>
+            </div>
 
-          <form action="pg-usuario.html" method="get">
+            <form action="index.html" method="get">
             <div class="form-group">
-              <label for="usuario">Email ou Nome de Usuário:</label>
-              <input
-                type="text"
-                id="usuario"
-                placeholder="Digite seu email ou user"
-                required
-              />
+            <label for="usuario">Email ou Nome de Usuário:</label>
+            <input type="text" id="usuario" placeholder="Digite seu email ou nome de usuário" required> 
             </div>
 
             <div class="form-group">
-              <label for="senha">Senha:</label>
-              <input
-                type="password"
-                id="senha"
-                placeholder="Digite sua senha"
-                required
-              />
-              <a href="Esqueceu-Senha.html" class="link-esqueceu-senha">Esqueceu sua senha?</a>
+            <a href="login.html" class="link-esqueceu-senha">Já Possui uma conta? Clique aqui para entrar</a>
             </div>
 
-            <button type="submit" class="btn-entrar">Entrar</button>
+            <button type="submit" class="btn-entrar">Enviar</button>
 
             <div class="divisor">
               <span>ou</span>
             </div>
 
-            <button type="button" class="btn-google">
-              <img
-                src="assets/icon-google.svg"
-                alt="logo do Google"
-                class="icon-google"
-              />
-              Entrar com o Google
-            </button>
+            <a href="index.html" style="text-decoration: none;">
+            <button type="button" class="btn-google">Voltar ao Início</button>
+            </a>
 
-            <p class="form-footer">
-              Não tem uma conta? <a href="cadastro.html">Crie sua conta</a>
+            <p class="form-footer"> Não tem uma conta? <a href="cadastro.html">Crie sua conta</a>
             </p>
           </form>
         </div>
@@ -118,10 +89,10 @@
     <!-- Plugin VLibras -->
 
     <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+    </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="JavaScript/login.js"></script>
@@ -131,5 +102,6 @@
       src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
       async
     ></script>
+
   </body>
 </html>

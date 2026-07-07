@@ -53,7 +53,7 @@ async function lidarComEnvio() {
 
   try {
     // 3. Envia o texto para o nosso backend Node na porta 3000
-    const response = await fetch('https://darkred-duck-282519.hostingersite.com', {
+    const response = await fetch('https://darkred-duck-282519.hostingersite.com/api/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ mensagem: mensagem })

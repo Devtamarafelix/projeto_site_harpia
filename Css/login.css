@@ -52,6 +52,12 @@ body {
     height: auto;
 }
 
+.logo-link {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
 .titulo-container {
     color:#1B4332;
     display: flex;
@@ -120,6 +126,26 @@ h1 span {
 .login-conta {
     width: 100%;
     max-width: 380px;
+}
+
+.btn-voltar {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #1B4332;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.btn-voltar:hover{
+    color: #245e46;
+}
+
+.icon-voltar {
+    width: 18px;
+    height: 18px;
 }
 
 .form-header {

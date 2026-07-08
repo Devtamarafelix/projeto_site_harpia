@@ -6,7 +6,7 @@
 
 body {
     background-color: #F5F1E8;
-    font-family: 'Inter';
+    font-family: 'Poopins', sans-serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -44,7 +44,6 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    
     width: 100%;
 }
 
@@ -76,7 +75,7 @@ h1 span {
 .banner-pluma {
     color: #1B4332;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     position: relative;
     padding-bottom: 0;
 }
@@ -156,12 +155,26 @@ h1 span {
 
 .form-group input {
     width: 100%;
-    padding: 12px;
+    padding: 12px 12px 12px 35px;
     border: 2px solid #A2B5AC; 
     border-radius: 8px;       
     background-color: white; 
     font-size: 0.95rem;
     outline: none;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-container .icon-input {
+    position: absolute;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
 }
 
 .form-group input:focus {

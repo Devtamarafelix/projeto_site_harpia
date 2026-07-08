@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -39,26 +39,26 @@
             class="mascote-pluma"
           />
         </div>
-         
+
         <!-- svg da imagem da onda verde -->
         <svg
-            width="100%"
-            height="auto"
-            viewBox="0 0 611 400"
-            preserveAspectRatio="none"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="onda-verde"
-            aria-hidden="true"
-          >
-            <path
-              d="M277.428 106.238C135.92 -54.5083 62.3672 -21.7213 0.5 135.459V399.5H610.5V44.4795C572.559 199.224 499.843 295.701 332.055 154.281L277.428 106.238Z"
-              fill="#1B4332"
-              fill-opacity=""
-              stroke="#1B4332"
-              stroke-opacity="0.71"
-            />
-          </svg>
+          width="100%"
+          height="auto"
+          viewBox="0 0 611 400"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="onda-verde"
+          aria-hidden="true"
+        >
+          <path
+            d="M277.428 106.238C135.92 -54.5083 62.3672 -21.7213 0.5 135.459V399.5H610.5V44.4795C572.559 199.224 499.843 295.701 332.055 154.281L277.428 106.238Z"
+            fill="#1B4332"
+            fill-opacity=""
+            stroke="#1B4332"
+            stroke-opacity="0.71"
+          />
+        </svg>
       </section>
 
       <section class="lado-direito">
@@ -73,26 +73,38 @@
           <form action="pg-usuario.html" method="get">
             <div class="form-group">
               <label for="usuario">Email ou Nome de Usuário:</label>
-              <input
+
+              <div class="input-container">
+                <img src="assets/icons-login-e-cadastro/icon-usuario.svg" alt="" class="icon-input" aria-hidden="true">
+                <input
                 type="text"
                 id="usuario"
                 placeholder="Digite seu email ou user"
                 required
               />
+              </div>
             </div>
 
             <div class="form-group">
               <label for="senha">Senha:</label>
-              <input
+              <div class="input-container">
+                <img src="assets/icons-login-e-cadastro/cadeado-senha.svg" alt="" class="icon-input" aria-hidden="true">
+                <input
                 type="password"
                 id="senha"
                 placeholder="Digite sua senha"
                 required
               />
-              <a href="#" class="link-esqueceu-senha">Esqueceu sua senha?</a>
+              </div>
+              <a href="Esqueceu-Senha.html" class="link-esqueceu-senha"
+                >Esqueceu sua senha?</a
+              >
             </div>
 
-            <button type="submit" class="btn-entrar">Entrar</button>
+            <button type="submit" class="btn-entrar">
+              <img src="assets/icons-login-e-cadastro/entrar.svg" alt="" aria-hidden="true">
+              Entrar
+          </button>
 
             <div class="divisor">
               <span>ou</span>
@@ -100,7 +112,7 @@
 
             <button type="button" class="btn-google">
               <img
-                src="assets/icon-google.svg"
+                src="assets/icons-login-e-cadastro/icon-google.svg"
                 alt="logo do Google"
                 class="icon-google"
               />
@@ -108,7 +120,7 @@
             </button>
 
             <p class="form-footer">
-              Não tem uma conta? <a href="index.html">Crie sua conta</a>
+              Não tem uma conta? <a href="cadastro.html">Crie sua conta</a>
             </p>
           </form>
         </div>

@@ -6,61 +6,61 @@
 
 body {
     background-color: #F5F1E8;
-    font-family: 'Poppins';
+    font-family: 'Inter';
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    
 }
 
-.cadastro-container {
+.login-container {
     display: flex;
     flex-direction: row;
     width: 100%;
-    max-width: 940px;      
-    min-height: 560px; 
+    max-width: 860px;
+    min-height: 540px;
     margin: auto;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    background-color: #FFFBf1; 
 }
 
 .lado-esquerdo, .lado-direito {
     flex: 1;
-    padding: 35px;         
+    padding: 40px;
 }
-
 
 .lado-esquerdo {
     background-color: #ECE4D3;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 50px, 40px;
     position: relative;
 }
 
 .logo {
     display: flex;
     align-items: center;
+    
     width: 100%;
-    margin-bottom: 25px;
 }
 
 .logo img {
-    width: 75px;
+    width: 80px;
     height: auto;
 }
 
 .titulo-container {
-    color: #1B4332;
+    color:#1B4332;
     display: flex;
     flex-direction: column;
 }
 
 .titulo-container h1 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
 }
 
@@ -69,29 +69,17 @@ h1 span {
 }
 
 .subtitulo {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     opacity: 0.9;
 }
 
 .banner-pluma {
     color: #1B4332;
     width: 100%;
+    margin-top: 30px;
     position: relative;
-    z-index: 2;
+    padding-bottom: 0;
 }
-
-.banner-pluma h2 {
-    font-size: 1.8rem;
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.banner-pluma p {
-    font-size: 0.90rem;
-    line-height: 1.4;
-    color: #2d5a45;
-}
-
 
 .onda-verde {
     position: absolute;
@@ -100,24 +88,30 @@ h1 span {
     width: 100%;
     height: auto;
     z-index: 1;
-    pointer-events: none;
 }
 
-.mascote-pluma {
-    position: absolute;
-    bottom: 45px;         
-    left: 50%;
-    transform: translateX(-50%); 
-    width: 290px;         
-    height: auto;         
-    object-fit: contain;  
-    z-index: 3;           
+.banner-pluma .mascote-pluma {
+    max-width: 270px;
+    height: auto;
     display: block;
-    pointer-events: none; 
+    margin: 25px auto 0 auto;
+    position: relative;
+    z-index: 2;
 }
 
+.banner-pluma h2 {
+    font-size: 1.9rem;
+    letter-spacing: 1.2;
+    margin-bottom: 12px;
+}
 
-.lado-direito {                  
+.banner-pluma p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #2d5a45;
+}
+
+.lado-direito {                   
     background-color: #FFFBf1; 
     display: flex;
     justify-content: center;    
@@ -126,113 +120,62 @@ h1 span {
 
 .login-conta {
     width: 100%;
-    max-width: 400px;      
+    max-width: 380px;
 }
 
 .form-header {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 .form-header h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #1B4332;
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .form-header p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: #555;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;             
-}
-
-.form-row {
-    display: flex;
-    gap: 12px;             
-    width: 100%;
+    line-height: 1.4;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    flex: 1; 
-    min-width: 0;
+    margin-bottom: 16px;
+    width: 100%;
 }
 
 .form-group label {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #1B4332;
     font-weight: bold;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .form-group input {
     width: 100%;
-    padding: 12px 12px 12px 35px; 
+    padding: 12px;
     border: 2px solid #A2B5AC; 
     border-radius: 8px;       
     background-color: white; 
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     outline: none;
-    color: #333;
-}
-
-.input-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.input-container .icon-input {
-    position: absolute;
-    left: 12px;
-    width: 16px;
-    height: 16px;
-    pointer-events: none;
 }
 
 .form-group input:focus {
     border: 2px solid #1B4332;
 }
 
-.alerta-seguranca {
-    background-color: #EFECE6;
-    border-radius: 8px;
-    padding: 8px 12px;
-    font-size: 0.75rem;
-    color: #555;
-    line-height: 1.3;
-    border-left: 4px solid #A2B5AC;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.form-checkbox {
-    display: flex;
-    align-items: flex-start;
-    gap: 6px;
-    font-size: 0.75rem;
-    color: #333;
-}
-
-.form-checkbox input {
-    margin-top: 2px;
-    accent-color: #1B4332;
-}
-
-.form-checkbox a {
+.link-esqueceu-senha {
     color: #C49A45;
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.85rem;
 }
 
-.form-checkbox a:hover {
+.link-esqueceu-senha:hover {
     color: #a88334;
 }
 
@@ -240,20 +183,22 @@ form {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 12px;
+    width: 100%;
     background-color: #1B4332;
     color: #FFF;
     border: none;
-    padding: 12px;
+    padding: 14px;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
+    margin-top: 8px;
     transition: background-color 0.2s;
-    width: 100%;
 }
 
 .btn-entrar:hover {
-    background-color: #245e46;
+        background-color: #245e46;
 }
 
 .icon-google {
@@ -266,9 +211,9 @@ form {
     display: flex;
     align-items: center;
     text-align: center;
-    margin: 4px 0;
+    margin: 20px 0;
     color: #888;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
 }
 
 .divisor::before, .divisor::after {
@@ -281,12 +226,13 @@ form {
 .divisor:not(:empty)::after { margin-left: 0.8em; }
 
 .btn-google {
+    width: 100%;
     background-color: #FFF;
     color: #1B4332;
     border: 1px solid #A2B5AC;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
     display: flex;
@@ -294,23 +240,16 @@ form {
     align-items: center;
     gap: 10px;
     transition: background-color 0.2s;
-    width: 100%;
 }
 
 .btn-google:hover {
     background-color: #f5f7f0;
 }
 
-.icon-google {
-    width: 18px;
-    height: 18px;
-    display: block;
-}
-
 .form-footer {
     text-align: center;
-    margin-top: 5px;
-    font-size: 0.85rem;
+    margin-top: 24px;
+    font-size: 0.9rem;
     color: #333;
 }
 
@@ -324,45 +263,60 @@ form {
     color: #a88334;
 }
 
-
 @media (max-width: 768px) {
-    body {
+   body {
         padding: 10px;
         align-items: flex-start;
         overflow-y: auto;
+        background-color: #F5F1E8; 
     }
 
-    .cadastro-container {
+    .login-container {
         display: flex;
         flex-direction: column;
         box-shadow: none;
         background-color: transparent;
         border-radius: 0;
+        height: auto;
+        min-height: auto; 
         padding: 16px;
         width: 100%;
     }
 
-    .lado-esquerdo, .lado-direito {
+    .lado-esquerdo, 
+    .lado-direito {
         flex: none;
         width: 100%;
+        height: auto;
+        min-height: auto;
         padding: 0;
         background-color: transparent;
     }
 
     .lado-esquerdo {
         margin-bottom: 24px;
-        min-height: 200px;
     }
 
     .lado-esquerdo .logo {
+        display: flex;
+        align-items: center;
+        width: 100%;
         margin-bottom: 24px;
     }
 
-    .mascote-pluma {
-        position: static;
-        transform: none;
-        max-width: 150px;
+    .lado-esquerdo .banner-pluma {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .banner-pluma .mascote-pluma {
+        max-width: 160px;
+        width: 100%;
+        height: auto;
+        display: block;
         margin: 0 auto;
+        position: static;
     }
 
     .lado-esquerdo .banner-pluma h2,
@@ -371,12 +325,15 @@ form {
         display: none;
     }
 
-    .form-row {
-        flex-direction: column;
-        gap: 10px;
+    .lado-direito {
+        margin-top: 0;
     }
 
-    body:has([vw].enabled) .cadastro-container {
+    .login-conta {
+        max-width: 100%;
+    }
+
+    body:has([vw].enabled) .login-container {
         padding-bottom: 180px;
     }
 

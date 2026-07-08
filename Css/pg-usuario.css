@@ -606,11 +606,13 @@ button:hover {
   margin-right: 4px;
 }
 
-.outline-btn {
+/* Como essa pagina meio q ta pronta eu comentei pra n ficar igual ao do figma e ficar
+igual aos demais botões, se achar q n ficou legal e só descomentar q volta a ficar dourado, tmj /*
+/*.outline-btn {
   background: transparent;
   color: var(--dourado);
   border: 1px solid var(--dourado);
-}
+} */
 
 /* PAINEL DIREITO */
 .right-panel {

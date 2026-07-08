@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,6 +13,8 @@
   <link rel="stylesheet" href="Css/materia-portugues.css">
   <link rel="stylesheet" href="Css/chatbox.css">
   <script src="JavaScript/chatbox.js" defer></script>
+
+  <link rel="stylesheet" href="Css/materia-portugues.css" />
 </head>
 
 <body>
@@ -49,17 +52,20 @@
 
       <div class="sidebar-bottom">
         <div class="user-box">
-          <img src="assets/img-materia-portugues/Profile.png" alt="Maria Silva" class="user-avatar-img">
+          <img src="assets/img-explorar-cursos/avatar.jpg" alt="Maria Silva" class="user-avatar-img">
 
           <div class="user-info">
             <strong>Maria Silva</strong>
-            <p>1.300 XP · Nível Iniciante</p>
+
+            <div class="user-xp-row">
+
+              <p>1.300 XP · Nível Iniciante</p>
+            </div>
           </div>
         </div>
 
         <button class="logout">↪ Sair</button>
       </div>
-
     </aside>
 
     <!-- MAIN -->
@@ -83,7 +89,7 @@
       <section class="current-class-card">
 
         <div class="current-icon">
-          <img src="assets/icons-materia-portugues/microphone.png" alt="Comunicação oral">
+          <img src="assets/img-materia-portugues/microphone.png" alt="Comunicação oral">
         </div>
 
         <div class="current-info">
@@ -108,7 +114,7 @@
 
         <article class="module-card">
           <div class="module-icon">
-            <img src="assets/icons-materia-portugues/balões de fala.png" alt="Interpretação de textos">
+            <img src="assets/img-materia-portugues/balões de fala.png" alt="Interpretação de textos">
           </div>
 
           <h2>Interpretação de Textos<br>Não-Verbais</h2>
@@ -117,18 +123,21 @@
             Aprenda a analisar charges, tirinhas, infográficos e expressões sem depender de palavras textuais.
           </p>
 
-          <button>▷ Ver curso</button>
+          <a href="portugues-aula.html" class="btn-curso">
+            ▷ Ver curso
+          </a>
         </article>
 
         <article class="module-card">
           <div class="module-icon">
-            <img src="assets/icons-materia-portugues/fake news.png" alt="Análise de notícias falsas">
+            <img src="assets/img-materia-portugues/fake news.png" alt="Análise de notícias falsas">
           </div>
 
           <h2>Análise de Notícias<br>Falsas</h2>
 
           <p>
-            Desenvolva o senso crítico para identificar informações duvidosas, checar fontes e combater fake news online.
+            Desenvolva o senso crítico para identificar informações duvidosas, checar fontes e combater fake news
+            online.
           </p>
 
           <button>▷ Ver curso</button>
@@ -152,32 +161,33 @@
   <script src="JavaScript/pg-usuario.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
 
-<!--chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
+  <!--chatbox -->
+  <div class="chat-icone" id="chat-icone">💬</div>
 
-<div class="chat-container" id="chat-container">
-<div class="chat-header">
-<div class="header-perfil">
-<img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
-<div class="header-info">
-<span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status"><span class="ponto-online">●</span> Online</span>
-</div>
-</div>
-<span class="btn-fechar" id="btn-fechar">✖</span>
-</div>
-  
-<div class="chat-box" id="chat-box">
-<div class="message bot">Olá! Como posso te ajudar hoje?</div>
-</div>
-  
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar">
-<img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
-</button>
-</div>
-</div>
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header">
+      <div class="header-perfil">
+        <img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+        <div class="header-info">
+          <span class="header-nome">Chat com a Pluma IA</span>
+          <span class="header-status"><span class="ponto-online">●</span> Online</span>
+        </div>
+      </div>
+      <span class="btn-fechar" id="btn-fechar">✖</span>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="message bot">Olá! Como posso te ajudar hoje?</div>
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+      <button id="btn-enviar">
+        <img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
+      </button>
+    </div>
+  </div>
 
 </body>
+
 </html>

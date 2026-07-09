@@ -274,7 +274,7 @@ body {
 }
 
 .barra-preenchida {
-  width: 66%;
+  width: 34%;
   height: 100%;
   background-color: var(--cor-dourado);
 }
@@ -381,6 +381,11 @@ body {
   font-weight: 800;
   cursor: pointer;
   transition: transform 0.2s ease, filter 0.2s ease, box-shadow 0.2s ease;
+   display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
 }
 
 .btn-confirmar:hover {

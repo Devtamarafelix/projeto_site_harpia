@@ -1,436 +1,438 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>H.A.R.P.I.A - Perfil do Aluno</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet"
+  />
 
-  <link rel="stylesheet" href="Css/chatbox.css">
-  <link rel="stylesheet" href="Css/pg-usuario.css">
- 
+  <link rel="stylesheet" href="Css/pg-usuario.css" />
+  <link rel="stylesheet" href="Css/chatbox.css" />
+
   <script src="JavaScript/chatbox.js" defer></script>
 </head>
 
 <body>
 
-  <p class="page-title">Perfil do Aluno</p>
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
 
-  <div class="app">
+    <header class="sidebar-header">
+      <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
+      <div class="logo-container">
+        <p class="logo-titulo">
+          H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+        </p>
+        <p class="logo-subtitulo">Aprenda do seu jeito</p>
+      </div>
+    </header>
 
-      <div class="sidebar-top">
+    <nav class="sidebar-nav">
+      <ul>
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+            Início
+          </a>
+        </li>
 
-        <div class="logo">
-          <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" class="logo-img">
+        <li>
+          <a href="pg-usuario.html" class="active">
+            <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+            Meu Perfil
+          </a>
+        </li>
 
-          <div class="logo-text">
-            <h2 class="logo-title">
-              H.<b>A</b>.R.P.I.<b>A</b>
-            </h2>
-            <p>Aprenda do seu jeito</p>
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/acessibilidade.svg" alt="" />
+            Acessibilidade
+          </a>
+        </li>
+
+        <li>
+          <a href="materia-portugues.html">
+            <img src="assets/icons-explorar-cursos/meus-cursos.svg" alt="" />
+            Meus Cursos
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/meu-progresso.svg" alt="" />
+            Meu Progresso
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/conquistas.svg" alt="" />
+            Conquistas
+          </a>
+        </li>
+
+        <li>
+          <a href="explorar-cursos.html">
+            <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+            Explorar Cursos
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+            Ajuda
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="user-perfil">
+      <img
+        src="assets/img-explorar-cursos/avatar.jpg"
+        alt="Foto de Maria Silva"
+        class="img-avatar"
+      />
+
+      <div class="user-texto">
+        <p class="user-nome">Maria Silva</p>
+        <p class="user-xp">1.300 XP - Nível Iniciante</p>
+      </div>
+
+      <button type="button" class="btn-sair">
+        <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
+        Sair
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main-container perfil-main">
+
+    <header class="main-header">
+      <div class="textos-header">
+        <h1>Olá, Maria Silva!</h1>
+        <p>Que bom ter você aqui de novo.</p>
+      </div>
+
+      <div class="perfil-top-actions">
+        <div class="search-container">
+          <input type="search" placeholder="Buscar cursos..." />
+          <img
+            src="assets/icons-explorar-cursos/lupa-pesquisa.svg"
+            alt="Pesquisar"
+            class="lupa-icon"
+          />
+        </div>
+
+        <button type="button" class="top-icon-btn" aria-label="Notificações">
+          <img src="assets/icons/sino.png" alt="" />
+        </button>
+
+        <img
+          src="assets/img-explorar-cursos/avatar.jpg"
+          alt="Maria Silva"
+          class="top-avatar"
+        />
+
+        <button type="button" class="top-icon-btn" aria-label="Abrir menu">
+          <img src="assets/icons/mais.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <section class="perfil-grid">
+
+      <!-- CARD PERFIL -->
+      <article class="card perfil-card">
+        <div class="perfil-foto">
+          <img src="assets/img-explorar-cursos/avatar.jpg" alt="Maria Silva" />
+        </div>
+
+        <span class="perfil-badge">★ Aprendiz<br>curioso</span>
+
+        <h2>Maria Silva</h2>
+
+        <div class="perfil-info">
+          <div class="info-linha">
+            <img src="assets/icons/idade.png" alt="" />
+            <span>Idade: 16 anos</span>
+          </div>
+
+          <div class="info-linha">
+            <img src="assets/icons/visual.png" alt="" />
+            <span>Estilo de aprendizagem: Visual</span>
+          </div>
+
+          <div class="info-linha">
+            <img src="assets/icons/Group.png" alt="" />
+            <span>Nível: Iniciante</span>
+          </div>
+
+          <div class="info-linha">
+            <img src="assets/icons/calendario.png" alt="" />
+            <span>Membro desde: Outubro/2026</span>
           </div>
         </div>
 
-        <nav class="menu">
+        <a href="" class="btn-dourado">
+          <img src="assets/icons/editar.png" alt="" />
+          Editar Perfil
+        </a>
+      </article>
 
-          <a href="#">
-            <img src="assets/icons/SVG.png" alt="" class="menu-icon">
-            <span>Início</span>
-          </a>
+      <!-- CARD PROGRESSO -->
+      <article class="card progresso-card">
+        <h2>Seu progresso geral</h2>
 
-          <a href="#" class="active">
-            <img src="assets/icons/Container.png" alt="" class="menu-icon">
-            <span>Meu Perfil</span>
-          </a>
+        <div class="progresso-numero">
+          <strong>67%</strong>
+          <span>do seu caminho concluído!</span>
+        </div>
 
-          <a href="#">
-            <img src="assets/icons/coracao.png" alt="" class="menu-icon">
-            <span>Acessibilidade</span>
-          </a>
+        <div class="barra-progresso">
+          <div class="barra-preenchida"></div>
+        </div>
 
-          <a href="#">
-            <img src="assets/icons/materias.png" alt="" class="menu-icon">
-            <span>Meus Cursos</span>
-          </a>
+        <div class="porcentagem-linha">
+          <span>0%</span>
+          <span>50%</span>
+          <span>100%</span>
+        </div>
 
-          <a href="#">
-            <img src="assets/icons/Container (1).png" alt="" class="menu-icon">
-            <span>Meu Progresso</span>
-          </a>
+        <div class="estatisticas-grid">
+          <div class="estatistica-card">
+            <img src="assets/icons/aulas.png" alt="" />
+            <strong>25</strong>
+            <span>Aulas<br>concluídas</span>
+          </div>
 
-          <a href="#">
-            <img src="assets/icons/conquistas.png" alt="" class="menu-icon">
+          <div class="estatistica-card">
+            <img src="assets/icons/Alarm.png" alt="" />
+            <strong>8</strong>
+            <span>Dias<br>seguidos</span>
+          </div>
+
+          <div class="estatistica-card">
+            <img src="assets/icons/Book.png" alt="" />
+            <strong>12</strong>
+            <span>Horas<br>estudadas</span>
+          </div>
+
+          <div class="estatistica-card">
+            <img src="assets/icons/iconify-icon.png" alt="" />
+            <strong>5</strong>
             <span>Conquistas</span>
-          </a>
+          </div>
+        </div>
+      </article>
 
-          <a href="#">
-            <img src="assets/icons/chapeu.png" alt="" class="menu-icon">
-            <span>Continue Estudando</span>
-          </a>
+    </section>
 
-          <a href="#">
-            <img src="assets/icons/Container (3).png" alt="" class="menu-icon">
-            <span>Ajuda</span>
-          </a>
-
-        </nav>
+    <!-- CURSOS -->
+    <section class="secao-cursos">
+      <div class="section-title">
+        <h2>Meus Cursos</h2>
+        <a href="explorar-cursos.html">Ver todos →</a>
       </div>
 
-      <div class="sidebar-bottom">
-
-        <div class="user-box">
-          <div class="user-avatar">👩</div>
-
-          <div class="user-info">
-            <strong>Maria Silva</strong>
-            <p>1.300 XP · Nível Iniciante</p>
+      <div class="cursos-grid">
+        <article class="curso-card">
+          <div class="curso-icon">
+            <img src="assets/icons/progama.png" alt="" />
           </div>
-        </div>
-
-        <button class="logout">↪ Sair</button>
-
-      </div>
-
-    </aside>
-
-    <!-- MAIN -->
-    <main class="main">
-
-      <!-- TOPO -->
-      <header class="topbar">
-
-        <div class="hello">
-          <h1>Olá, Maria Silva!</h1>
-          <p>Que bom ter você aqui de novo.</p>
-        </div>
-
-        <div class="search-area">
-          <input type="text" placeholder="Buscar cursos...">
-
-          <img src="assets/icons/sino.png" alt="Notificações" class="icon-bell">
-          <img src="assets/icons/Container.png" alt="Perfil" class="top-avatar">
-          <img src="assets/icons/mais.png" alt="Abrir menu" class="icon-arrow">
-        </div>
-
-      </header>
-
-      <!-- PERFIL + PROGRESSO -->
-      <div class="content-grid">
-
-        <section class="card profile-card">
-
-          <div class="profile-img">👩</div>
-
-          <h2>Maria Silva</h2>
-
-          <div class="profile-info">
-
-            <div class="info-item">
-              <img src="assets/assets/icons/idade.png" alt="" class="info-icon">
-              <span>Idade: 16 anos</span>
-            </div>
-
-            <div class="info-item">
-              <img src="assets/assets/icons/visual.png" alt="" class="info-icon">
-              <span>Estilo de aprendizagem: Visual</span>
-            </div>
-
-            <div class="info-item">
-              <img src="assets/icons/Group.png" alt="" class="info-icon">
-              <span>Nível: Iniciante</span>
-            </div>
-
-            <div class="info-item">
-              <img src="assets/icons/calendario.png" alt="" class="info-icon">
-              <span>Membro desde: Outubro/2026</span>
-            </div>
-
-          </div>
-
-          <button class="gold-btn">
-            <img src="assets/icons/editar.png" alt="" class="button-icon">
-            Editar Perfil
-          </button>
-
-        </section>
-
-        <section class="card progress-card">
-
-          <h3>Seu progresso geral</h3>
-
-          <div class="progress-number">
-            67%
-            <span>do seu caminho concluído!</span>
-          </div>
-
-          <div class="progress-bar">
-            <div class="progress-fill"></div>
-          </div>
-
-          <div class="percent-row">
-            <span>0%</span>
-            <span>50%</span>
-            <span>100%</span>
-          </div>
-
-          <div class="stats">
-
-            <div class="stat">
-              <img src="assets/icons/aulas.png" alt="Aulas" class="stat-icon">
-              <h3>25</h3>
-              <p>AULAS<br>CONCLUÍDAS</p>
-            </div>
-
-            <div class="stat">
-              <img src="assets/icons/Alarm.png" alt="Dias" class="stat-icon">
-              <h3>8</h3>
-              <p>EM<br>ANDAMENTO</p>
-            </div>
-
-            <div class="stat">
-              <img src="assets/icons/Book.png" alt="Horas" class="stat-icon">
-              <h3>12</h3>
-              <p>MATÉRIAS<br>ESTUDADAS</p>
-            </div>
-
-            <div class="stat">
-              <img src="assets/icons/iconify-icon.png" alt="Conquistas" class="stat-icon">
-              <h3>5</h3>
-              <p>CONQUISTAS<br>ALCANÇADAS</p>
-            </div>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!-- CURSOS -->
-      <section class="courses-section">
-
-        <div class="section-title">
-          <h2>Meus Cursos</h2>
-          <a href="#">Ver todos →</a>
-        </div>
-
-        <div class="courses">
-
-          <article class="course-card">
-            <div class="course-icon">
-              <img src="assets/icons/progama.png" alt="">
-            </div>
-
-            <h3>Programação</h3>
-            <p>12 de 24 aulas</p>
-
-            <div class="mini-bar">
-              <div class="mini-fill" style="width:50%"></div>
-            </div>
-
-            <button>▷ Continuar</button>
-          </article>
-
-          <article class="course-card">
-            <div class="course-icon">
-              <img src="assets/icons/matema.png" alt="">
-            </div>
-
-            <h3>Matemática</h3>
-            <p>8 de 20 aulas</p>
-
-            <div class="mini-bar">
-              <div class="mini-fill" style="width:40%"></div>
-            </div>
-
-            <button>▷ Continuar</button>
-          </article>
-
-          <article class="course-card">
-            <div class="course-icon">
-              <img src="assets/icons/portu.png" alt="">
-            </div>
-
-            <h3>Português</h3>
-            <p>6 de 18 aulas</p>
-
-            <div class="mini-bar">
-              <div class="mini-fill" style="width:33%"></div>
-            </div>
-
-            <button class="outline-btn">▷ Continuar</button>
-          </article>
-
-          <article class="course-card">
-            <div class="course-icon">
-              <img src="assets/icons/money.png" alt="">
-            </div>
-
-            <h3>Educação Financeira</h3>
-            <p>5 de 15 aulas</p>
-
-            <div class="mini-bar">
-              <div class="mini-fill" style="width:30%"></div>
-            </div>
-
-            <button>▷ Continuar</button>
-          </article>
-
-        </div>
-
-      </section>
-
-      <!-- CONTINUE ESTUDANDO -->
-      <section class="continue-section">
-
-        <div class="section-title">
-          <h2>Continue Estudando</h2>
-        </div>
-
-        <article class="continue-card">
-
-          <div class="html-icon">
-            <img src="assets/icons/Html.png" alt="HTML">
-          </div>
-
-          <div class="continue-info">
-            <small>Programação</small>
-            <h3>Listas com HTML</h3>
-            <p>Aprenda como usar listas no seu projeto.</p>
-            <small>Aula 4 de 12</small>
-
-            <div class="mini-bar">
-              <div class="mini-fill gold-fill" style="width:35%"></div>
-            </div>
-          </div>
-
-          <button class="gold-btn">▷ Continuar aula</button>
-
+          <h3>Programação</h3>
+          <p>12 de 24 aulas</p>
+          <div class="mini-barra"><div style="width: 50%"></div></div>
+          <a href="#" class="btn-curso">▷ Continuar</a>
         </article>
 
-      </section>
+        <article class="curso-card">
+          <div class="curso-icon">
+            <img src="assets/icons/matema.png" alt="" />
+          </div>
+          <h3>Matemática</h3>
+          <p>8 de 20 aulas</p>
+          <div class="mini-barra"><div style="width: 40%"></div></div>
+          <a href="materia-matematica.html" class="btn-curso">▷ Continuar</a>
+        </article>
 
-    </main>
+        <article class="curso-card">
+          <div class="curso-icon">
+            <img src="assets/icons/portu.png" alt="" />
+          </div>
+          <h3>Português</h3>
+          <p>6 de 18 aulas</p>
+          <div class="mini-barra"><div style="width: 33%"></div></div>
+          <a href="materia-portugues.html" class="btn-curso outline">▷ Continuar</a>
+        </article>
 
-    <!-- PAINEL DIREITO -->
-    <aside class="right-panel">
+        <article class="curso-card">
+          <div class="curso-icon">
+            <img src="assets/icons/money.png" alt="" />
+          </div>
+          <h3>Educação Financeira</h3>
+          <p>5 de 15 aulas</p>
+          <div class="mini-barra"><div style="width: 30%"></div></div>
+          <a href="#" class="btn-curso">▷ Continuar</a>
+        </article>
+      </div>
+    </section>
 
-      <div class="harpinha-area">
-
-        <div class="speech">
-          Oi, Maria! Pronta para os desafios de hoje?
-        </div>
-
-        <div class="harpinha">
-          <img src="assets/imgs/Pluma.png" alt="Pluma, mascote da H.A.R.P.I.A">
-        </div>
-
+    <!-- CONTINUE ESTUDANDO -->
+    <section class="continue-section">
+      <div class="section-title">
+        <h2>Continue Estudando</h2>
       </div>
 
-      <section class="side-card">
-
-        <div class="section-title">
-          <h2>Conquistas recentes</h2>
-          <a href="#">Ver todas →</a>
+      <article class="continue-card">
+        <div class="html-icon">
+          <img src="assets/icons/Html.png" alt="HTML" />
         </div>
 
-        <div class="achievement">
-          <img src="assets/icons/trofeu.png" alt="" class="achievement-icon">
-          <div class="achievement-info">
-            <strong>Primeira aula concluída</strong>
-            <p>Parabéns! Você começou!</p>
+        <div class="continue-info">
+          <small>Programação</small>
+          <h3>Listas com HTML</h3>
+          <p>Aprenda como usar listas no seu projeto.</p>
+          <small>Aula 4 de 12</small>
+
+          <div class="mini-barra dourada">
+            <div style="width: 35%"></div>
           </div>
         </div>
 
-        <div class="achievement">
-          <img src="assets/icons/Overlay.png" alt="" class="achievement-icon">
-          <div class="achievement-info">
-            <strong>3 dias seguidos</strong>
-            <p>Consistência é a chave!</p>
-          </div>
+        <a href="#" class="btn-dourado">▷ Continuar aula</a>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- PAINEL DIREITO -->
+  <aside class="right-panel">
+
+    <div class="harpinha-area">
+      <div class="speech">
+        Oi, Maria! Pronta para os desafios de hoje?
+      </div>
+
+      <img
+        src="assets/imgs/Pluma.png"
+        alt="Pluma, mascote da H.A.R.P.I.A"
+        class="harpinha-img"
+      />
+    </div>
+
+    <section class="side-card">
+      <div class="section-title">
+        <h2>Conquistas recentes</h2>
+        <a href="#">Ver todas →</a>
+      </div>
+
+      <div class="achievement">
+        <img src="assets/icons/trofeu.png" alt="" />
+        <div>
+          <strong>Primeira aula concluída</strong>
+          <p>Parabéns! Você começou!</p>
         </div>
+      </div>
 
-        <div class="achievement">
-          <img src="assets/icons/icon medalha.png" alt="" class="achievement-icon">
-          <div class="achievement-info">
-            <strong>Explorador</strong>
-            <p>Começou 3 aulas</p>
-          </div>
+      <div class="achievement">
+        <img src="assets/icons/Overlay.png" alt="" />
+        <div>
+          <strong>3 dias seguidos</strong>
+          <p>Consistência é a chave!</p>
         </div>
+      </div>
 
-      </section>
-
-      <section class="tip-card">
-
-        <h3>
-          <img src="assets/icons/ideia.png" alt="" class="tip-icon">
-          Dica do dia
-        </h3>
-
-        <p>
-          Estude em blocos de 15 a 20 minutos e faça pequenas pausas.
-        </p>
-
-        <strong>Você consegue! ♡</strong>
-
-        <div class="mini-harpia">
-          <img src="assets/imgs/joia-pluma.png" alt="Mini Pluma">
+      <div class="achievement">
+        <img src="assets/icons/icon medalha.png" alt="" />
+        <div>
+          <strong>Explorador</strong>
+          <p>Começou 3 aulas</p>
         </div>
+      </div>
+    </section>
 
-      </section>
+    <section class="tip-card">
+      <h3>
+        <img src="assets/icons/ideia.png" alt="" />
+        Dica do dia
+      </h3>
 
-    </aside>
+      <p>Estude em blocos de 15 a 20 minutos e faça pequenas pausas.</p>
+      <strong>Você consegue! ♡</strong>
 
+      <img
+        src="assets/imgs/pluma-joia.png"
+        alt="Mini Pluma"
+        class="mini-harpia"
+      />
+    </section>
+
+  </aside>
+
+  <!-- VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
   </div>
 
-    <!-- Plugin VLibras -->
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+
+  <!-- Sienna Accessibility -->
+  <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
+
+  <script src="JavaScript/pg-usuario.js"></script>
+
+  <!-- Chatbox -->
+  <div class="chat-icone" id="chat-icone">💬</div>
+
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header">
+      <div class="header-perfil">
+        <img src="./assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma" />
+
+        <div class="header-info">
+          <span class="header-nome">Chat com a Pluma IA</span>
+          <span class="header-status"><span class="ponto-online">●</span> Online</span>
+        </div>
       </div>
+
+      <span class="btn-fechar" id="btn-fechar">✖</span>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script src="JavaScript/pg-usuario.js"></script>
 
-    <!-- plugin acessibiidade -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
-      async
-    ></script>
+    <div class="chat-box" id="chat-box">
+      <div class="message bot">Olá! Como posso te ajudar hoje?</div>
+    </div>
 
-<!--chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
+    <div class="input-area">
+      <input
+        type="text"
+        id="input-usuario"
+        placeholder="Digite uma mensagem..."
+        autocomplete="off"
+      />
 
-<div class="chat-container" id="chat-container">
-<div class="chat-header">
-<div class="header-perfil">
-<img src="./assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
-<div class="header-info">
-<span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status"><span class="ponto-online">●</span> Online</span>
-</div>
-</div>
-<span class="btn-fechar" id="btn-fechar">✖</span>
-</div>
-  
-<div class="chat-box" id="chat-box">
-<div class="message bot">Olá! Como posso te ajudar hoje?</div>
-</div>
-  
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar">
-<img src="./assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
-</button>
-</div>
-</div>
+      <button id="btn-enviar">
+        <img src="./assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar" />
+      </button>
+    </div>
+  </div>
 
 </body>
 </html>

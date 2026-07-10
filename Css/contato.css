@@ -161,7 +161,16 @@ body {
     cursor: pointer;
 }
 
+.pluma{
+    position: absolute;
+    right: 0;
+    bottom: -90px; 
+}
 
+.pluma img{
+    width: 500px;
+    display: block;
+}
 
 .instagram-card {
     width: 570px;

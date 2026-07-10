@@ -1,0 +1,422 @@
+:root {
+    --fonte-principal: "Poppins", sans-serif;
+
+    --fundo: #F5F1E8;
+    --verde-escuro: #1B4332;
+    --verde-texto: #14251E;
+    --verde-claro: #d6e0d8;
+    --dourado: #D4A64F;
+    --branco: #ffffff;
+    --borda: #c9d3cc;
+    --texto: #171717;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--fundo);
+    color: var(--texto);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.perguntas-ajuda {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 45px 0 55px;
+}
+
+.voltar-inicio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--verde-texto);
+    font-size: 20px;
+    font-weight: 400;
+
+    margin-bottom: 25px;
+}
+
+.voltar-inicio img {
+    width: 18px;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+
+    margin-bottom: -5px;
+}
+
+.texto-comeco {
+    max-width: 690px;
+    padding-top: 5px;
+}
+
+.texto-comeco h1 {
+    color: var(--verde-texto);
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    margin-bottom: 22px;
+}
+
+.texto-comeco p {
+    max-width: 640px;
+
+    color: var(--verde-texto);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.imagem-comeco {
+    width: 520px;
+    margin-top: -35px;
+    margin-right: -35px;
+
+    flex-shrink: 0;
+}
+
+.lista-perguntas {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-ajuda {
+    min-height: 105px;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    background-color: var(--branco);
+    border: 1px solid var(--borda);
+    border-radius: 17px;
+
+    padding: 18px 28px;
+}
+
+.icone-ajuda {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+
+    background-color: var(--verde-claro);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.texto-ajuda h2 {
+    color: var(--verde-texto);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    margin-bottom: 8px;
+}
+
+.texto-ajuda p {
+    color: var(--verde-texto);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.texto-ajuda strong {
+    font-weight: 400;
+}
+
+.caixa-ajuda {
+    margin-top: 28px;
+
+    min-height: 130px;
+
+    background-color: var(--verde-escuro);
+    border-radius: 17px;
+
+    padding: 24px 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.icone-caixa {
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.icone-caixa img {
+    width: 95px;
+}
+
+.texto-caixa {
+    flex: 1;
+}
+
+.texto-caixa h2 {
+    color: var(--dourado);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+.texto-caixa p {
+    max-width: 460px;
+
+    color: var(--dourado);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.botao-ajuda {
+    width: 200px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background-color: var(--dourado);
+    color: var(--branco);
+
+    border-radius: 8px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.botao-ajuda:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.95);
+}
+
+.botao-ajuda img {
+    width: 24px;
+}
+
+
+@media (max-width: 992px) {
+    .perguntas-ajuda {
+        width: 90%;
+        padding-top: 35px;
+    }
+
+    .hero {
+        align-items: center;
+        gap: 25px;
+    }
+
+    .texto-comeco h1 {
+        font-size: 44px;
+    }
+
+    .texto-comeco p {
+        font-size: 19px;
+    }
+
+    .imagem-comeco {
+        width: 360px;
+        margin-top: -20px;
+        margin-right: -10px;
+    }
+
+    .card-ajuda {
+        padding: 18px 22px;
+    }
+
+    .texto-ajuda h2 {
+        font-size: 22px;
+    }
+
+    .texto-ajuda p {
+        font-size: 16px;
+    }
+
+    .caixa-ajuda {
+        padding: 24px 34px;
+        gap: 28px;
+    }
+
+    .texto-caixa h2 {
+        font-size: 26px;
+    }
+
+    .texto-caixa p {
+        font-size: 16px;
+    }
+
+    .botao-ajuda {
+        width: 180px;
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .perguntas-ajuda {
+        width: 92%;
+        padding: 28px 0 45px;
+    }
+
+    .voltar-inicio {
+        font-size: 16px;
+        margin-bottom: 22px;
+    }
+
+    .voltar-inicio img {
+        width: 16px;
+    }
+
+    .hero {
+        display: block;
+        margin-bottom: 28px;
+    }
+
+    .texto-comeco {
+        max-width: 100%;
+    }
+
+    .texto-comeco h1 {
+        font-size: 36px;
+        margin-bottom: 14px;
+    }
+
+    .texto-comeco p {
+        font-size: 17px;
+        line-height: 1.4;
+    }
+
+    .imagem-comeco {
+        display: none;
+    }
+
+    .lista-perguntas {
+        gap: 16px;
+    }
+
+    .card-ajuda {
+        flex-direction: column;
+        text-align: center;
+
+        min-height: auto;
+        padding: 22px 18px;
+        gap: 14px;
+    }
+
+    .icone-ajuda {
+        width: 68px;
+        height: 68px;
+    }
+
+    .icone-ajuda img {
+        width: 38px;
+    }
+
+    .texto-ajuda h2 {
+        font-size: 21px;
+        margin-bottom: 8px;
+    }
+
+    .texto-ajuda p {
+        font-size: 15.5px;
+        line-height: 1.45;
+    }
+
+    .caixa-ajuda {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 28px 20px;
+        gap: 16px;
+    }
+
+    .icone-caixa {
+        width: 80px;
+        height: 80px;
+    }
+
+    .icone-caixa img {
+        width: 72px;
+    }
+
+    .texto-caixa h2 {
+        font-size: 26px;
+    }
+
+    .texto-caixa p {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .botao-ajuda {
+        width: 100%;
+        max-width: 260px;
+        height: 52px;
+
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 420px) {
+    .texto-comeco h1 {
+        font-size: 31px;
+    }
+
+    .texto-comeco p {
+        font-size: 16px;
+    }
+
+    .texto-ajuda h2 {
+        font-size: 19px;
+    }
+
+    .texto-ajuda p {
+        font-size: 14.5px;
+    }
+
+    .texto-caixa h2 {
+        font-size: 23px;
+    }
+}
+

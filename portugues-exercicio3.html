@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercícios - Português</title>
+    <title>Exercício de Português | H.A.R.P.I.A.</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
+        rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="Css/portugues-exercicio3.css" />
 </head>
@@ -18,7 +19,10 @@
 <body>
     <aside class="sidebar">
         <header class="sidebar-header">
-            <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA" />
+            <img
+                src="assets/imgs/Logo_HARPIA.png"
+                alt="Logo da plataforma H.A.R.P.I.A."
+            />
 
             <div class="logo-container">
                 <p class="logo-titulo">
@@ -28,32 +32,44 @@
             </div>
         </header>
 
-        <nav class="sidebar-nav">
+        <nav class="sidebar-nav" aria-label="Menu principal">
             <ul>
                 <li>
-                    <a href="#">
-                        <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+                    <a href="index.html">
+                        <img
+                            src="assets/icons-explorar-cursos/inicio.svg"
+                            alt=""
+                        />
                         Início
                     </a>
                 </li>
 
                 <li>
                     <a href="pg-usuario.html">
-                        <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+                        <img
+                            src="assets/icons-explorar-cursos/perfil.svg"
+                            alt=""
+                        />
                         Meu Perfil
                     </a>
                 </li>
 
                 <li>
                     <a href="explorar-cursos.html">
-                        <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+                        <img
+                            src="assets/icons-explorar-cursos/explorar-cursos.svg"
+                            alt=""
+                        />
                         Explorar Cursos
                     </a>
                 </li>
 
                 <li>
                     <a href="ajuda.html">
-                        <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+                        <img
+                            src="assets/icons-explorar-cursos/ajuda.svg"
+                            alt=""
+                        />
                         Ajuda
                     </a>
                 </li>
@@ -61,7 +77,11 @@
         </nav>
 
         <div class="user-perfil">
-            <img src="assets/img-explorar-cursos/avatar.jpg" alt="avatar do aluno" class="img-avatar" />
+            <img
+                src="assets/img-explorar-cursos/avatar.jpg"
+                alt="Foto de perfil da aluna Maria Silva"
+                class="img-avatar"
+            />
 
             <div class="user-texto">
                 <p class="user-nome">Maria Silva</p>
@@ -69,7 +89,10 @@
             </div>
 
             <button type="button" class="btn-sair">
-                <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
+                <img
+                    src="assets/icons-explorar-cursos/sair.svg"
+                    alt=""
+                />
                 Sair
             </button>
         </div>
@@ -78,67 +101,175 @@
     <main class="main-container">
         <section class="aula-header">
             <p class="aula-caminho">Meus Cursos &gt; Português</p>
-            <h1>Interpretação de Textos Não-Verbais</h1>
+            <h1>Interpretação de Textos Não Verbais</h1>
         </section>
 
         <nav class="abas-aula" aria-label="Navegação da aula">
             <a href="portugues-aula.html" class="aba-aula">
-                <span>▶</span>
+                <span aria-hidden="true">▶</span>
                 Leitura
             </a>
 
-            <a href="#" class="aba-aula active">
-                <span>▶</span>
+            <a
+                href="portugues-exercicio3.html"
+                class="aba-aula active"
+                aria-current="page"
+            >
+                <span aria-hidden="true">▶</span>
                 Exercícios
             </a>
         </nav>
 
-        <section class="progresso-exercicio">
+        <section
+            class="progresso-exercicio"
+            aria-label="Progresso do exercício"
+        >
             <div class="progresso-textos">
-                <span>Questão 2 de 3</span>
-                <span>Sucesso 1/3</span>
+                <span class="contador-questoes">
+                    Questão
+                    <strong id="questao-atual">3</strong>
+                    de
+                    <strong id="total-questoes">3</strong>
+                </span>
+
+                <span class="contador-acertos">
+                    Sucesso
+                    <strong id="total-acertos">2</strong>
+                    /
+                    <strong id="total-respondidas">2</strong>
+                </span>
             </div>
 
-            <div class="barra-progresso">
-                <div class="barra-preenchida"></div>
+            <div
+                class="barra-progresso"
+                role="progressbar"
+                aria-label="Progresso das questões"
+                aria-valuemin="0"
+                aria-valuemax="3"
+                aria-valuenow="3"
+            >
+                <div
+                    class="barra-preenchida"
+                    id="barra-preenchida"
+                ></div>
             </div>
         </section>
 
-        <section class="card-exercicio">
-            <div class="imagem-exercicio">
-                <img src="assets/img-exercicios-portugues/exercicios-PT-3.png"
-                    alt="Ilustração usada para interpretação de texto não-verbal" />
-            </div>
+        <section
+            class="card-exercicio"
+            aria-labelledby="titulo-pergunta"
+        >
+            <figure class="imagem-exercicio">
+                <img
+                    src="assets/img-exercicios-portugues/exercicios-PT-3.png"
+                    alt="Placa de sinalização usada para interpretação de linguagem não verbal"
+                />
+
+                <figcaption class="descricao-imagem">
+                    Observe atentamente a sinalização para responder à questão.
+                </figcaption>
+            </figure>
 
             <div class="conteudo-exercicio">
-                <h2>
-                    Placas e sinalizações minimalistas transmitem comandos urgentes. Que mensagem a linguagem puramente
-                    não-verbal desta placa comunica ao observador?
+                <h2
+                    class="quiz-pergunta"
+                    id="titulo-pergunta"
+                >
+                    Placas e sinalizações minimalistas transmitem comandos
+                    urgentes. Que mensagem a linguagem puramente não verbal
+                    desta placa comunica ao observador?
                 </h2>
 
-                <div class="alternativas">
-                    <button type="button" class="opcao-resposta">
-                        <strong>(A)</strong>
-                        Permissão para tráfego em alta velocidade e condições ideais de segurança na pista.
+                <div
+                    class="alternativas"
+                    id="quiz-opcoes"
+                    role="group"
+                    aria-label="Alternativas da questão"
+                >
+                    <button
+                        type="button"
+                        class="opcao-resposta"
+                        data-opcao="A"
+                        data-correta="false"
+                        aria-pressed="false"
+                    >
+                        <span class="opcao-letra">(A)</span>
+                        <span class="opcao-texto">
+                            Permissão para tráfego em alta velocidade e
+                            condições ideais de segurança na pista.
+                        </span>
                     </button>
 
-                    <button type="button" class="opcao-resposta">
-                        <strong>(B)</strong>
-                       Um alerta preventivo de perigo iminente que exige atenção redobrada de pedestres ou condutores.
+                    <button
+                        type="button"
+                        class="opcao-resposta"
+                        data-opcao="B"
+                        data-correta="true"
+                        aria-pressed="false"
+                    >
+                        <span class="opcao-letra">(B)</span>
+                        <span class="opcao-texto">
+                            Um alerta preventivo de perigo iminente que exige
+                            atenção redobrada de pedestres ou condutores.
+                        </span>
+                    </button>
 
-                        <button type="button" class="opcao-resposta">
-                            <strong>(C)</strong>
-                           Um mero elemento de decoração artística abstrata urbana sem finalidade prática de trânsito.
-                        </button>
+                    <button
+                        type="button"
+                        class="opcao-resposta"
+                        data-opcao="C"
+                        data-correta="false"
+                        aria-pressed="false"
+                    >
+                        <span class="opcao-letra">(C)</span>
+                        <span class="opcao-texto">
+                            Um mero elemento de decoração artística abstrata
+                            urbana sem finalidade prática de trânsito.
+                        </span>
+                    </button>
                 </div>
 
-                 <a href="" class="btn-confirmar">
-          Confirmar Resposta
-        </a>
+                <div
+                    class="quiz-feedback"
+                    id="quiz-feedback"
+                    aria-live="polite"
+                    hidden
+                >
+                    <p
+                        class="feedback-titulo"
+                        id="feedback-titulo"
+                    ></p>
+
+                    <p
+                        class="feedback-explicacao"
+                        id="feedback-explicacao"
+                    ></p>
+                </div>
+
+                <div class="quiz-acoes">
+                    <button
+                        type="button"
+                        class="btn-confirmar"
+                        id="btn-confirmar"
+                        disabled
+                    >
+                        Confirmar Resposta
+                    </button>
+
+                    <button
+                        type="button"
+                        class="btn-proxima"
+                        id="btn-proxima"
+                        data-proxima-pagina="portugues-aula.html"
+                        hidden
+                    >
+                        Finalizar Exercício
+                    </button>
+                </div>
             </div>
         </section>
     </main>
-    <!-- VLibras -->
+
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
@@ -146,46 +277,73 @@
         </div>
     </div>
 
+    <div class="chat-icone" id="chat-icone">💬</div>
+
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <div class="header-perfil">
+                <img
+                    src="./assets/icons-chatbox/avatar-pluma.png"
+                    class="header-img"
+                    alt="Pluma"
+                />
+
+                <div class="header-info">
+                    <span class="header-nome">Chat com a Pluma IA</span>
+                    <span class="header-status">
+                        <span class="ponto-online">●</span>
+                        Online
+                    </span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-fechar"
+                id="btn-fechar"
+                aria-label="Fechar chat"
+            >
+                ✖
+            </button>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                Olá! Como posso te ajudar hoje?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="input-usuario"
+                placeholder="Digite uma mensagem..."
+                autocomplete="off"
+            />
+
+            <button
+                type="button"
+                id="btn-enviar"
+                aria-label="Enviar mensagem"
+            >
+                <img
+                    src="./assets/icons-chatbox/ic-enviar.png"
+                    class="btn-enviar-img"
+                    alt=""
+                />
+            </button>
+        </div>
+    </div>
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 
     <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
     </script>
 
-    <!-- Sienna Accessibility -->
     <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
-
-    <!-- JavaScript da página -->
-    <script src="JavaScript/exercicio-portugues.js"></script>
-
-
-<!--chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
-
-<div class="chat-container" id="chat-container">
-<div class="chat-header">
-<div class="header-perfil">
-<img src="./assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
-<div class="header-info">
-<span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status"><span class="ponto-online">●</span> Online</span>
-</div>
-</div>
-<span class="btn-fechar" id="btn-fechar">✖</span>
-</div>
-  
-<div class="chat-box" id="chat-box">
-<div class="message bot">Olá! Como posso te ajudar hoje?</div>
-</div>
-  
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar">
-<img src="./assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
-</button>
-</div>
-</div>
-
+    <script src="JavaScript/quiz.js" defer></script>
+    <script src="JavaScript/chatbox.js" defer></script>
 </body>
 
 </html>

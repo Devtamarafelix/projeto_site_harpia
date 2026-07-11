@@ -2,166 +2,276 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exercícios - Português</title>
+    <!-- ===================================================== -->
+    <!-- 1. CONFIGURAÇÕES DA PÁGINA -->
+    <!-- ===================================================== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício de Português | H.A.R.P.I.A.</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="Css/portugues-exercicio1.css" />
+    <link rel="stylesheet" href="Css/portugues-exercicio1.css" />
 </head>
 
 <body>
-  <aside class="sidebar">
-    <header class="sidebar-header">
-      <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA" />
 
-      <div class="logo-container">
-        <p class="logo-titulo">
-          H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
-        </p>
-        <p class="logo-subtitulo">Aprenda do Seu Jeito</p>
-      </div>
-    </header>
+    <!-- ===================================================== -->
+    <!-- 2. SIDEBAR -->
+    <!-- ===================================================== -->
 
-    <nav class="sidebar-nav">
-      <ul>
-        <li>
-          <a href="#">
-            <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
-            Início
-          </a>
-        </li>
+    <aside class="sidebar">
 
-        <li>
-          <a href="pg-usuario.html">
-            <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
-            Meu Perfil
-          </a>
-        </li>
+        <header class="sidebar-header">
+            <img src="assets/imgs/Logo_HARPIA.png" alt="Logo da plataforma H.A.R.P.I.A." />
 
-        
-        <li>
-          <a href="explorar-cursos.html">
-            <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
-            Explorar Cursos
-          </a>
-        </li>
+            <div class="logo-container">
+                <p class="logo-titulo">
+                    H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+                </p>
 
-        <li>
-          <a href="ajuda.html">
-            <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
-            Ajuda
-          </a>
-        </li>
-      </ul>
-    </nav>
+                <p class="logo-subtitulo">
+                    Aprenda do Seu Jeito
+                </p>
+            </div>
+        </header>
 
-    <div class="user-perfil">
-      <img src="assets/img-explorar-cursos/avatar.jpg" alt="avatar do aluno" class="img-avatar" />
+        <nav class="sidebar-nav" aria-label="Menu principal">
+            <ul>
 
-      <div class="user-texto">
-        <p class="user-nome">Maria Silva</p>
-        <p class="user-xp">1.900 XP - Nível Iniciante</p>
-      </div>
+                <li>
+                    <a href="index.html">
+                        <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+                        Início
+                    </a>
+                </li>
 
-      <button type="button" class="btn-sair">
-        <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
-        Sair
-      </button>
-    </div>
-  </aside>
+                <li>
+                    <a href="pg-usuario.html">
+                        <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+                        Meu Perfil
+                    </a>
+                </li>
 
-  <main class="main-container">
-    <section class="aula-header">
-      <p class="aula-caminho">Meus Cursos &gt; Português</p>
-      <h1>Interpretação de Textos Não-Verbais</h1>
-    </section>
+                <li>
+                    <a href="explorar-cursos.html">
+                        <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+                        Explorar Cursos
+                    </a>
+                </li>
 
-    <nav class="abas-aula" aria-label="Navegação da aula">
-      <a href="portugues-aula.html" class="aba-aula">
-        <span>▶</span>
-        Leitura
-      </a>
+                <li>
+                    <a href="ajuda.html">
+                        <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+                        Ajuda
+                    </a>
+                </li>
 
-      <a href="#" class="aba-aula active">
-        <span>▶</span>
-        Exercícios
-      </a>
-    </nav>
+            </ul>
+        </nav>
 
-    <section class="progresso-exercicio">
-      <div class="progresso-textos">
-        <span>Questão 1 de 3</span>
-        <span>Sucesso 0/3</span>
-      </div>
+        <div class="user-perfil">
 
-      <div class="barra-progresso">
-        <div class="barra-preenchida"></div>
-      </div>
-    </section>
+            <img src="assets/img-explorar-cursos/avatar.jpg"
+                alt="Foto de perfil da aluna Maria Silva"
+                class="img-avatar" />
 
-    <section class="card-exercicio">
-      <div class="imagem-exercicio">
-        <img src="assets/img-exercicios-portugues/exercicio-1-PT.png"
-          alt="Ilustração usada para interpretação de texto não-verbal" />
-      </div>
+            <div class="user-texto">
+                <p class="user-nome">Maria Silva</p>
+                <p class="user-xp">1.900 XP - Nível Iniciante</p>
+            </div>
 
-      <div class="conteudo-exercicio">
-        <h2>
-          Analisando os elementos puramente visuais e estruturais da ilustração
-          ao lado, qual é a principal crítica social ou reflexão apresentada
-          pelo autor?
-        </h2>
+            <button type="button" class="btn-sair">
+                <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
+                Sair
+            </button>
 
-        <div class="alternativas">
-          <button type="button" class="opcao-resposta">
-            <strong>(A)</strong>
-            O avanço tecnológico sustentável é a única saída harmônica para proteger as florestas.
-          </button>
-
-          <button type="button" class="opcao-resposta">
-            <strong>(B)</strong>
-            A contradição irônica entre a aparente evolução humana moderna e a degradação ambiental.
-          </button>
-
-          <button type="button" class="opcao-resposta">
-            <strong>(C)</strong>
-            A total ausência de interferência humana na sobrevivência e beleza das matas preservadas.
-          </button>
         </div>
 
-        <a href="portugues-exercicio2.html" class="btn-confirmar">
-          Confirmar Resposta
-        </a>
-      </div>
-    </section>
-  </main>
-  <!-- VLibras -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    </aside>
+
+    <main class="main-container">
+
+        <section class="aula-header">
+            <p class="aula-caminho">Meus Cursos &gt; Português</p>
+            <h1>Interpretação de Textos Não Verbais</h1>
+        </section>
+
+        <nav class="abas-aula" aria-label="Navegação da aula">
+
+            <a href="portugues-aula.html" class="aba-aula">
+                <span aria-hidden="true">▶</span>
+                Leitura
+            </a>
+
+            <a href="portugues-exercicio1.html"
+               class="aba-aula active"
+               aria-current="page">
+                <span aria-hidden="true">▶</span>
+                Exercícios
+            </a>
+
+        </nav>
+
+        <section class="progresso-exercicio" aria-label="Progresso do exercício">
+
+            <div class="progresso-textos">
+
+                <span class="contador-questoes">
+                    Questão
+                    <strong id="questao-atual">1</strong>
+                    de
+                    <strong id="total-questoes">3</strong>
+                </span>
+
+                <span class="contador-acertos">
+                    Sucesso
+                    <strong id="total-acertos">0</strong>
+                    /
+                    <strong id="total-respondidas">0</strong>
+                </span>
+
+            </div>
+
+            <div class="barra-progresso"
+                 role="progressbar"
+                 aria-valuemin="0"
+                 aria-valuemax="3"
+                 aria-valuenow="1">
+
+                <div class="barra-preenchida"
+                     id="barra-preenchida"></div>
+
+            </div>
+
+        </section>
+
+        <section class="card-exercicio" aria-labelledby="titulo-pergunta">
+
+            <figure class="imagem-exercicio">
+
+                <img src="assets/img-exercicios-portugues/exercicio-1-PT.png"
+                     alt="Ilustração utilizada para interpretação de texto não verbal">
+
+                <figcaption class="descricao-imagem">
+                    Observe atentamente a ilustração para responder à questão.
+                </figcaption>
+
+            </figure>
+
+            <div class="conteudo-exercicio">
+
+                <h2 class="quiz-pergunta" id="titulo-pergunta">
+
+                    Analisando os elementos visuais e estruturais da ilustração ao lado,
+                    qual é a principal crítica social ou reflexão apresentada pelo autor?
+
+                </h2>
+
+                <div class="alternativas"
+                     id="quiz-opcoes"
+                     role="group"
+                     aria-label="Alternativas da questão">
+
+                    <button type="button"
+                            class="opcao-resposta"
+                            data-opcao="A"
+                            data-correta="false"
+                            aria-pressed="false">
+
+                        <span class="opcao-letra">(A)</span>
+
+                        <span class="opcao-texto">
+                            O avanço tecnológico sustentável é a única saída harmônica para proteger as florestas.
+                        </span>
+
+                    </button>
+
+                    <button type="button"
+                            class="opcao-resposta"
+                            data-opcao="B"
+                            data-correta="true"
+                            aria-pressed="false">
+
+                        <span class="opcao-letra">(B)</span>
+
+                        <span class="opcao-texto">
+                            A contradição irônica entre a aparente evolução humana moderna e a degradação ambiental.
+                        </span>
+
+                    </button>
+
+                    <button type="button"
+                            class="opcao-resposta"
+                            data-opcao="C"
+                            data-correta="false"
+                            aria-pressed="false">
+
+                        <span class="opcao-letra">(C)</span>
+
+                        <span class="opcao-texto">
+                            A total ausência de interferência humana na sobrevivência e beleza das matas preservadas.
+                        </span>
+
+                    </button>
+
+                </div>
+
+                <div class="quiz-feedback"
+                     id="quiz-feedback"
+                     aria-live="polite"
+                     hidden>
+
+                    <p class="feedback-titulo"
+                       id="feedback-titulo"></p>
+
+                    <p class="feedback-explicacao"
+                       id="feedback-explicacao"></p>
+
+                </div>
+
+                <div class="quiz-acoes">
+
+                    <button type="button"
+                            class="btn-confirmar"
+                            id="btn-confirmar"
+                            disabled>
+                        Confirmar Resposta
+                    </button>
+
+                    <button type="button"
+                            class="btn-proxima"
+                            id="btn-proxima"
+                            data-proxima-pagina="portugues-exercicio2.html"
+                            hidden>
+                        Próxima Questão
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
 
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
 
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
 
-  <!-- Sienna Accessibility -->
-  <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
-
-  <!-- JavaScript da página -->
-  <script src="JavaScript/exercicio-portugues.js"></script>
-
+    <script src="JavaScript/quiz.js" defer></script>
 
 </body>
-
 </html>

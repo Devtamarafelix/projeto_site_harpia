@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercício de Português | H.A.R.P.I.A.</title>
+    <title>Exercício de Matemática | H.A.R.P.I.A.</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +13,7 @@
         rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="Css/portugues-exercicio2.css" />
+    <link rel="stylesheet" href="Css/matematica-exercicio2.css" />
 </head>
 
 <body>
@@ -100,18 +100,18 @@
 
     <main class="main-container">
         <section class="aula-header">
-            <p class="aula-caminho">Meus Cursos &gt; Português</p>
-            <h1>Interpretação de Textos Não Verbais</h1>
+            <p class="aula-caminho">Meus Cursos &gt; Matemática</p>
+            <h1>Noções de Estatística Básica</h1>
         </section>
 
         <nav class="abas-aula" aria-label="Navegação da aula">
-            <a href="portugues-aula.html" class="aba-aula">
+            <a href="matematica-aula.html" class="aba-aula">
                 <span aria-hidden="true">▶</span>
                 Leitura
             </a>
 
             <a
-                href="portugues-exercicio2.html"
+                href="matematica-exercicio2.html"
                 class="aba-aula active"
                 aria-current="page"
             >
@@ -159,74 +159,64 @@
             class="card-exercicio"
             aria-labelledby="titulo-pergunta"
         >
-            <figure class="imagem-exercicio">
-                <img
-                    src="assets/img-exercicios-portugues/exercicios-PT-2.png"
-                    alt="Campanha publicitária com metáfora visual relacionada ao impacto ambiental"
-                />
-
-                <figcaption class="descricao-imagem">
-                    Observe atentamente a campanha para responder à questão.
-                </figcaption>
-            </figure>
-
             <div class="conteudo-exercicio">
                 <h2
                     class="quiz-pergunta"
                     id="titulo-pergunta"
                 >
-                    Campanhas publicitárias costumam usar metáforas visuais.
-                    Na campanha apresentada ao lado, o recurso de design
-                    não verbal busca primordialmente:
+                    Um grupo de estudantes obteve as seguintes pontuações
+                    em um teste de matemática: 8, 3, 9, 5, 6, 10 e 4.
+                    Qual é a mediana dessas pontuações?
                 </h2>
 
                 <div
-                    class="alternativas"
+                    class="quiz-grid"
                     id="quiz-opcoes"
                     role="group"
                     aria-label="Alternativas da questão"
                 >
                     <button
                         type="button"
-                        class="opcao-resposta"
+                        class="opcao"
                         data-opcao="A"
                         data-correta="false"
                         aria-pressed="false"
                     >
                         <span class="opcao-letra">(A)</span>
-                        <span class="opcao-texto">
-                            Chocar o espectador por meio do uso aleatório
-                            de cores agressivas e confusas.
-                        </span>
+                        <span class="opcao-texto">5 pontos</span>
                     </button>
 
                     <button
                         type="button"
-                        class="opcao-resposta"
+                        class="opcao"
                         data-opcao="B"
                         data-correta="false"
                         aria-pressed="false"
                     >
                         <span class="opcao-letra">(B)</span>
-                        <span class="opcao-texto">
-                            Sugerir que ações individuais e cotidianas
-                            não geram impactos ecológicos globais.
-                        </span>
+                        <span class="opcao-texto">6,4 pontos</span>
                     </button>
 
                     <button
                         type="button"
-                        class="opcao-resposta"
+                        class="opcao"
                         data-opcao="C"
                         data-correta="true"
                         aria-pressed="false"
                     >
                         <span class="opcao-letra">(C)</span>
-                        <span class="opcao-texto">
-                            Associar criativamente hábitos de consumo
-                            direto à integridade e à sobrevivência dos
-                            ecossistemas.
-                        </span>
+                        <span class="opcao-texto">6 pontos</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class="opcao"
+                        data-opcao="D"
+                        data-correta="false"
+                        aria-pressed="false"
+                    >
+                        <span class="opcao-letra">(D)</span>
+                        <span class="opcao-texto">8 pontos</span>
                     </button>
                 </div>
 
@@ -261,7 +251,7 @@
                         type="button"
                         class="btn-proxima"
                         id="btn-proxima"
-                        data-proxima-pagina="portugues-exercicio3.html"
+                        data-proxima-pagina="matematica-exercicio3.html"
                         hidden
                     >
                         Próxima Questão

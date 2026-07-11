@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>H.A.R.P.I.A - Aula Matemática</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="Css/matematica-aula.css" />
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA" />
+
+            <div class="logo-container">
+                <p class="logo-titulo">
+                    H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+                </p>
+                <p class="logo-subtitulo">Aprenda do Seu Jeito</p>
+            </div>
+        </header>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="#"><img src="assets/icons-explorar-cursos/inicio.svg" alt="">Início</a></li>
+
+                <li><a href="pg-usuario.html"><img src="assets/icons-explorar-cursos/perfil.svg" alt="">Meu Perfil</a>
+                </li>
+
+
+                <li><a href="explorar-cursos.html"><img src="assets/icons-explorar-cursos/explorar-cursos.svg"
+                            alt="">Explorar Cursos</a></li>
+
+                <li><a href="ajuda.html"><img src="assets/icons-explorar-cursos/ajuda.svg" alt="">Ajuda</a></li>
+            </ul>
+        </nav>
+
+        <div class="user-perfil">
+            <img src="assets/img-explorar-cursos/avatar.jpg" alt="Foto de Maria Silva" class="img-avatar">
+
+            <div class="user-texto">
+                <p class="user-nome">Maria Silva</p>
+                <p class="user-xp">1.300 XP - Nível Iniciante</p>
+            </div>
+
+            <button type="button" class="btn-sair">
+                <img src="assets/icons-explorar-cursos/sair.svg" alt="">
+                Sair
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-container">
+
+        <section class="aula-header">
+            <p class="aula-caminho">Meus Cursos &gt; Matemática</p>
+            <h1>Noções de Estatística Básica</h1>
+        </section>
+
+        <nav class="abas-aula">
+            <a href="#" class="aba-aula active">
+                <span>▶</span>
+                Leitura
+            </a>
+
+            <a href="matematica-exercicio1.html" class="aba-aula">
+                <span>▶</span>
+
+                Exercícios
+            </a>
+        </nav>
+
+        <section class="conteudo-aula">
+            <h2>O que é Estatística ?</h2>
+
+            <p class="intro">
+                A Estatística é a área da matemática que coleta, organiza e analisa dados para nos ajudar a entender o
+                que acontece à nossa volta.
+            </p>
+
+            <p>
+                Na estatística básica, usamos três ferramentas principais para resumir um grupo de números:
+                <strong>Média</strong>
+                (resultado de somar tudo e dividir pela quantidade de itens), a <strong>Moda</strong> (o número que mais
+                se repete) e a
+                <strong>Mediana</strong> (o valor que fica bem no centro da lista).
+
+            </p>
+
+            
+             <div class="exemplo-box">
+                <h3>Exemplo:</h3>
+
+               <p>Imagine que você e seus amigos jogaram 5 partidas de um jogo e você fez as seguintes pontuações: 10,
+                    20, 20, 30, 50.
+                </p>
+            </div>
+
+            <div class="exemplos-aula">
+                <span>● A Média seria somar tudo (130) e dividir por 5 partidas = 26 pontos.</span>
+                <span>● A Moda é o número 20, porque ele foi o único que se repetiu. </span>
+                <span>● A Mediana é o número 20 também, porque ele está bem no meio da sua lista </span>
+            </div>
+
+
+            <section class="assistir-aula">
+                <h2>Assista e Aprenda</h2>
+
+                <button type="button" class="btn-video">
+                    ▶ Vídeo Aula
+                </button>
+            </section>
+        </section>
+
+        <aside class="dica-pluma">
+            <div class="icone-dica">💡</div>
+
+            <div>
+                <strong>Dica da Pluma</strong>
+                <p>Para fechar esse tema com chave de ouro, guarde essa regra: imagens exigem observação!</p>
+            </div>
+
+            <img src="assets/imgs/pluma-joia.png" alt="Pluma">
+        </aside>
+
+    </main>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <!-- Sienna Accessibility -->
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
+
+    <script src="JavaScript/pg-usuario.js"></script>
+
+
+</body>
+
+</html>

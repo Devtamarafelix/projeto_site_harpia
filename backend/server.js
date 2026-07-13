@@ -26,7 +26,7 @@ function senhaValida(senha) {
 app.listen(3000, () => console.log("Servidor rodando na porta 3000!"))
 
 // rota cadastro (POST)
-app.post('/register', async (req, res) => {
+app.post('/cadastro', async (req, res) => {
     try { 
         const { nome, nascimento, email, usuario, senha } = req.body;
 
@@ -64,4 +64,76 @@ app.post('/register', async (req, res) => {
       res.status(500).json({ error: "Erro interno ao cadastrar." });
      }
 
+});
+
+//rota login (POST)
+app.post('/login', async (req, res) => {
+    try {
+        const { identificador, senha } = req.body;
+
+        if (!identificador || !senha) {
+            return res.status(400).json( { error: "Preencha todos os campos."})
+        }
+
+        const usuario = db.prepare (
+            'SELECT * FROM usuarios WHERE email = ? OR usuario = ?'
+        ).get (identificador, identificador);
+        if (!usuario) {
+            return res.status(400).json( { error: "Úsuario ou senha inválidos." });
+        }
+
+        const senhaCorreta = await bcrypt.compare(senha, usuario.senha);
+        if (!senhaCorreta) {
+            return res.status(400).json( { error: "Úsuario ou senha inválidos." })
+        }
+            
+
+        const token = jwt.sign(
+            {id: usuario.id, email: usuario.email, usuario: usuario.usuario },
+            JWT_SECRET,
+            { expiresIn: '1h' }
+        );
+
+        res.json({
+            menssage: "Login realizado com sucesso!",
+            token,
+            usuario: {
+                nome: usuario.nome,
+                usuario: usuario.usuario,
+                email: usuario.email
+            }
+        });
+    } catch (error) {
+        console.log("Erro em /login", error);
+        res.status(500).json({error:"Erro interno ao logar."});
+    }
+});
+
+//rota esqueceu-senha
+app.post('/esqueceu-senha', async (req, res) => {
+    try {
+        const {email, novaSenha} = req.body;
+
+        if(!email || !novaSenha) {
+            return res.status(400).json({ error: "Preencha todos os campos." });
+        }
+
+        if(!senhaValida(novaSenha)) {
+            return res.status(400).json({ error: "A senha deve ter pelo menos 6 caracteres." });
+        }
+
+        const usuario = db.prepare('SELECT * FROM usuarios WHERE email = ?').get(email);
+        if (!usuario) {
+            return res.status(400).json({ error: "Email não encontrado." });
+        }
+
+        const novaSenhaCriptografada = await  bcrypt.hash(novaSenha, 10);
+
+        db.prepare('UPDATE usuarios SET senha = ? WHERE email = ?').run(novaSenhaCriptografada, email);
+
+        res.json({message: "Senha redefinida com sucesso!"});
+    } catch(error) {
+        console.error("Erro em /esqueceu-senha:", error);
+        res.status(500).json({error: "Erro interno ao redefinir senha."});
+    }
 });

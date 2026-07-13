@@ -12,7 +12,7 @@ function conectarBanco() {
         nascimento TEXT NOT NULL,
         email TEXT UNIQUE NOT NULL,            -- campo obrigatório e único(não aceita dados duplicados)
         usuario TEXT UNIQUE NOT NULL,
-        password TEXT NOT NULL 
+        senha TEXT NOT NULL 
       )     
     `);
 

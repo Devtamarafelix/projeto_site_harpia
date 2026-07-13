@@ -1,0 +1,67 @@
+import 'dotenv/config';
+import express, { json } from 'express';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import cors from 'cors';
+import conectarBanco from './database.js'
+
+// configuração inicial do servidor
+const app = express();
+app.use(express.json());
+app.use(cors());
+
+const JWT_SECRET = process.env.JWT_SECRET;
+const db = conectarBanco();
+
+// validações
+function emailValido(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+function senhaValida(senha) {
+    return typeof senha === 'string' && senha.length >= 6;
+}
+
+// inicio do servidor
+app.listen(3000, () => console.log("Servidor rodando na porta 3000!"))
+
+// rota cadastro (POST)
+app.post('/register', async (req, res) => {
+    try { 
+        const { nome, nascimento, email, usuario, senha } = req.body;
+
+        if (!nome || !nascimento || !email || !usuario || !senha) {
+           return res.status(400).json({ error: "Preencha todos os campos." });
+        }
+
+        if(!emailValido(email)) {
+           return res.status(400).json({ error: "Email invalido." });
+       }
+
+       if(!senhaValida(senha)) {
+          return res.status(400).json({ error: "A senha deve ter pelo menos 6 caracteres." });
+       }
+
+       const emailExistente = db.prepare('SELECT * FROM usuarios WHERE email = ?').get(email);
+       if(emailExistente) {
+          return res.status(400).json( { error: "Email já cadastrado." });
+       } 
+
+       const usuarioExistente = db.prepare('SELECT * FROM usuarios WHERE usuario = ?').get(usuario);
+       if(usuarioExistente) {
+          return res.status(400).json( { error: "Usuario já cadastrado." });
+       }
+
+       const senhaCriptografada = await bcrypt.hash(senha, 10)
+
+       db.prepare(
+          'INSERT INTO usuarios (nome, nascimento, email, usuario, senha) VALUES (?, ?, ?, ?, ?)'     
+       ).run(nome, nascimento, email, usuario, senhaCriptografada);
+
+      res.status(201).json( { message: "Usúario criado com sucesso!" });
+   } catch (error) {
+      console.log("Error em /register:", error)
+      res.status(500).json({ error: "Erro interno ao cadastrar." });
+     }
+
+});

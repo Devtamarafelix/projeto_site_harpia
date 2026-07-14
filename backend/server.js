@@ -100,40 +100,12 @@ app.post('/login', async (req, res) => {
             usuario: {
                 nome: usuario.nome,
                 usuario: usuario.usuario,
-                email: usuario.email
+                email: usuario.email,
+                nascimento: usuario.nascimento
             }
         });
     } catch (error) {
         console.log("Erro em /login", error);
         res.status(500).json({error:"Erro interno ao logar."});
-    }
-});
-
-//rota esqueceu-senha
-app.post('/esqueceu-senha', async (req, res) => {
-    try {
-        const {email, novaSenha} = req.body;
-
-        if(!email || !novaSenha) {
-            return res.status(400).json({ error: "Preencha todos os campos." });
-        }
-
-        if(!senhaValida(novaSenha)) {
-            return res.status(400).json({ error: "A senha deve ter pelo menos 6 caracteres." });
-        }
-
-        const usuario = db.prepare('SELECT * FROM usuarios WHERE email = ?').get(email);
-        if (!usuario) {
-            return res.status(400).json({ error: "Email não encontrado." });
-        }
-
-        const novaSenhaCriptografada = await  bcrypt.hash(novaSenha, 10);
-
-        db.prepare('UPDATE usuarios SET senha = ? WHERE email = ?').run(novaSenhaCriptografada, email);
-
-        res.json({message: "Senha redefinida com sucesso!"});
-    } catch(error) {
-        console.error("Erro em /esqueceu-senha:", error);
-        res.status(500).json({error: "Erro interno ao redefinir senha."});
     }
 });

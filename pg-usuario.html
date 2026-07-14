@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="Css/pg-usuario.css" />
   <link rel="stylesheet" href="Css/chatbox.css" />
 
+  <script src="JavaScript/global.js" defer></script>
   <script src="JavaScript/chatbox.js" defer></script>
 </head>
 
@@ -78,7 +79,7 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
       />
 
       <div class="user-texto">
-        <p class="user-nome">Maria Silva</p>
+        <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
         <p class="user-xp">1.300 XP - Nível Iniciante</p>
       </div>
 
@@ -95,7 +96,7 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
 
     <header class="main-header">
       <div class="textos-header">
-        <h1>Olá, Maria Silva!</h1>
+        <h1>Olá, <span id="nome-boas-vindas">Maria Silva</span>!</h1>
         <p>Que bom ter você aqui de novo.</p>
       </div>
 
@@ -135,12 +136,13 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
 
         <span class="perfil-badge">★ Aprendiz<br>curioso</span>
 
-        <h2>Maria Silva</h2>
+        <h2 id="nome-card-central">Maria Silva</h2>
 
         <div class="perfil-info">
           <div class="info-linha">
-            <img src="assets/icons/idade.png" alt="" />
-            <span>Idade: 16 anos</span>
+            <p><img src="assets/icons/idade.png" alt="" /> 
+              <span>Idade: <span id="idade-usuario">16</span> anos</span>
+            </p>
           </div>
 
           <div class="info-linha">

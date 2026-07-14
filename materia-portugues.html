@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8" />
@@ -7,145 +7,162 @@
 
   <title>H.A.R.P.I.A - Português</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Css/materia-portugues.css">
-  <link rel="stylesheet" href="Css/chatbox.css">
-  <script src="JavaScript/chatbox.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="Css/materia-portugues.css" />
+  <link rel="stylesheet" href="Css/chatbox.css" />
+
+  <script src="JavaScript/chatbox.js" defer></script>
 </head>
 
 <body>
 
-  <p class="page-title">matéria - português</p>
+  <aside class="sidebar">
+    <header class="sidebar-header">
+      <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
 
-  <div class="app subject-app">
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-
-      <div class="sidebar-top">
-
-        <div class="logo">
-          <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A">
-
-          <div class="logo-text">
-            <h2 class="logo-title">H.<b>A</b>.R.P.I.<b>A</b></h2>
-            <p>Aprenda do seu jeito</p>
-          </div>
-        </div>
-
-        <nav class="menu">
-          <a href="pg-usuario.html"><img src="assets/icons/SVG.png" alt=""><span>Início</span></a>
-          <a href="#"><img src="assets/icons/Container.png" alt=""><span>Meu Perfil</span></a>
-          <a href="pg-explorar-cursos.html"><img src="assets/icons/explorar.png" alt=""><span>Explorar cursos</span></a>
-          <a href="ajuda.html"><img src="assets/icons/Container (3).png" alt=""><span>Ajuda</span></a>
-        </nav>
-
+      <div class="logo-container">
+        <p class="logo-titulo">
+          H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+        </p>
+        <p class="logo-subtitulo">Aprenda do seu jeito</p>
       </div>
+    </header>
 
-      <div class="sidebar-bottom">
-        <div class="user-box">
-          <img src="assets/img-explorar-cursos/avatar.jpg" alt="Maria Silva" class="user-avatar-img">
-
-          <div class="user-info">
-            <strong>Maria Silva</strong>
-
-            <div class="user-xp-row">
-
-              <p>1.300 XP · Nível Iniciante</p>
-            </div>
-          </div>
-        </div>
-
-        <button class="logout">↪ Sair</button>
-      </div>
-    </aside>
-
-    <!-- MAIN -->
-    <main class="main subject-main">
-
-      <header class="topbar">
-
-        <div class="hello">
-          <h1>Português</h1>
-          <p>Explore os temas e desenvolva sua comunicação.</p>
-        </div>
-
-        <div class="search-area">
-          <input type="text" placeholder="Buscar cursos...">
-          <img src="assets/icons/lupa.png" alt="Pesquisar" class="search-icon">
-        </div>
-
-      </header>
-
-      <!-- AULA EM ANDAMENTO -->
-      <section class="current-class-card">
-
-        <div class="current-icon">
-          <img src="assets/img-materia-portugues/microphone.png" alt="Comunicação oral">
-        </div>
-
-        <div class="current-info">
-          <small>Português</small>
-          <h2>Comunicação Oral</h2>
-          <p>Desenvolva sua oratória e expressão</p>
-
-          <div class="lesson-progress">
-            <span>Aula 6 de 15</span>
-            <div class="mini-bar">
-              <div class="mini-fill" style="width: 38%;"></div>
-            </div>
-          </div>
-        </div>
-
-        <button class="gold-btn">▷ Continuar aula</button>
-
-      </section>
-
-      <!-- MÓDULOS -->
-      <section class="modules-grid">
-
-        <article class="module-card">
-          <div class="module-icon">
-            <img src="assets/img-materia-portugues/balões de fala.png" alt="Interpretação de textos">
-          </div>
-
-          <h2>Interpretação de Textos<br>Não-Verbais</h2>
-
-          <p>
-            Aprenda a analisar charges, tirinhas, infográficos e expressões sem depender de palavras textuais.
-          </p>
-
-          <a href="portugues-aula.html" class="btn-curso">
-            ▷ Ver curso
+    <nav class="sidebar-nav">
+      <ul>
+        <li>
+          <a href="pg-usuario.html">
+            <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+            Início
           </a>
-        </article>
+        </li>
 
-        <article class="module-card">
-          <div class="module-icon">
-            <img src="assets/img-materia-portugues/fake news.png" alt="Análise de notícias falsas">
+        <li>
+          <a href="pg-usuario.html">
+            <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+            Meu Perfil
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/acessibilidade.svg" alt="" />
+            Acessibilidade
+          </a>
+        </li>
+
+
+        <li>
+          <a href="pg-explorar-cursos.html">
+            <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+            Explorar Cursos
+          </a>
+        </li>
+
+        <li>
+          <a href="ajuda.html">
+            <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+            Ajuda
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="user-perfil">
+      <img src="assets/img-explorar-cursos/avatar.jpg" alt="Foto de Maria Silva" class="img-avatar" />
+
+      <div class="user-texto">
+        <p class="user-nome">Maria Silva</p>
+        <p class="user-xp">1.300 XP - Nível Iniciante</p>
+      </div>
+
+      <button type="button" class="btn-sair">
+        <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
+        Sair
+      </button>
+    </div>
+  </aside>
+
+  <main class="main-container">
+    <header class="main-header">
+      <div class="textos-header">
+        <h1>Português</h1>
+        <p>Explore os temas e desenvolva sua comunicação.</p>
+      </div>
+
+      <div class="search-container">
+        <input type="search" placeholder="Buscar cursos..." />
+        <img src="assets/icons-explorar-cursos/lupa-pesquisa.svg" alt="Pesquisar" class="lupa-icon" />
+      </div>
+    </header>
+
+    <section class="aula-atual-card">
+      <div class="aula-atual-icon">
+        <img src="assets/img-materia-portugues/microphone.png" alt="Microfone representando comunicação oral" />
+      </div>
+
+      <div class="aula-atual-info">
+        <small>Português</small>
+        <h2>Comunicação Oral</h2>
+        <p>Desenvolva sua oratória e expressão.</p>
+
+        <div class="aula-progresso">
+          <span>Aula 6 de 15</span>
+
+          <div class="mini-barra">
+            <div class="mini-preenchimento" style="width: 38%"></div>
           </div>
+        </div>
+      </div>
 
-          <h2>Análise de Notícias<br>Falsas</h2>
+      <a href="portugues-aula.html" class="btn-continuar-aula">
+        ▷ Continuar aula
+      </a>
+    </section>
 
-          <p>
-            Desenvolva o senso crítico para identificar informações duvidosas, checar fontes e combater fake news
-            online.
-          </p>
+    <section class="modulos-grid">
+      <article class="modulo-card">
+        <div class="modulo-icon">
+          <img src="assets/img-materia-portugues/balões de fala.png"
+            alt="Balões de fala representando interpretação de textos" />
+        </div>
 
-          <button>▷ Ver curso</button>
-        </article>
+        <h2>Interpretação de Textos Não-Verbais</h2>
 
-      </section>
+        <p>
+          Aprenda a analisar charges, tirinhas, infográficos e expressões sem
+          depender de palavras textuais.
+        </p>
 
-    </main>
+        <a href="portugues-aula.html" class="btn-ver-curso">
+          ▷ Ver curso
+        </a>
+      </article>
 
-  </div>
+      <article class="modulo-card">
+        <div class="modulo-icon">
+          <img src="assets/img-materia-portugues/fake news.png" alt="Ícone representando notícias falsas" />
+        </div>
 
-  <!-- Plugin VLibras -->
+        <h2>Análise de Notícias Falsas</h2>
+
+        <p>
+          Desenvolva o senso crítico para identificar informações duvidosas,
+          checar fontes e combater fake news online.
+        </p>
+
+        <a href="#" class="btn-ver-curso">
+          ▷ Ver curso
+        </a>
+      </article>
+    </section>
+  </main>
+
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -154,22 +171,34 @@
   </div>
 
   <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script src="JavaScript/pg-usuario.js"></script>
+
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
 
-  <!--chatbox -->
+  <script src="JavaScript/pg-usuario.js"></script>
+
   <div class="chat-icone" id="chat-icone">💬</div>
 
   <div class="chat-container" id="chat-container">
     <div class="chat-header">
       <div class="header-perfil">
-        <img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+        <img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma" />
+
         <div class="header-info">
           <span class="header-nome">Chat com a Pluma IA</span>
-          <span class="header-status"><span class="ponto-online">●</span> Online</span>
+          <span class="header-status">
+            <span class="ponto-online">●</span>
+            Online
+          </span>
         </div>
       </div>
-      <span class="btn-fechar" id="btn-fechar">✖</span>
+
+      <button type="button" class="btn-fechar" id="btn-fechar" aria-label="Fechar chat">
+        ✖
+      </button>
     </div>
 
     <div class="chat-box" id="chat-box">
@@ -177,9 +206,10 @@
     </div>
 
     <div class="input-area">
-      <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-      <button id="btn-enviar">
-        <img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
+      <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off" />
+
+      <button type="button" id="btn-enviar" aria-label="Enviar mensagem">
+        <img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="" />
       </button>
     </div>
   </div>

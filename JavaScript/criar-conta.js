@@ -30,7 +30,7 @@ btnCadastrar.addEventListener('click', async () => {
     }
 
     try {
-        const resposta = await fetch('https://projeto-site-harpia.onrender.com/cadastro', {
+        const resposta = await fetch('https://khaki-lark-345527.hostingersite.com/cadastro', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ nome, nascimento, email, usuario, senha })

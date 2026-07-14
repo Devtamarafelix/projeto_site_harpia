@@ -13,7 +13,7 @@ btnEntrar.addEventListener('click', async () => {
     }
 
     try {
-        const resposta = await fetch ('https://projeto-site-harpia.onrender.com/login', {
+        const resposta = await fetch ('https://khaki-lark-345527.hostingersite.com/login', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ identificador, senha })

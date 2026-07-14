@@ -21,13 +21,8 @@
 </head>
 
 <body>
-<!--Seguinte, eu comentei o perfil do aluno de titulo q fica la em cima e o botão dourado continuar da div portugues, 
-pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descomentar o p abaixo pra volta o titulo perfil do aluno
- fiz isso pra n ficar igual ao figma e pq a pagina portugues ta feita-->
 
-  <!-- SIDEBAR -->
   <aside class="sidebar">
-
     <header class="sidebar-header">
       <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
 
@@ -39,7 +34,7 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
       </div>
     </header>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav" aria-label="Navegação principal">
       <ul>
         <li>
           <a href="#">
@@ -88,12 +83,9 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
         Sair
       </button>
     </div>
-
   </aside>
 
-  <!-- MAIN -->
   <main class="main-container perfil-main">
-
     <header class="main-header">
       <div class="textos-header">
         <h1>Olá, <span id="nome-boas-vindas">Maria Silva</span>!</h1>
@@ -102,10 +94,14 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
 
       <div class="perfil-top-actions">
         <div class="search-container">
-          <input type="search" placeholder="Buscar cursos..." />
+          <input
+            type="search"
+            placeholder="Buscar cursos..."
+            aria-label="Buscar cursos"
+          />
           <img
             src="assets/icons-explorar-cursos/lupa-pesquisa.svg"
-            alt="Pesquisar"
+            alt=""
             class="lupa-icon"
           />
         </div>
@@ -116,7 +112,7 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
 
         <img
           src="assets/img-explorar-cursos/avatar.jpg"
-          alt="Maria Silva"
+          alt="Foto de Maria Silva"
           class="top-avatar"
         />
 
@@ -127,22 +123,22 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
     </header>
 
     <section class="perfil-grid">
-
-      <!-- CARD PERFIL -->
       <article class="card perfil-card">
         <div class="perfil-foto">
-          <img src="assets/img-explorar-cursos/avatar.jpg" alt="Maria Silva" />
+          <img
+            src="assets/img-explorar-cursos/avatar.jpg"
+            alt="Foto de Maria Silva"
+          />
         </div>
 
-        <span class="perfil-badge">★ Aprendiz<br>curioso</span>
+        <span class="perfil-badge">★ Aprendiz<br />curioso</span>
 
         <h2 id="nome-card-central">Maria Silva</h2>
 
         <div class="perfil-info">
           <div class="info-linha">
-            <p><img src="assets/icons/idade.png" alt="" /> 
-              <span>Idade: <span id="idade-usuario">16</span> anos</span>
-            </p>
+            <img src="assets/icons/idade.png" alt="" />
+            <span>Idade: <span id="idade-usuario">16</span> anos</span>
           </div>
 
           <div class="info-linha">
@@ -161,13 +157,12 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           </div>
         </div>
 
-        <a href="" class="btn-dourado">
+        <a href="#" class="btn-dourado">
           <img src="assets/icons/editar.png" alt="" />
           Editar Perfil
         </a>
       </article>
 
-      <!-- CARD PROGRESSO -->
       <article class="card progresso-card">
         <h2>Seu progresso geral</h2>
 
@@ -176,7 +171,7 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           <span>do seu caminho concluído!</span>
         </div>
 
-        <div class="barra-progresso">
+        <div class="barra-progresso" aria-label="Progresso geral de 67%">
           <div class="barra-preenchida"></div>
         </div>
 
@@ -190,19 +185,19 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           <div class="estatistica-card">
             <img src="assets/icons/aulas.png" alt="" />
             <strong>25</strong>
-            <span>Aulas<br>concluídas</span>
+            <span>Aulas<br />concluídas</span>
           </div>
 
           <div class="estatistica-card">
             <img src="assets/icons/Alarm.png" alt="" />
             <strong>8</strong>
-            <span>Dias<br>seguidos</span>
+            <span>Dias<br />seguidos</span>
           </div>
 
           <div class="estatistica-card">
             <img src="assets/icons/Book.png" alt="" />
             <strong>12</strong>
-            <span>Horas<br>estudadas</span>
+            <span>Horas<br />estudadas</span>
           </div>
 
           <div class="estatistica-card">
@@ -212,14 +207,12 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           </div>
         </div>
       </article>
-
     </section>
 
-    <!-- CURSOS -->
     <section class="secao-cursos">
       <div class="section-title">
         <h2>Meus Cursos</h2>
-        <a href="explorar-cursos.html">Ver todos →</a>
+        <a href="pg-explorar-cursos.html">Ver todos →</a>
       </div>
 
       <div class="cursos-grid">
@@ -227,9 +220,14 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           <div class="curso-icon">
             <img src="assets/icons/progama.png" alt="" />
           </div>
+
           <h3>Programação</h3>
           <p>12 de 24 aulas</p>
-          <div class="mini-barra"><div style="width: 50%"></div></div>
+
+          <div class="mini-barra">
+            <div style="width: 50%"></div>
+          </div>
+
           <a href="#" class="btn-curso">▷ Continuar</a>
         </article>
 
@@ -237,9 +235,14 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           <div class="curso-icon">
             <img src="assets/icons/matema.png" alt="" />
           </div>
+
           <h3>Matemática</h3>
           <p>8 de 20 aulas</p>
-          <div class="mini-barra"><div style="width: 40%"></div></div>
+
+          <div class="mini-barra">
+            <div style="width: 40%"></div>
+          </div>
+
           <a href="materia-matematica.html" class="btn-curso">▷ Continuar</a>
         </article>
 
@@ -247,9 +250,14 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           <div class="curso-icon">
             <img src="assets/icons/portu.png" alt="" />
           </div>
+
           <h3>Português</h3>
           <p>6 de 18 aulas</p>
-          <div class="mini-barra"><div style="width: 33%"></div></div>
+
+          <div class="mini-barra">
+            <div style="width: 33%"></div>
+          </div>
+
           <a href="materia-portugues.html" class="btn-curso outline">▷ Continuar</a>
         </article>
 
@@ -257,15 +265,19 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
           <div class="curso-icon">
             <img src="assets/icons/money.png" alt="" />
           </div>
+
           <h3>Educação Financeira</h3>
           <p>5 de 15 aulas</p>
-          <div class="mini-barra"><div style="width: 30%"></div></div>
+
+          <div class="mini-barra">
+            <div style="width: 30%"></div>
+          </div>
+
           <a href="#" class="btn-curso">▷ Continuar</a>
         </article>
       </div>
     </section>
 
-    <!-- CONTINUE ESTUDANDO -->
     <section class="continue-section">
       <div class="section-title">
         <h2>Continue Estudando</h2>
@@ -290,12 +302,9 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
         <a href="#" class="btn-dourado">▷ Continuar aula</a>
       </article>
     </section>
-
   </main>
 
-  <!-- PAINEL DIREITO -->
   <aside class="right-panel">
-
     <div class="harpinha-area">
       <div class="speech">
         Oi, Maria! Pronta para os desafios de hoje?
@@ -353,10 +362,8 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
         class="mini-harpia"
       />
     </section>
-
   </aside>
 
-  <!-- VLibras -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -370,26 +377,37 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
     new window.VLibras.Widget("https://vlibras.gov.br/app");
   </script>
 
-  <!-- Sienna Accessibility -->
   <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
-
   <script src="JavaScript/pg-usuario.js"></script>
 
-  <!-- Chatbox -->
   <div class="chat-icone" id="chat-icone">💬</div>
 
   <div class="chat-container" id="chat-container">
     <div class="chat-header">
       <div class="header-perfil">
-        <img src="./assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma" />
+        <img
+          src="./assets/icons-chatbox/avatar-pluma.png"
+          class="header-img"
+          alt="Pluma"
+        />
 
         <div class="header-info">
           <span class="header-nome">Chat com a Pluma IA</span>
-          <span class="header-status"><span class="ponto-online">●</span> Online</span>
+          <span class="header-status">
+            <span class="ponto-online">●</span>
+            Online
+          </span>
         </div>
       </div>
 
-      <span class="btn-fechar" id="btn-fechar">✖</span>
+      <button
+        type="button"
+        class="btn-fechar"
+        id="btn-fechar"
+        aria-label="Fechar chat"
+      >
+        ✖
+      </button>
     </div>
 
     <div class="chat-box" id="chat-box">
@@ -404,8 +422,12 @@ pra desfazer o do botão se quiser e só descomentar o css outline-btn, e descom
         autocomplete="off"
       />
 
-      <button id="btn-enviar">
-        <img src="./assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar" />
+      <button type="button" id="btn-enviar" aria-label="Enviar mensagem">
+        <img
+          src="./assets/icons-chatbox/ic-enviar.png"
+          class="btn-enviar-img"
+          alt=""
+        />
       </button>
     </div>
   </div>

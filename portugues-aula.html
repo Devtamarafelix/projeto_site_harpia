@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>H.A.R.P.I.A - Aula Português</title>
+  <title>H.A.R.P.I.A - Aula de Português</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,31 +22,54 @@
 
   <aside class="sidebar">
     <header class="sidebar-header">
-      <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA" />
+      <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
 
       <div class="logo-container">
         <p class="logo-titulo">
           H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
         </p>
-        <p class="logo-subtitulo">Aprenda do Seu Jeito</p>
+        <p class="logo-subtitulo">Aprenda do seu jeito</p>
       </div>
     </header>
 
-    <nav class="sidebar-nav">
+    <nav class="sidebar-nav" aria-label="Navegação principal">
       <ul>
-        <li><a href="#"><img src="assets/icons-explorar-cursos/inicio.svg" alt="">Início</a></li>
+        <li>
+          <a href="#">
+            <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+            Início
+          </a>
+        </li>
 
-        <li><a href="pg-usuario.html"><img src="assets/icons-explorar-cursos/perfil.svg" alt="">Meu Perfil</a></li>
+        <li>
+          <a href="pg-usuario.html">
+            <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+            Meu Perfil
+          </a>
+        </li>
 
+        <li>
+          <a href="pg-explorar-cursos.html">
+            <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+            Explorar Cursos
+          </a>
+        </li>
 
-        <li><a href="pg-explorar-cursos.html"><img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="">Explorar Cursos</a></li>
-
-        <li><a href="ajuda.html"><img src="assets/icons-explorar-cursos/ajuda.svg" alt="">Ajuda</a></li>
+        <li>
+          <a href="ajuda.html">
+            <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+            Ajuda
+          </a>
+        </li>
       </ul>
     </nav>
 
     <div class="user-perfil">
-      <img src="assets/img-explorar-cursos/avatar.jpg" alt="Foto de Maria Silva" class="img-avatar">
+      <img
+        src="assets/img-explorar-cursos/avatar.jpg"
+        alt="Foto de Maria Silva"
+        class="img-avatar"
+      />
 
       <div class="user-texto">
         <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
@@ -54,7 +77,7 @@
       </div>
 
       <button type="button" class="btn-sair">
-        <img src="assets/icons-explorar-cursos/sair.svg" alt="">
+        <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
         Sair
       </button>
     </div>
@@ -62,13 +85,13 @@
 
   <main class="main-container">
 
-    <section class="aula-header">
+    <header class="aula-header">
       <p class="aula-caminho">Meus Cursos &gt; Português</p>
       <h1>Interpretação de Textos Não-Verbais</h1>
-    </section>
+    </header>
 
-    <nav class="abas-aula">
-      <a href="#" class="aba-aula active">
+    <nav class="abas-aula" aria-label="Navegação da aula">
+      <a href="portugues-aula.html" class="aba-aula active" aria-current="page">
         <span>▶</span>
         Leitura
       </a>
@@ -88,8 +111,8 @@
 
       <p>
         O conteúdo é transmitido totalmente por elementos visuais:
-        <strong>cores, formas, expressões faciais, gestos, postura</strong>
-        e a disposição dos objetos. Encontramos esse modelo no nosso dia a dia em:
+        <strong>cores, formas, expressões faciais, gestos e postura</strong>,
+        além da disposição dos objetos. Encontramos esse modelo no nosso dia a dia em:
       </p>
 
       <div class="exemplos-aula">
@@ -105,7 +128,7 @@
           Imagine que você entra na cozinha e vê seu amigo olhando para a geladeira
           vazia, com os ombros caídos e um bico enorme no rosto. Ele não disse uma
           única palavra, mas você interpretou o texto não-verbal perfeitamente:
-          ele está triste e decepcionado porque não achou nada para comer.
+          ele está triste e decepcionado porque não encontrou nada para comer.
         </p>
       </div>
 
@@ -119,19 +142,21 @@
     </section>
 
     <aside class="dica-pluma">
-      <div class="icone-dica">💡</div>
+      <div class="icone-dica" aria-hidden="true">💡</div>
 
       <div>
         <strong>Dica da Pluma</strong>
-        <p>Para fechar esse tema com chave de ouro, guarde essa regra: imagens exigem observação!</p>
+        <p>
+          Para fechar esse tema com chave de ouro, guarde esta regra:
+          imagens exigem observação!
+        </p>
       </div>
 
-      <img src="assets/imgs/pluma-joia.png" alt="Pluma">
+      <img src="assets/imgs/pluma-joia.png" alt="Pluma" />
     </aside>
 
   </main>
 
-  <!-- VLibras -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -145,11 +170,12 @@
     new window.VLibras.Widget("https://vlibras.gov.br/app");
   </script>
 
-  <!-- Sienna Accessibility -->
-  <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+    async
+  ></script>
 
   <script src="JavaScript/pg-usuario.js"></script>
-
 
 </body>
 </html>

@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.345);
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.25);
 
     overflow-y: auto;
     scrollbar-width: none;
@@ -104,19 +104,20 @@
     color: var(--cor-verde-escuro);
     font-size: 0.95rem;
     font-weight: 500;
-    transition: backgraound-color 0.2s, color 0.2s;;
+    transition: background-color 0.2s ease, transform 0.2s ease;
  }
 
  .sidebar-nav a:hover {
     background-color: var(--cor-dourado);
+    transform: translateX(4px);
     color: var(--cor-verde-escuro);
-    font-weight: 540;
+    font-weight: 430;
  }
 
  .sidebar-nav .active {
     background-color: var(--cor-dourado);
     color: var(--cor-verde-escuro);
-    font-weight: 600;
+    font-weight: 430;
  }
 
  .user-perfil {

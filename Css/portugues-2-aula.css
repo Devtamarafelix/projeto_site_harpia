@@ -1,0 +1,322 @@
+*{margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+body{
+    font-family:Inter,sans-serif;
+    background:#f8f5ef;
+    color:#1f4a3d;
+    display:flex;
+    min-height:100vh;
+}
+a{text-decoration:none;color:inherit}
+
+img{max-width:100%;display:block}
+
+/* Sidebar */
+.sidebar{
+    width:270px;
+    background:#f6f1e7;
+    border-right:1px solid #ddd;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:24px;
+    position:sticky;
+    top:0;
+    height:100vh;
+}
+.sidebar-header{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 32px;
+}
+
+.sidebar-header img{
+  width: 60px;
+}
+
+.logo-titulo{
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logo-titulo span{
+  color: var(--cor-dourado);
+}
+
+.logo-subtitulo{
+  font-size: .65rem;
+  text-transform: uppercase;
+}
+
+.sidebar-nav ul{list-style:none;margin-top:30px}
+.sidebar-nav li{margin-bottom:12px}
+.sidebar-nav a{
+display:flex;
+align-items:center;
+gap:12px;
+padding:14px;
+border-radius:12px;
+transition:.3s;
+font-weight:600;
+}
+.sidebar-nav a:hover{
+background:#d6a644;
+transform:translateX(6px);
+}
+
+/* Perfil */
+.user-perfil{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px 12px;
+  padding: 16px;
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--cor-dourado) 20%, transparent);
+}
+
+.img-avatar{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-dourado);
+}
+
+.user-nome{
+  font-size: .95rem;
+  font-weight: 700;
+}
+
+.user-xp{
+  font-size: .8rem;
+}
+
+.btn-sair{
+  grid-column: span 2;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: 1.5px solid var(--cor-dourado);
+  background: transparent;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.btn-sair:hover{
+  background: var(--cor-dourado);
+  transform: translateY(-2px);
+}
+
+/* Main */
+.main-container{
+flex:1;
+padding:35px;
+display:flex;
+flex-direction:column;
+gap:30px;
+}
+
+.aula-header{
+background:#d6a644;
+padding:35px;
+border-radius:20px;
+}
+.aula-header h1{
+font-size:2.5rem;
+margin-top:10px;
+}
+
+.abas-aula{
+display:flex;
+justify-content:center;
+gap:60px;
+border-bottom:2px solid #ddd;
+padding-bottom:20px;
+}
+
+.aba-aula{
+padding:14px 35px;
+border-radius:14px;
+font-weight:700;
+transition:.3s;
+}
+
+.aba-aula.active{
+background:#d6a644;
+}
+
+.aba-aula:hover{
+background:#ddb358;
+transform:translateY(-4px);
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.conteudo-aula{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.conteudo-aula h2{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.intro,.exemplo-box,.finalização-box{
+margin-bottom:40px;
+line-height:1.7;
+font-size:1.2rem;
+}
+
+.btn-video{
+margin-top:20px;
+padding:20px 45px;
+font-size:1.2rem;
+font-weight:700;
+background:#d6a644;
+border:none;
+border-radius:16px;
+cursor:pointer;
+transition:.3s;
+color:#1f4a3d;
+}
+
+.btn-video:hover{
+background:#c9972b;
+transform:translateY(-5px);
+box-shadow:0 12px 25px rgba(0,0,0,.18);
+}
+
+.btn-video:active{
+transform:scale(.97);
+}
+
+.dica-pluma {
+position:fixed;
+right:30px;
+bottom:30px;
+background:#f2e8d2;
+padding:18px;
+width:280px;
+border-radius:18px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+display:flex;
+gap:15px;
+align-items:flex-start;
+}
+
+.dica-pluma img{
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  width: 65px;
+}
+
+
+
+
+/* Tablet */
+@media(max-width:1024px){
+
+.sidebar{
+width:220px;
+}
+
+.main-container{
+padding:20px;
+}
+
+.aula-header h1{
+font-size:2rem;
+}
+
+.conteudo-aula h2{
+font-size:2.3rem;
+}
+
+.dica-pluma{
+position:static;
+width:100%;
+margin-top:30px;
+}
+
+}
+
+/* Celular */
+
+@media(max-width:768px){
+
+body{
+flex-direction:column;
+}
+
+.sidebar{
+position:relative;
+width:100%;
+height:auto;
+}
+
+.main-container{
+padding:18px;
+}
+
+.aula-header{
+padding:25px;
+}
+
+.aula-header h1{
+font-size:1.7rem;
+}
+
+.abas-aula{
+gap:20px;
+flex-wrap:wrap;
+}
+
+.aba-aula{
+width:100%;
+justify-content:center;
+text-align:center;
+}
+
+.conteudo-aula h2{
+font-size:2rem;
+}
+
+.intro,
+.exemplo-box,
+.finalização-box{
+font-size:1rem;
+}
+
+.btn-video{
+width:100%;
+}
+
+.dica-pluma{
+width:100%;
+}
+
+}
+
+/* Telas muito pequenas */
+
+@media(max-width:480px){
+
+.logo-titulo{
+font-size:1.6rem;
+}
+
+.aula-header h1{
+font-size:1.4rem;
+}
+
+.conteudo-aula h2{
+font-size:1.7rem;
+}
+
+}

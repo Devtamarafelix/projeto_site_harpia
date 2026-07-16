@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercício de Português | H.A.R.P.I.A.</title>
+    <title>Exercício de Matemática | H.A.R.P.I.A.</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,9 +12,11 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="Css/portugues-2-exercicio2.css" />
+    <link rel="stylesheet" href="Css/matematica-2-exercicios1.css" />
 
     <script src="JavaScript/global.js" defer></script>
+
+
 </head>
 
 <body>
@@ -47,7 +49,7 @@
                 </li>
 
                 <li>
-                    <a href="pg-explorar-cursos.html">
+                    <a href="explorar-cursos.html">
                         <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
                         Explorar Cursos
                     </a>
@@ -79,18 +81,18 @@
     </aside>
 
     <main class="main-container">
-        <header class="aula-header">
-            <p class="aula-caminho">Meus Cursos &gt; Português</p>
-            <h1>Análise de Notícias Falsas (Fake News)</h1>
-        </header>
+        <section class="aula-header">
+            <p class="aula-caminho">Meus Cursos &gt; Matemática</p>
+            <h1>Regra de Três no Cotidiano</h1>
+        </section>
 
         <nav class="abas-aula" aria-label="Navegação da aula">
-            <a href="portugues-2-aula.html" class="aba-aula">
+            <a href="matematica-aula.html" class="aba-aula">
                 <span aria-hidden="true">▶</span>
                 Leitura
             </a>
 
-            <a href="portugues-2-exercicio2.html" class="aba-aula active" aria-current="page">
+            <a href="matematica-exercicio1.html" class="aba-aula active" aria-current="page">
                 <span aria-hidden="true">▶</span>
                 Exercícios
             </a>
@@ -100,64 +102,53 @@
             <div class="progresso-textos">
                 <span class="contador-questoes">
                     Questão
-                    <strong id="questao-atual">2</strong>
+                    <strong id="questao-atual">1</strong>
                     de
                     <strong id="total-questoes">3</strong>
                 </span>
 
                 <span class="contador-acertos">
                     Sucesso
-                    <strong id="total-acertos">1</strong>
+                    <strong id="total-acertos">0</strong>
                     /
-                    <strong id="total-respondidas">1</strong>
+                    <strong id="total-respondidas">0</strong>
                 </span>
             </div>
 
             <div class="barra-progresso" role="progressbar" aria-label="Progresso das questões" aria-valuemin="0"
-                aria-valuemax="3" aria-valuenow="2">
+                aria-valuemax="3" aria-valuenow="1">
                 <div class="barra-preenchida" id="barra-preenchida"></div>
             </div>
         </section>
 
         <section class="card-exercicio" aria-labelledby="titulo-pergunta">
-            <figure class="imagem-exercicio">
-                <img src="assets/img-exercicios-portugues/76184166-87de-429f-a449-0fec27364f89 1.png"
-                    alt="uma imagem mostrando o mecanismo da desinformação" />
-
-                <figcaption class="descricao-imagem">
-                    Observe atentamente a campanha para responder à questão.
-                </figcaption>
-            </figure>
-
             <div class="conteudo-exercicio">
                 <h2 class="quiz-pergunta" id="titulo-pergunta">
-                    Antes de compartilhar uma notícia, é importante verificar se ela é verdadeira.
-                    O que você deve fazer antes de compartilhar uma notícia?
+                    Lucas foi até uma papelaria comprar materiais e encontrou um pacote promocional onde 2 canetas
+                    custavam R$ 6,00. Como ele precisa de uma quantidade maior para um trabalho escolar, decidiu comprar
+                    5 canetas iguais às da promoção. Mantendo a mesma proporção de preço por unidade, quanto ele pagará
+                    por essa compra?
                 </h2>
 
-                <div class="alternativas" id="quiz-opcoes" role="group" aria-label="Alternativas da questão">
-                    <button type="button" class="opcao-resposta" data-opcao="A" data-correta="false"
-                        aria-pressed="false">
+                <div class="quiz-grid" id="quiz-opcoes" role="group" aria-label="Alternativas da questão">
+                    <button type="button" class="opcao" data-opcao="A" data-correta="false" aria-pressed="false">
                         <span class="opcao-letra">(A)</span>
-                        <span class="opcao-texto">
-                            Compartilhar rapidamente para ajudar outras pessoas.
-                        </span>
+                        <span class="opcao-texto">R$ 10,00</span>
                     </button>
 
-                    <button type="button" class="opcao-resposta" data-opcao="B" data-correta="false"
-                        aria-pressed="false">
+                    <button type="button" class="opcao" data-opcao="B" data-correta="false" aria-pressed="false">
                         <span class="opcao-letra">(B)</span>
-                        <span class="opcao-texto">
-                            Acreditar apenas porque um amigo enviou.
-                        </span>
+                        <span class="opcao-texto">R$ 15,00</span>
                     </button>
 
-                    <button type="button" class="opcao-resposta" data-opcao="C" data-correta="true"
-                        aria-pressed="false">
+                    <button type="button" class="opcao" data-opcao="C" data-correta="false" aria-pressed="false">
                         <span class="opcao-letra">(C)</span>
-                        <span class="opcao-texto">
-                            Verificar a fonte da informação e procurar evidências de que ela é verdadeira.
-                        </span>
+                        <span class="opcao-texto">R$ 12,00</span>
+                    </button>
+
+                    <button type="button" class="opcao" data-opcao="D" data-correta="true" aria-pressed="false">
+                        <span class="opcao-letra">(D)</span>
+                        <span class="opcao-texto">R$ 18,00</span>
                     </button>
                 </div>
 
@@ -173,7 +164,7 @@
                     </button>
 
                     <button type="button" class="btn-proxima" id="btn-proxima"
-                        data-proxima-pagina="portugues-2-exercicio3.html" hidden>
+                        data-proxima-pagina="matematica-exercicio2.html" hidden>
                         Próxima Questão
                     </button>
                 </div>

@@ -1,0 +1,84 @@
+
+:root {
+  --cor-de-fundo: #F5F1E8;
+  --cor-dourado: #D4A64F;
+  --cor-verde-escuro: #1B4332;
+}
+
+/* estlização da barra de rolagem (desktop) */
+html {
+  scrollbar-color: var(--cor-dourado) var(--cor-de-fundo);
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cor-de-fundo); 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--cor-dourado); 
+  border-radius: 10px;
+  border: 2px solid var(--cor-de-fundo);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in srgb, var(--cor-dourado) 80%, black); 
+}
+
+
+/* Ajuste no tamnaho do plugin de acessiblidade */
+.asw-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.asw-menu {
+  width: 90% !important;         
+  max-width: 420px !important;    
+  height: auto !important;       
+  max-height: 80vh !important;    
+  
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  
+  border-radius: 20px !important;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25) !important;
+  overflow: hidden !important;
+}
+
+.asw-menu-content {
+  max-height: calc(80vh - 100px) !important; 
+  overflow-y: auto !important;
+}
+
+/* responsividade: estlização da barra de rolagem do sidebar */
+@media (max-width: 768px) {
+  .sidebar-nav ul {
+    
+    scrollbar-width: thin;
+    scrollbar-color: var(--cor-dourado) var(--cor-de-fundo);
+  }
+
+  .sidebar-nav ul::-webkit-scrollbar {
+    display: block !important; 
+    height: 5px !important;    
+  }
+
+  .sidebar-nav ul::-webkit-scrollbar-track {
+    background: var(--cor-de-fundo) !important;
+    border-radius: 10px !important;
+  }
+  
+  .sidebar-nav ul::-webkit-scrollbar-thumb {
+    background-color: var(--cor-dourado) !important;
+    border-radius: 10px !important;
+  }
+}

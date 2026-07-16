@@ -27,7 +27,7 @@ body{
   padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Mudado de space-between para flex-start */
+  justify-content: flex-start;
   box-shadow: 4px 0 16px rgba(0,0,0,.20);
   flex-shrink: 0;
 }
@@ -125,6 +125,11 @@ body{
   font-weight: 700;
   cursor: pointer;
   transition: .2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .btn-sair:hover{
@@ -332,20 +337,6 @@ body{
     gap: 12px;
     overflow-x: auto;
     padding-bottom: 4px;
-    scrollbar-width: thin; /* Deixa fina no Firefox */
-    scrollbar-color: var(--cor-dourado); /* Cores no Firefox */
-  }
-
-  /*Ativa e define o tamanho da barra no Chrome, Safari e Edge (Celulares) */
-  .sidebar-nav ul::-webkit-scrollbar {
-    display: block;
-    height: 5px;   
-  }
-
-  /* deixa a barra colorida do menu */
-  .sidebar-nav ul::-webkit-scrollbar-thumb {
-    background-color: var(--cor-dourado);
-    border-radius: 10px;
   }
 
   .sidebar-nav a {

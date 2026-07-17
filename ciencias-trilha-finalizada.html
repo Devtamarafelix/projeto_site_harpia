@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercícios - Ciências</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+        <link rel="stylesheet" href="Css/acessibilidade.css">
+    <link rel="stylesheet" href="Css/ciencias-trilha-finalizada.css" />
+    <link rel="stylesheet" href="Css/chatbox.css">
+
+    <script src="JavaScript/global.js" defer></script>
+    <script src="JavaScript/chatbox.js" defer></script>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="assets/imgs/Logo_HARPIA.png" alt="Logo HARPIA" />
+
+            <div class="logo-container">
+                <p class="logo-titulo">
+                    H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+                </p>
+                <p class="logo-subtitulo">Aprenda do Seu Jeito</p>
+            </div>
+        </header>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pg-usuario.html">
+                        <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+                        Meu Perfil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="explorar-cursos.html">
+                        <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+                        Explorar Cursos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ajuda.html">
+                        <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+                        Ajuda
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="user-perfil">
+            <img src="assets/img-explorar-cursos/avatar.jpg" alt="avatar do aluno" class="img-avatar" />
+
+            <div class="user-texto">
+                <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
+                <p class="user-xp">1.900 XP - Nível Iniciante</p>
+            </div>
+
+            <button type="button" class="btn-sair">
+                <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
+                Sair
+            </button>
+        </div>
+    </aside>
+<main class="main-container">
+
+    <section class="aula-header">
+        <p class="aula-caminho">Meus Cursos &gt;Ciêcias </p>
+        <h1>Ciências Básica</h1>
+    </section>
+
+    <nav class="abas-aula" aria-label="Navegação da aula">
+        <a href="ciencias-aula.html" class="aba-aula">
+            <span>▶</span>
+            Leitura
+        </a>
+
+        <a href="#" class="aba-aula active">
+            <span>▶</span>
+            Exercícios
+        </a>
+    </nav>
+
+    <section class="resultado-card">
+
+        <div class="resultado-info">
+
+            <h2>PARABÉNS!</h2>
+
+            <h3>
+                Você concluiu<br>
+                mais uma trilha
+            </h3>
+
+            <div class="resultado-pontos">
+                <img src="assets/icons/trofeu 2.png" alt="Troféu">
+                <span>Pontuação: 3 de 3 acertos</span>
+            </div>
+
+            <a href="materia-ciencias.html" class="btn-continuar">
+                Continue aprendendo
+                <span>➜</span>
+            </a>
+
+            <a href="ciencias-exercicio1.html" class="link-refazer">
+                Refazer Exercícios
+            </a>
+
+        </div>
+
+        <div class="resultado-imagem">
+            <img src="assets/img-início/Pluma.png"
+                 alt="Pluma comemorando">
+        </div>
+
+    </section>
+
+</main>
+    
+<!-- plugin acessibiidade -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
+
+    <!-- Plugin VLibras -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
+
+<!--chatbox -->
+<div class="chat-icone" id="chat-icone">💬</div>
+
+<div class="chat-container" id="chat-container">
+<div class="chat-header">
+<div class="header-perfil">
+<img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+<div class="header-info">
+<span class="header-nome">Chat com a Pluma IA</span>
+<span class="header-status"><span class="ponto-online">●</span> Online</span>
+</div>
+</div>
+<span class="btn-fechar" id="btn-fechar">✖</span>
+</div>
+  
+<div class="chat-box" id="chat-box">
+<div class="message bot">Olá! Como posso te ajudar hoje?</div>
+</div>
+  
+<div class="input-area">
+<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+<button id="btn-enviar">
+<img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
+</button>
+</div>
+</div>
+</body>
+
+</html>

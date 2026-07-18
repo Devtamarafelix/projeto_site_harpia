@@ -48,3 +48,15 @@ function calcularIdade(dataNascimentoString) {
     
     return idade;
 }
+
+// carrega a foto do usuario logado no menu lateral de todas as páginas
+document.addEventListener('DOMContentLoaded', () => {
+    const usuarioLogado = JSON.parse(localStorage.getItem('usuarioLogado'));
+
+    if (usuarioLogado?.foto_perfil) {
+        const urlFotoSalva = `${API_BASE_URL}${usuarioLogado.foto_perfil}`;
+        document.querySelectorAll('.foto-perfil-dinamica').forEach((img) => {
+            img.src = urlFotoSalva;
+        });
+    }
+});

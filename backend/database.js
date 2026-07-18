@@ -1,9 +1,13 @@
 import { DatabaseSync } from 'node:sqlite'
+import path from 'path';
+import os from 'os';
 
 function conectarBanco() {
-    const db = new DatabaseSync('./banco.db');    // vai criar o arquivo "banco.db" na raiz da pasta backend
-    console.log("banco de dados SQLite nativo conectado com sucesso!")
-
+    // Cria o banco na raiz do usuário, fora da pasta 'nodejs'
+    const dbPath = path.join(os.homedir(), 'banco.db');
+    
+    const db = new DatabaseSync(dbPath);
+    console.log(`Banco de dados SQLite nativo conectado em: ${dbPath}`);
     //criação da tabela  
     db.exec(`
       CREATE TABLE IF NOT EXISTS usuarios (
@@ -12,9 +16,15 @@ function conectarBanco() {
         nascimento TEXT NOT NULL,
         email TEXT UNIQUE NOT NULL,            -- campo obrigatório e único(não aceita dados duplicados)
         usuario TEXT UNIQUE NOT NULL,
-        senha TEXT NOT NULL 
+        senha TEXT NOT NULL,
+        foto_perfil TEXT
       )     
     `);
+
+    try {
+    db.exec(`ALTER TABLE usuarios ADD COLUMN foto_perfil TEXT;`);
+    console.log("Coluna 'foto_perfil' criada com sucesso no banco antigo!");
+  } catch (error) {}
 
     return db;
 }

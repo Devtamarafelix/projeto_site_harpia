@@ -1,3 +1,4 @@
 node_modules/
 .env
 banco.db
+config.js

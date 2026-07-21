@@ -17,10 +17,8 @@
   <link rel="stylesheet" href="Css/chatbox.css" />
 
   <link rel="stylesheet" href="Css/acessibilidade.css" />
-    <script src="JavaScript/config.js" defer></script>
-  <link rel="stylesheet" href="Css/acessibilidade.css" />
-    <script src="JavaScript/config.js" defer></script>
-    <script src="JavaScript/global.js" defer></script>
+  <script src="JavaScript/config.js" defer></script>
+  <script src="JavaScript/global.js" defer></script>
   <script src="JavaScript/chatbox.js" defer></script>
 </head>
 
@@ -89,7 +87,8 @@
     </div>
   </aside>
 
-  <main class="main-container perfil-main">
+  <main class="main-container">
+    <section class="perfil-main">
     <header class="main-header">
       <div class="textos-header">
         <h1>Olá, <span id="nome-boas-vindas">Maria Silva</span>!</h1>
@@ -307,9 +306,9 @@
         <a href="#" class="btn-dourado">▷ Continuar aula</a>
       </article>
     </section>
-  </main>
+    </section>
 
-  <aside class="right-panel">
+    <aside class="right-panel">
     <div class="harpinha-area">
       <div class="speech">
         Oi, Maria! Pronta para os desafios de hoje?
@@ -367,9 +366,10 @@
         class="mini-harpia"
       />
     </section>
-  </aside>
+    </aside>
+  </main>
 
-   <!-- plugin acessibiidade -->
+  <!-- plugin acessibilidade -->
     <script
       src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
       async
@@ -385,6 +385,9 @@
       </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
     <script src="JavaScript/explorar-cursos.js"></script>
 
 <!--chatbox -->
@@ -399,7 +402,7 @@
 <span class="header-status"><span class="ponto-online">●</span> Online</span>
 </div>
 </div>
-<span class="btn-fechar" id="btn-fechar">✖</span>
+<button type="button" class="btn-fechar" id="btn-fechar" aria-label="Fechar chat">✖</button>
 </div>
   
 <div class="chat-box" id="chat-box">

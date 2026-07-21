@@ -12,6 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
 
+<script src="JavaScript/chatbox.js" defer></script>
+<link rel="stylesheet" href="Css/chatbox.css">
+
     <link rel="stylesheet" href="Css/trilha-finalizada.css" />
 
     <script src="JavaScript/global.js"></script>
@@ -150,10 +153,36 @@
 
     <!-- JavaScript da página -->
     <script src="JavaScript/exercicio-portugues.js"></script>
+</section>
 
-<!--chatbox -->
+<!-- Chatbox -->
+<div class="chat-icone" id="chat-icone">💬</div>
+<div class="chat-container" id="chat-container">
+<div class="chat-header">
+<div class="header-perfil">
+<img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+<div class="header-info">
+<span class="header-nome">Chat com a Pluma IA</span>
+<span class="header-status">
+<span class="ponto-online">●</span> Online
+</span>
+</div>
+</div>
 
-    </section>
+<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+</div>
+
+<div class="chat-box" id="chat-box">
+<div class="message bot">
+<img class="avatar-chat"
+src="assets/icons-chatbox/avatar-pluma.png">
+<div class="conteudo-chat">
+<div class="nome-chat"> Pluma </div>
+<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+</div>
+</div>
+</div>
+
 </body>
 
 </html>

@@ -79,88 +79,112 @@
 }
 
 .ponto-online { color: #22c55e; }
-.btn-fechar { cursor: pointer; font-size: 16px; opacity: 0.7; }
-.btn-fechar:hover { opacity: 1; }
+.btn-fechar{
+    background: transparent;
+    border: none;
 
-/* Rolagem das mensagens */
-.chat-box { 
-  flex: 1; 
-  padding: 35px 20px 20px 70px; 
-  overflow-y: auto; 
-  background: #ffffff; 
-  display: flex; 
-  flex-direction: column; 
-  gap: 35px; /* distância para os nomes não encostarem no balão*/
+    color: #ffffff;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 6px;
+
+    transition: background .2s;
 }
 
-/* Configuração base caixas de texto */
-.message { 
-  position: relative;
-  padding: 14px 16px; 
-  border-radius: 16px; 
-  max-width: 85%; 
-  font-size: 14.5px; 
-  line-height: 1.5; 
-  color: #242424; 
-  word-break: break-word;
-  align-self: flex-start; 
+.btn-fechar:hover{
+    background: rgba(255,255,255,.18);
+}
+.btn-fechar:hover { opacity: 1; }
+
+/* Área das mensagens */
+.chat-box{
+    flex:1;
+    padding:35px 20px 20px 70px;
+    overflow-y:auto;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+/* Mensagem */
+.message{
+    position:relative;
+    max-width:85%;
+}
+
+/* Avatar */
+.avatar-chat{
+    position:absolute;
+    left:-52px;
+    top:-16px;
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Nome */
+.nome-chat{
+    position:absolute;
+    left:0;
+    top:-22px;
+
+    font-size:14px;
+    font-weight:700;
+    color:#04432e;
+}
+
+/* Balão */
+.texto-chat{
+    display:inline-block;
+    width:auto;
+    max-width:260px;
+
+    padding:14px 16px;
+    border-radius:16px;
+    line-height:1.5;
+    font-size:14.5px;
+    word-break:break-word;
+}
+
+/* Cores */
+.message.bot .texto-chat{
+    background:#eef3f0;
+}
+
+.message.user .texto-chat{
+    background:#f4f6f5;
+}
+
+.message strong{
+    color:#04432e;
+    font-weight:700;
 }
 
 /* Balão da Pluma  */
-.message.bot { background-color: #eef3f0; }
+.message.bot .texto-chat { background-color: #eef3f0; }
 
 /* Balão do Aluno */
-.message.user { background-color: #f4f6f5; }
+.message.user .texto-chat { 
+  background-color: #f4f6f5; 
+}
 
 .message strong { color: #04432e; font-weight: 700; }
 
-/* Foto da Pluma */
-.message.bot::before {
-  content: "";
-  position: absolute;
-  left: -52px;
-  top: -16px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: url('../assets/icons-chatbox/avatar-pluma.png') no-repeat center/cover;
-  background-color: #f0f4f2;
-}
-
-/* Nome da Pluma */
-.message.bot::after {
-  content: "Pluma";
-  position: absolute;
-  left: 0;
-  top: -22px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #04432e;
-}
-
-/* Foto do Aluno */
-.message.user::before {
-  content: "";
-  position: absolute;
-  left: -52px;
-  top: -16px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: url('avatar-aluno.png') no-repeat center/cover;
-  background-color: #e2ede8;
-}
-
-/* Nome do Aluno */
-.message.user::after {
-  content: "Aluno";
-  position: absolute;
-  left: 0;
-  top: -22px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #04432e;
-}
 
 /* Area de digitação rodapé */
 .input-area { 

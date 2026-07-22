@@ -298,3 +298,120 @@ body{
   bottom: 6px;
   width: 65px;
 }
+
+/* resposividade */
+@media (max-width: 1000px) {
+  body {
+    display: block;
+    overflow: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-container {
+    height: auto;
+    overflow: visible;
+  }
+
+  .abas-aula {
+    gap: 32px;
+  }
+
+  .dica-pluma {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    margin: 32px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.10);
+    gap: 16px;
+  }
+
+  .sidebar-header {
+    margin-bottom: 0;
+    justify-content: center; 
+  }
+
+  .sidebar-nav ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .sidebar-nav a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .user-perfil {
+    margin-top: 12px; 
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    height: auto;    
+    overflow-y: auto;
+    padding: 0 16px 80px 16px;
+  }
+
+  .abas-aula {
+    gap: 32px; 
+    height: 64px;
+  }
+
+  .aba-aula {
+    padding: 8px 20px;
+  }
+
+  .conteudo-aula {
+    width: calc(100% - 32px);
+    padding-bottom: 40px;
+  }
+
+  .conteudo-aula h2 {
+    font-size: 1.5rem;
+  }
+
+  .exemplos-aula {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .cards-exemplo {
+    grid-template-columns: 1fr;
+  }
+
+  .btn-video {
+    width: 100%;
+  }
+  
+  .conteudo-aula .assistir-aula {
+  width: min(500px, 100%);
+ margin: 110px auto 0 !important;
+  padding-top: 0;
+  text-align: left;
+}
+
+.conteudo-aula .assistir-aula h2 {
+  margin: 0 0 18px;
+}
+
+.conteudo-aula .assistir-aula .btn-video {
+  margin-top: 0;
+}
+
+}

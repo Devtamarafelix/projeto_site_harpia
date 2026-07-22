@@ -297,3 +297,84 @@ body{
   bottom: 6px;
   width: 65px;
 }
+
+/* responsividade */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; 
+    overflow-y: auto; 
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.10);
+    gap: 16px;
+  }
+
+  .sidebar-header {
+    margin-bottom: 0;
+    justify-content: center; 
+  }
+
+  .sidebar-nav ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .sidebar-nav a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .user-perfil {
+    margin-top: 12px; 
+    width: 100%;
+  }
+
+  .main-container {
+    width: 100%;
+    height: auto;    
+    overflow-y: auto;
+    padding: 0 16px 80px 16px;
+  }
+
+  .abas-aula {
+    gap: 32px; 
+    height: 64px;
+  }
+
+  .aba-aula {
+    padding: 8px 20px;
+  }
+
+  .conteudo-aula {
+    margin: 32px 0 0 0;
+    padding: 0 8px;
+  }
+
+  .conteudo-aula h2 {
+    font-size: 1.6rem; 
+  }
+
+  .exemplo-box, .assistir-aula {
+    width: 100%;
+    max-width: 100%;
+    margin: 24px 0;
+  }
+
+  .dica-pluma {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin: 32px 0;
+    padding: 16px 80px 16px 16px;
+  }
+}

@@ -92,7 +92,7 @@
         </section>
 
         <nav class="abas-aula" aria-label="Navegação da aula">
-            <a href="matematica-aula.html" class="aba-aula">
+            <a href="matematica-2-aula.html" class="aba-aula">
                 <span aria-hidden="true">▶</span>
                 Leitura
             </a>
@@ -177,23 +177,28 @@
         </section>
     </main>
 
+    <!-- plugin acessibiidade -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
+
+    <!-- Plugin VLibras -->
+
     <div vw class="enabled">
-        <div vw-access-button class="active"></div>
-        <div vw-plugin-wrapper>
-            <div class="vw-plugin-top-wrapper"></div>
-        </div>
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
-    <script>
-        new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
+    <script src="JavaScript/explorar-cursos.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
     <script src="JavaScript/quiz.js" defer></script>
 
-  <!-- Chatbox -->
+           <!-- Chatbox -->
 <div class="chat-icone" id="chat-icone">💬</div>
 <div class="chat-container" id="chat-container">
 <div class="chat-header">
@@ -218,12 +223,6 @@ src="assets/icons-chatbox/avatar-pluma.png">
 <div class="nome-chat"> Pluma </div>
 <div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
 </div>
-</div>
-</div>
-
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar"> <img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
 </div>
 </div>
 </body>

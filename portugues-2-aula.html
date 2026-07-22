@@ -154,27 +154,24 @@ Análise de Notícias Falsas é o ato de usar o pensamento crítico para checar 
 
   </main>
 
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+  <!-- plugin acessibiidade -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
+
+    <!-- Plugin VLibras -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-  </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
 
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-
- 
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
-    async
-  ></script>
-
-  <script src="JavaScript/pg-usuario.js"></script>
-
-   <script>
-    new window.VLibras.Widget("https://vlibras.gov.br/app");
-  </script>
 
 <!-- Chatbox -->
 <div class="chat-icone" id="chat-icone">💬</div>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>H.A.R.P.I.A - Aula de Programação</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="Css\programacao-html-aula.css">i
+
+    <link rel="stylesheet" href="Css/acessibilidade.css" />
+    <script src="JavaScript/config.js" defer></script>
+    <script src="JavaScript/global.js" defer></script>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <header class="sidebar-header">
+            <img src="assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
+
+            <div class="logo-container">
+                <p class="logo-titulo">
+                    H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+                </p>
+                <p class="logo-subtitulo">Aprenda do seu jeito</p>
+            </div>
+        </header>
+
+        <nav class="sidebar-nav" aria-label="Navegação principal">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/icons-explorar-cursos/inicio.svg" alt="" />
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pg-usuario.html">
+                        <img src="assets/icons-explorar-cursos/perfil.svg" alt="" />
+                        Meu Perfil
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pg-explorar-cursos.html">
+                        <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
+                        Explorar Cursos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ajuda.html">
+                        <img src="assets/icons-explorar-cursos/ajuda.svg" alt="" />
+                        Ajuda
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="user-perfil">
+            <img src="assets/img-explorar-cursos/avatar.jpg" alt="Foto de Maria Silva"
+                class="img-avatar foto-perfil-dinamica" />
+
+            <div class="user-texto">
+                <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
+                <p class="user-xp">1.300 XP - Nível Iniciante</p>
+            </div>
+
+            <button type="button" class="btn-sair">
+                <img src="assets/icons-explorar-cursos/sair.svg" alt="" />
+                Sair
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-container">
+
+        <header class="aula-header">
+            <p class="aula-caminho">Meus Cursos &gt; </p>
+            <h1>Introdução ao HTML</h1>
+        </header>
+
+        <nav class="abas-aula" aria-label="Navegação da aula">
+            <a href="progamacao-html-aula.html" class="aba-aula active" aria-current="page">
+                <span>▶</span>
+                Leitura
+            </a>
+
+            <a href="" class="aba-aula">
+                <span>▶</span>
+                Exercícios
+            </a>
+        </nav>
+
+        <section class="conteudo-aula">
+            <h2>O que é HTML?</h2>
+
+            <p class="intro">
+                Consiste em uma linguagem utilizada para criar e estruturar páginas na internet.
+            </p>
+
+            <p>
+                HTML significa HyperText Markup Language ou Linguagem de Marcação de Hipertexto. É a linguagem utilizada
+                para criar e organizar a estrutura de uma página na internet. Com o HTML, podemos adicionar títulos,
+                textos, imagens, links, botões e diversos outros elementos.
+            </p>
+
+            <div class="exemplos-aula">
+                <span>● Títulos e textos </span>
+                <span>● Imagens e links  </span>
+                <span>● Botões e formulários</span>
+            </div>
+
+            <div class="exemplo-box">
+                <h3>Exemplo:</h3>
+
+                <p>
+
+                    Imagine que você está construindo uma casa. O HTML seria responsável pela estrutura: paredes,
+                    portas, janelas e cômodos. Em um site, ele organiza onde cada conteúdo será exibido.
+                </p>
+            </div>
+
+            <section class="assistir-aula">
+                <h2>Assista e Aprenda</h2>
+
+                <button type="button" class="btn-video">
+                    ▶ Vídeo Aula
+                </button>
+            </section>
+        </section>
+
+        <aside class="dica-pluma">
+            <div class="icone-dica" aria-hidden="true">💡</div>
+
+            <div>
+                <strong>Dica da Pluma</strong>
+                <p>
+                    Para aprender HTML, comece pelas tags mais simples e pratique criando pequenas páginas!
+                </p>
+            </div>
+
+            <img src="assets/imgs/pluma-joia.png" alt="Pluma" />
+        </aside>
+
+    </main>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
+
+    <script src="JavaScript/pg-usuario.js"></script>
+
+</body>
+
+</html>

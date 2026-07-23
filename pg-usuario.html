@@ -13,12 +13,11 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="Css/pg-usuario.css" />
-  <link rel="stylesheet" href="Css/chatbox.css" />
-
-  <link rel="stylesheet" href="Css/acessibilidade.css" />
   <script src="JavaScript/config.js" defer></script>
   <script src="JavaScript/global.js" defer></script>
+  <link rel="stylesheet" href="Css/pg-usuario.css" />
+  <link rel="stylesheet" href="Css/chatbox.css" />
+  <link rel="stylesheet" href="Css/acessibilidade.css" />
   <script src="JavaScript/chatbox.js" defer></script>
 </head>
 
@@ -70,13 +69,13 @@
 
     <div class="user-perfil">
       <img
-        src="assets/img-explorar-cursos/avatar.jpg"
-        alt="Foto de Maria Silva"
+        src="assets/imgs/avatar-user.png"
+        alt="foto do usuario"
         class="img-avatar foto-perfil-dinamica"
       />
 
       <div class="user-texto">
-        <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
+        <p class="user-nome" id="nome-menu-lateral"></p>
         <p class="user-xp">1.300 XP - Nível Iniciante</p>
       </div>
 
@@ -91,7 +90,7 @@
     <section class="perfil-main">
     <header class="main-header">
       <div class="textos-header">
-        <h1>Olá, <span id="nome-boas-vindas">Maria Silva</span>!</h1>
+        <h1>Olá, <span id="nome-boas-vindas"></span>!</h1>
         <p>Que bom ter você aqui de novo.</p>
       </div>
 
@@ -113,11 +112,7 @@
           <img src="assets/icons/sino.png" alt="" />
         </button>
 
-        <img
-          src="assets/img-explorar-cursos/avatar.jpg"
-          alt="Foto de Maria Silva"
-          class="top-avatar foto-perfil-dinamica"
-        />
+        <img src="assets/imgs/avatar-user.png" alt="Foto do usuario" class=" top-avatar foto-perfil-dinamica"/>
 
         <button type="button" class="top-icon-btn" aria-label="Abrir menu">
           <img src="assets/icons/mais.png" alt="" />
@@ -128,7 +123,7 @@
     <section class="perfil-grid">
       <article class="card perfil-card">
         <div class="perfil-foto">
-         <img id="avatar-principal" class="foto-perfil-dinamica" src="assets/img-explorar-cursos/avatar.jpg" alt="Foto de Maria Silva"/>
+         <img id="avatar-principal" class="foto-perfil-dinamica" src="assets/imgs/avatar-user.png" alt="Foto do usuario"/>
          <label for="input-avatar" class="alterar-foto-overlay">
           <span>Mudar Foto</span>
          </label>
@@ -137,7 +132,7 @@
 
         <span class="perfil-badge">★ Aprendiz<br />curioso</span>
 
-        <h2 id="nome-card-central">Maria Silva</h2>
+        <h2 id="nome-card-central"></h2>
 
         <div class="perfil-info">
           <div class="info-linha">
@@ -369,12 +364,12 @@
     </aside>
   </main>
 
-  <!-- plugin acessibilidade -->
+  <!-- plugin acessibiidade -->
     <script
       src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
       async
     ></script>
-    <script src="JavaScript/pg-usuario.js"></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
 
     <!-- Plugin VLibras -->
 
@@ -385,37 +380,43 @@
       </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
     <script src="JavaScript/explorar-cursos.js"></script>
 
-<!--chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
 
+<!-- Chatbox -->
+<div class="chat-icone" id="chat-icone">💬</div>
 <div class="chat-container" id="chat-container">
 <div class="chat-header">
 <div class="header-perfil">
 <img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
 <div class="header-info">
 <span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status"><span class="ponto-online">●</span> Online</span>
-</div>
-</div>
-<button type="button" class="btn-fechar" id="btn-fechar" aria-label="Fechar chat">✖</button>
-</div>
-  
-<div class="chat-box" id="chat-box">
-<div class="message bot">Olá! Como posso te ajudar hoje?</div>
-</div>
-  
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar">
-<img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
-</button>
+<span class="header-status">
+<span class="ponto-online">●</span> Online
+</span>
 </div>
 </div>
 
+<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+</div>
+
+<div class="chat-box" id="chat-box">
+<div class="message bot">
+<img class="avatar-chat"
+src="assets/icons-chatbox/avatar-pluma.png">
+<div class="conteudo-chat">
+<div class="nome-chat"> Pluma </div>
+<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+</div>
+</div>
+</div>
+
+<div class="input-area">
+<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+<button id="btn-enviar"> <img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
+</div>
+</div>
+ <!-- arquivo js -->
+  <script src="JavaScript/pg-usuario.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@
                 </li>
 
                 <li>
-                    <a href="explorar-cursos.html">
+                    <a href="pg-explorar-cursos.html">
                         <img src="assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
                         Explorar Cursos
                     </a>
@@ -66,7 +66,9 @@
         </nav>
 
         <div class="user-perfil">
-            <img src="assets/img-explorar-cursos/avatar.jpg" alt="avatar do aluno" class="img-avatar" />
+            <img src="assets/imgs/avatar-user.png" alt="Foto de perfil do usuario"
+                class="img-avatar foto-perfil-dinamica" />
+
 
             <div class="user-texto">
                 <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
@@ -152,30 +154,37 @@
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="JavaScript/explorar-cursos.js"></script>
 
-<!--chatbox -->
+  <!-- Chatbox -->
 <div class="chat-icone" id="chat-icone">💬</div>
-
 <div class="chat-container" id="chat-container">
 <div class="chat-header">
 <div class="header-perfil">
 <img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
 <div class="header-info">
 <span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status"><span class="ponto-online">●</span> Online</span>
+<span class="header-status">
+<span class="ponto-online">●</span> Online
+</span>
 </div>
 </div>
-<span class="btn-fechar" id="btn-fechar">✖</span>
+
+<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
 </div>
-  
+
 <div class="chat-box" id="chat-box">
-<div class="message bot">Olá! Como posso te ajudar hoje?</div>
+<div class="message bot">
+<img class="avatar-chat"
+src="assets/icons-chatbox/avatar-pluma.png">
+<div class="conteudo-chat">
+<div class="nome-chat"> Pluma </div>
+<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
 </div>
-  
+</div>
+</div>
+
 <div class="input-area">
 <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar">
-<img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="Enviar">
-</button>
+<button id="btn-enviar"> <img src="assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
 </div>
 </div>
 </body>

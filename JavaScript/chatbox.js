@@ -18,21 +18,50 @@ btnFechar.addEventListener('click', () => {
 });
 
 // Adiciona as bolhas de mensagem na tela com suporte a negrito
-function adicionarMensagem(texto, tipo) {
-  const div = document.createElement('div');
-  div.classList.add('message', tipo);
-  
-  if (tipo === 'bot') {
-    // Transforma o formato **texto** do Groq em tags <strong> do HTML
-    const textoFormatado = texto.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    div.innerHTML = textoFormatado;
-  } else {
-    // Mensagens do usuário continuam como texto puro por segurança
-    div.innerText = texto;
-  }
-  
-  chatBox.appendChild(div);
-  chatBox.scrollTop = chatBox.scrollHeight;
+function adicionarMensagem(texto, tipo){
+
+    const div = document.createElement("div");
+    div.className = `message ${tipo}`;
+
+    if(tipo==="bot"){
+
+        texto = texto.replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>");
+
+        div.innerHTML=`
+            <img
+                class="avatar-chat"
+                src="assets/icons-chatbox/avatar-pluma.png">
+
+            <div class="conteudo-chat">
+
+                <div class="nome-chat">
+                    Pluma
+                </div>
+
+                <div class="texto-chat">
+                    ${texto}
+                </div>
+
+            </div>
+        `;
+
+    }else{
+const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+const foto = usuario && usuario.foto_perfil
+    ? `${API_BASE_URL}${usuario.foto_perfil}`
+    : "";
+
+const nome = usuario && usuario.nome
+    ? usuario.nome
+    : "Aluno";
+div.innerHTML=` <img class="avatar-chat" src="${foto}"> <div class="conteudo-chat"> <div class="nome-chat"> ${nome} </div> <div class="texto-chat"></div>
+</div> `;
+div.querySelector(".texto-chat").innerText=texto;
+    }
+chatBox.appendChild(div);
+chatBox.scrollTop=chatBox.scrollHeight;
+
 }
 
 // Faz a ponte com o seu server.js
@@ -75,6 +104,15 @@ async function lidarComEnvio() {
     if (chatBox.contains(divPensando)) chatBox.removeChild(divPensando);
     adicionarMensagem('Não consegui voar até o servidor. Ele está ligado?', 'bot');
   }
+}
+
+const avatar = document.getElementById("avatar-principal");
+
+if (avatar) {
+    document.documentElement.style.setProperty(
+        "--avatar-user",
+        `url("${avatar.src}")`
+    );
 }
 
 btnEnviar.addEventListener('click', lidarComEnvio);

@@ -12,6 +12,8 @@
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap"
     rel="stylesheet"
   />
+<script src="JavaScript/chatbox.js" defer></script>
+<link rel="stylesheet" href="Css/chatbox.css">
 
   <link rel="stylesheet" href="Css/portugues-aula.css" />
 
@@ -68,10 +70,9 @@
 
     <div class="user-perfil">
       <img
-        src="assets/img-explorar-cursos/avatar.jpg"
-        alt="Foto de Maria Silva"
-        class="img-avatar foto-perfil-dinamica"
-      />
+          src="assets/imgs/avatar-user.png"
+          alt="avatar do aluno"
+          class="img-avatar foto-perfil-dinamica">
 
       <div class="user-texto">
         <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
@@ -166,18 +167,51 @@
     </div>
   </div>
 
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <!-- plugin acessibiidade -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
 
-  <script>
-    new window.VLibras.Widget("https://vlibras.gov.br/app");
-  </script>
+    <!-- Plugin VLibras -->
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
-    async
-  ></script>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
 
-  <script src="JavaScript/pg-usuario.js"></script>
+   <!-- Chatbox -->
+<div class="chat-icone" id="chat-icone">💬</div>
+<div class="chat-container" id="chat-container">
+<div class="chat-header">
+<div class="header-perfil">
+<img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+<div class="header-info">
+<span class="header-nome">Chat com a Pluma IA</span>
+<span class="header-status">
+<span class="ponto-online">●</span> Online
+</span>
+</div>
+</div>
+
+<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+</div>
+
+<div class="chat-box" id="chat-box">
+<div class="message bot">
+<img class="avatar-chat"
+src="assets/icons-chatbox/avatar-pluma.png">
+<div class="conteudo-chat">
+<div class="nome-chat"> Pluma </div>
+<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+</div>
+</div>
+</div>
 
 </body>
 </html>

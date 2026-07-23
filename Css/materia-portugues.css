@@ -449,6 +449,38 @@ body {
 }
 
 @media (max-width: 760px) {
+.sidebar {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.10);
+    gap: 16px;
+  }
+
+  .sidebar-header {
+    margin-bottom: 0;
+    justify-content: center; 
+  }
+
+  .sidebar-nav ul {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .sidebar-nav a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .user-perfil {
+    margin-top: 12px; 
+    width: 100%;
+  }
+  
   .main-container {
     padding: 24px;
   }

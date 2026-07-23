@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício de Português | H.A.R.P.I.A.</title>
 
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet"
     />
+
+<script src="JavaScript/chatbox.js" defer></script>
+<link rel="stylesheet" href="Css/chatbox.css">
 
     <link rel="stylesheet" href="Css/portugues-2-exercicio3.css" />
 
@@ -57,7 +61,7 @@
                 </li>
 
                 <li>
-                    <a href="explorar-cursos.html">
+                    <a href="pg-explorar-cursos.html">
                         <img
                             src="assets/icons-explorar-cursos/explorar-cursos.svg"
                             alt=""
@@ -79,11 +83,9 @@
         </nav>
 
         <div class="user-perfil">
-            <img
-                src="assets/img-explorar-cursos/avatar.jpg"
-                alt="Foto de perfil da aluna Maria Silva"
-                class="img-avatar foto-perfil-dinamica"
-            />
+            <img src="assets/imgs/avatar-user.png" alt="Foto de perfil do usuario"
+                class="img-avatar foto-perfil-dinamica" />
+
 
             <div class="user-texto">
                 <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
@@ -332,17 +334,53 @@
         </div>
     </div>
 
+    <!-- plugin acessibiidade -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+      async
+    ></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
+
+    <!-- Plugin VLibras -->
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="JavaScript/explorar-cursos.js"></script>
 
-   
+    <!-- Chatbox -->
+<div class="chat-icone" id="chat-icone">💬</div>
+<div class="chat-container" id="chat-container">
+<div class="chat-header">
+<div class="header-perfil">
+<img src="assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+<div class="header-info">
+<span class="header-nome">Chat com a Pluma IA</span>
+<span class="header-status">
+<span class="ponto-online">●</span> Online
+</span>
+</div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
-    <script src="JavaScript/quiz.js" defer></script>
-    <script src="JavaScript/chatbox.js" defer></script>
+<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+</div>
 
-     <script>
-        new window.VLibras.Widget("https://vlibras.gov.br/app");
-    </script>
+<div class="chat-box" id="chat-box">
+<div class="message bot">
+<img class="avatar-chat"
+src="assets/icons-chatbox/avatar-pluma.png">
+<div class="conteudo-chat">
+<div class="nome-chat"> Pluma </div>
+<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+</div>
+</div>
+</div>
+
 </body>
+
 
 </html>

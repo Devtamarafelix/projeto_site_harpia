@@ -30,7 +30,7 @@ function adicionarMensagem(texto, tipo){
         div.innerHTML=`
             <img
                 class="avatar-chat"
-                src="assets/icons-chatbox/avatar-pluma.png">
+                src="../assets/icons-chatbox/avatar-pluma.png">
 
             <div class="conteudo-chat">
 

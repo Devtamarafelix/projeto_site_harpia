@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Introdução ao JavaScript | H.A.R.P.I.A.</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="Css/chatbox.css" />
+    <link rel="stylesheet" href="Css/programacao-js-aula.css" />
+    <link rel="stylesheet" href="Css/acessibilidade.css" />
+
+    <script src="JavaScript/chatbox.js" defer></script>
+    <script src="JavaScript/config.js" defer></script>
+    <script src="JavaScript/global.js" defer></script>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div>
+            <header class="sidebar-header">
+                <img
+                    src="assets/imgs/Logo_HARPIA.png"
+                    alt="Logo da plataforma H.A.R.P.I.A."
+                />
+
+                <div class="logo-container">
+                    <p class="logo-titulo">
+                        H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+                    </p>
+
+                    <p class="logo-subtitulo">Aprenda do seu jeito</p>
+                </div>
+            </header>
+
+            <nav class="sidebar-nav" aria-label="Menu principal">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img
+                                src="assets/icons-explorar-cursos/inicio.svg"
+                                alt=""
+                            />
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pg-usuario.html">
+                            <img
+                                src="assets/icons-explorar-cursos/perfil.svg"
+                                alt=""
+                            />
+                            Meu Perfil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="pg-explorar-cursos.html"
+                            class="active"
+                            aria-current="page"
+                        >
+                            <img
+                                src="assets/icons-explorar-cursos/explorar-cursos.svg"
+                                alt=""
+                            />
+                            Explorar Cursos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="ajuda.html">
+                            <img
+                                src="assets/icons-explorar-cursos/ajuda.svg"
+                                alt=""
+                            />
+                            Ajuda
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="user-perfil">
+            <img
+                src="assets/imgs/avatar-user.png"
+                alt="Foto de perfil de Maria Silva"
+                class="img-avatar foto-perfil-dinamica"
+            />
+
+            <div class="user-texto">
+                <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
+                <p class="user-xp">1.900 XP - Nível Iniciante</p>
+            </div>
+
+            <button type="button" class="btn-sair">
+                <img
+                    src="assets/icons-explorar-cursos/sair.svg"
+                    alt=""
+                />
+                Sair
+            </button>
+        </div>
+    </aside>
+
+    <main class="main-container">
+        <header class="aula-header">
+            <p class="aula-caminho">Meus Cursos &gt; Programação</p>
+            <h1>Introdução ao JavaScript</h1>
+        </header>
+
+        <nav class="abas-aula" aria-label="Navegação da aula">
+            <a
+                href="programacao-js-aula.html"
+                class="aba-aula active"
+                aria-current="page"
+            >
+                <span aria-hidden="true">▷</span>
+                Leitura
+            </a>
+
+            <a href="js-exercicio1.html" class="aba-aula">
+                <span aria-hidden="true">▷</span>
+                Exercícios
+            </a>
+        </nav>
+
+        <section class="conteudo-aula">
+            <h2>O que é JavaScript?</h2>
+
+            <p class="intro">
+                O JavaScript é uma linguagem de programação utilizada para
+                tornar as páginas da web mais interativas e dinâmicas. Com ele,
+                é possível criar botões que respondem ao clique do usuário,
+                formulários inteligentes, animações, menus interativos e muitas
+                outras funcionalidades.
+            </p>
+
+            <p>
+                Enquanto o HTML organiza o conteúdo da página e o CSS define sua
+                aparência, o JavaScript adiciona comportamento e interação ao
+                site.
+            </p>
+
+            <h3 class="titulo-exemplo">Exemplo:</h3>
+
+            <p class="texto-exemplo">
+                Veja um exemplo simples de JavaScript:
+            </p>
+
+            <div class="exemplo-area">
+                <div
+                    class="codigo-card"
+                    aria-label="Exemplo de código JavaScript"
+                >
+                    <div class="codigo-cabecalho">
+                        <span aria-hidden="true">&lt;/&gt;</span>
+                        <strong>JavaScript</strong>
+                    </div>
+
+                    <pre><code><span class="palavra-chave">function</span> mostrarMensagem() {
+    alert(<span class="texto-codigo">"Olá, seja bem-vindo!"</span>);
+}</code></pre>
+                </div>
+
+                <div class="explicacao-codigo">
+                    <p>
+                        Esse código cria uma função que exibe uma mensagem na
+                        tela quando é chamada. Esse tipo de recurso pode ser
+                        utilizado em botões, formulários e diversas outras
+                        partes de um site.
+                    </p>
+                </div>
+            </div>
+
+            <section class="assistir-aula">
+                <h2>Assista e Aprenda</h2>
+
+                <button type="button" class="btn-video">
+                    ▷ Vídeo Aula
+                </button>
+            </section>
+
+            <aside class="dica-pluma">
+                <div class="dica-texto">
+                    <strong>
+                        <span aria-hidden="true">💡</span>
+                        Dica da Pluma
+                    </strong>
+
+                    <p>
+                        Lembre-se: o JavaScript torna as páginas mais
+                        inteligentes e interativas. Ele funciona junto com o
+                        HTML e o CSS para criar sites completos e modernos.
+                    </p>
+                </div>
+
+                <img
+                    src="assets/imgs/pluma-joia.png"
+                    alt="Pluma dando uma dica"
+                />
+            </aside>
+        </section>
+    </main>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+    <script>
+        new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
+        async
+    ></script>
+
+    <div class="chat-icone" id="chat-icone">💬</div>
+
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <div class="header-perfil">
+                <img
+                    src="assets/icons-chatbox/avatar-pluma.png"
+                    class="header-img"
+                    alt="Pluma"
+                />
+
+                <div class="header-info">
+                    <span class="header-nome">
+                        Chat com a Pluma IA
+                    </span>
+
+                    <span class="header-status">
+                        <span class="ponto-online">●</span>
+                        Online
+                    </span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-fechar"
+                id="btn-fechar"
+                aria-label="Fechar chat"
+            >
+                ✖
+            </button>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                Olá! Como posso te ajudar hoje?
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="input-usuario"
+                placeholder="Digite uma mensagem..."
+                autocomplete="off"
+            />
+
+            <button
+                type="button"
+                id="btn-enviar"
+                aria-label="Enviar mensagem"
+            >
+                <img
+                    src="assets/icons-chatbox/ic-enviar.png"
+                    class="btn-enviar-img"
+                    alt=""
+                />
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>

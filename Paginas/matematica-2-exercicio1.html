@@ -12,15 +12,15 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
 
- <script src="../JavaScript/chatbox.js" defer></script>
-<link rel="stylesheet" href="../Css/chatbox.css">
+    <script src="../JavaScript/chatbox.js" defer></script>
+    <link rel="stylesheet" href="../Css/chatbox.css">
 
     <link rel="stylesheet" href="../Css/matematica-2-exercicios1.css" />
 
     <link rel="stylesheet" href="../Css/acessibilidade.css" />
     <script src="../JavaScript/config.js" defer></script>
     <script src="../JavaScript/global.js" defer></script>
-
+    <script src="../JavaScript/quiz.js" defer></script>
 
 </head>
 
@@ -178,19 +178,16 @@
     </main>
 
     <!-- plugin acessibiidade -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
-      async
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
     <script src="../JavaScript/explorar-cursos.js"></script>
 
     <!-- Plugin VLibras -->
 
     <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="../JavaScript/explorar-cursos.js"></script>
@@ -198,39 +195,38 @@
     <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"></script>
     <script src="../JavaScript/quiz.js" defer></script>
 
- <!-- Chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
-<div class="chat-container" id="chat-container">
-<div class="chat-header">
-<div class="header-perfil">
-<img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
-<div class="header-info">
-<span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status">
-<span class="ponto-online">●</span> Online
-</span>
-</div>
-</div>
+    <!-- Chatbox -->
+    <div class="chat-icone" id="chat-icone">💬</div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <div class="header-perfil">
+                <img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+                <div class="header-info">
+                    <span class="header-nome">Chat com a Pluma IA</span>
+                    <span class="header-status">
+                        <span class="ponto-online">●</span> Online
+                    </span>
+                </div>
+            </div>
 
-<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
-</div>
+            <button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+        </div>
 
-<div class="chat-box" id="chat-box">
-<div class="message bot">
-<img class="avatar-chat"
-src="../assets/icons-chatbox/avatar-pluma.png">
-<div class="conteudo-chat">
-<div class="nome-chat"> Pluma </div>
-<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
-</div>
-</div>
-</div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <img class="avatar-chat" src="../assets/icons-chatbox/avatar-pluma.png">
+                <div class="conteudo-chat">
+                    <div class="nome-chat"> Pluma </div>
+                    <div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+                </div>
+            </div>
+        </div>
 
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar"> <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
-</div>
-</div>
+        <div class="input-area">
+            <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+            <button id="btn-enviar"> <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
+        </div>
+    </div>
 
 
 </body>

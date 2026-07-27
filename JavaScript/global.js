@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const txtMenuLateral = document.getElementById('nome-menu-lateral');
     const txtBoasVindas = document.getElementById('nome-boas-vindas');
     const txtCardCentral = document.getElementById('nome-card-central');
+    const txtNomeUserPluma = document.getElementById('nome-user-pluma')
     const txtIdade = document.getElementById('idade-usuario'); 
 
     if (txtMenuLateral) txtMenuLateral.textContent = dadosDoUsuario.nome;
     if (txtBoasVindas) txtBoasVindas.textContent = dadosDoUsuario.nome;
     if (txtCardCentral) txtCardCentral.textContent = dadosDoUsuario.nome;
+    if (txtCardCentral) txtNomeUserPluma.textContent = dadosDoUsuario.nome;
 
     if (txtIdade && dadosDoUsuario.nascimento) {
         txtIdade.textContent = calcularIdade(dadosDoUsuario.nascimento);

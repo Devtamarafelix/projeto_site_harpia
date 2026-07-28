@@ -58,3 +58,45 @@ inputAvatar.addEventListener('change', async (event) => {
         alert(`Erro de conexão ou no script: ${erro.message}`);
     }
 });
+
+
+//lógica para o input de busca
+function inicializarBusca() {
+  const buscarCursos = document.getElementById('buscar-cursos');
+  const cardsCursos = document.querySelectorAll('.curso-card, .continue-card');
+  const secaoCursos = document.querySelector('.secao-cursos');
+
+  if (!buscarCursos) return;
+
+  buscarCursos.addEventListener('input', () => {
+    const filtroBusca = buscarCursos.value.toLowerCase().trim();
+
+    if (filtroBusca.length > 0 && secaoCursos) {
+      secaoCursos.scrollIntoView({ 
+        behavior: 'smooth', // Rola de forma suave, sem dar "pulo"
+        block: 'start'      // Alinha o topo da seção de cursos com a tela
+      });
+    }
+
+    cardsCursos.forEach(card => {
+      const tituloElemento = card.querySelector('h3');
+
+      if (tituloElemento) {
+        const tituloText = tituloElemento.textContent.toLowerCase();
+
+        if (tituloText.includes(filtroBusca)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      }
+    });
+  });
+}
+
+// Executa a busca imediatamente primeiro
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', inicializarBusca);
+} else {
+  inicializarBusca();
+}

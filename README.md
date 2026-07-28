@@ -87,7 +87,7 @@ A plataforma busca auxiliar estudantes com diferentes formas de aprendizagem, in
 <td align="center" width="50%">
 <b>👤 Perfil do Estudante</b><br><br>
 
-<img src="./assets/imgs-readme/perfil-tela.png" width="100%" alt="Tela de Perfil">
+<img src="./assets/imgs-readme/tela-perfil.png" width="100%" alt="Tela de Perfil">
 
 </td>
 
@@ -105,7 +105,7 @@ A plataforma busca auxiliar estudantes com diferentes formas de aprendizagem, in
 <td align="center" width="50%">
 <b>📚 Conteúdo da Matéria & Assistente IA Pluma</b><br><br>
 
-<img src="assets/imgs-readme/tela-materia-IA.png" width="100%" alt="Tela de Matéria com IA">
+<img src="assets/imgs-readme/tela-materia.png" width="100%" alt="Tela de Matéria com IA">
 
 </td>
 

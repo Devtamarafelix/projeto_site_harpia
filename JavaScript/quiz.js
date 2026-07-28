@@ -121,10 +121,7 @@ botaoProxima.addEventListener("click", () => {
         return;
     }
 
-    if (questaoAtual === totalQuestoes) {
-        sessionStorage.removeItem("quizAcertos");
-        sessionStorage.removeItem("quizRespondidas");
-    }
+
 
     window.location.href = proximaPagina;
 });
@@ -132,7 +129,7 @@ botaoProxima.addEventListener("click", () => {
 function atualizarProgresso() {
     totalAcertosElemento.textContent = totalAcertos;
     totalRespondidasElemento.textContent = totalRespondidas;
-
+    
     const porcentagem =
         (questaoAtual / totalQuestoes) * 100;
 

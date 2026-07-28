@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,19 +9,17 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap"
-    rel="stylesheet"
-  />
-<script src="../JavaScript/chatbox.js" defer></script>
-<link rel="stylesheet" href="../Css/chatbox.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <script src="../JavaScript/chatbox.js" defer></script>
+  <link rel="stylesheet" href="../Css/chatbox.css">
 
   <link rel="stylesheet" href="../Css/portugues-2-aula.css" />
 
   <link rel="stylesheet" href="../Css/acessibilidade.css" />
-    <script src="../JavaScript/config.js" defer></script>
-    <script src="../JavaScript/global.js" defer></script>
-    <script src="../JavaScript/quiz.js" defer></script>
+  <script src="../JavaScript/config.js" defer></script>
+  <script src="../JavaScript/global.js" defer></script>
+  <script src="../JavaScript/quiz.js" defer></script>
 </head>
 
 <body>
@@ -70,10 +69,7 @@
     </nav>
 
     <div class="user-perfil">
-      <img
-          src="../assets/imgs/avatar-user.png"
-          alt="avatar do aluno"
-          class="img-avatar foto-perfil-dinamica">
+      <img src="../assets/imgs/avatar-user.png" alt="avatar do aluno" class="img-avatar foto-perfil-dinamica">
 
       <div class="user-texto">
         <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
@@ -110,14 +106,19 @@
       <h2>O que é?</h2>
 
       <p class="intro">
-Análise de Notícias Falsas é o ato de usar o pensamento crítico para checar se uma informação que você recebeu na internet é verdadeira ou mentirosa. Fake news são boatos criados propositalmente para enganar a população, criar pânico ou queimar a reputação de alguém, espalhando-se muito rápido pelas redes sociais.      </p>
+        Análise de Notícias Falsas é o ato de usar o pensamento crítico para checar se uma informação que você recebeu
+        na internet é verdadeira ou mentirosa. Fake news são boatos criados propositalmente para enganar a população,
+        criar pânico ou queimar a reputação de alguém, espalhando-se muito rápido pelas redes sociais. </p>
 
-      
+
       <div class="exemplo-box">
         <h3>Exemplo:</h3>
 
         <p>
-          Você recebe uma mensagem no WhatsApp dizendo: "URGENTE: Cientistas provam que comer chocolate antes de dormir faz você flutuar! Compartilhe antes que apaguem!". Parece bom demais para ser verdade, né? Um analista de fake news logo pensaria: Cadê o link da pesquisa? Quem são os cientistas? Isso é um exemplo clássico de boato bobo da internet.
+          Você recebe uma mensagem no WhatsApp dizendo: "URGENTE: Cientistas provam que comer chocolate antes de dormir
+          faz você flutuar! Compartilhe antes que apaguem!". Parece bom demais para ser verdade, né? Um analista de fake
+          news logo pensaria: Cadê o link da pesquisa? Quem são os cientistas? Isso é um exemplo clássico de boato bobo
+          da internet.
         </p>
       </div>
 
@@ -125,7 +126,10 @@ Análise de Notícias Falsas é o ato de usar o pensamento crítico para checar 
         <h3>Finalização:</h3>
 
         <p>
-          Você recebe uma mensagem no WhatsApp dizendo: "URGENTE: Cientistas provam que comer chocolate antes de dormir faz você flutuar! Compartilhe antes que apaguem!". Parece bom demais para ser verdade, né? Um analista de fake news logo pensaria: Cadê o link da pesquisa? Quem são os cientistas? Isso é um exemplo clássico de boato bobo da internet.
+          Você recebe uma mensagem no WhatsApp dizendo: "URGENTE: Cientistas provam que comer chocolate antes de dormir
+          faz você flutuar! Compartilhe antes que apaguem!". Parece bom demais para ser verdade, né? Um analista de fake
+          news logo pensaria: Cadê o link da pesquisa? Quem são os cientistas? Isso é um exemplo clássico de boato bobo
+          da internet.
         </p>
       </div>
 
@@ -155,57 +159,54 @@ Análise de Notícias Falsas é o ato de usar o pensamento crítico para checar 
   </main>
 
   <!-- plugin acessibiidade -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
-      async
-    ></script>
-    <script src="../JavaScript/explorar-cursos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
+  <script src="../JavaScript/explorar-cursos.js"></script>
 
-    <!-- Plugin VLibras -->
+  <!-- Plugin VLibras -->
 
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script src="../JavaScript/explorar-cursos.js"></script>
+
+
+  <!-- Chatbox -->
+  <div class="chat-icone" id="chat-icone">💬</div>
+  <div class="chat-container" id="chat-container">
+    <div class="chat-header">
+      <div class="header-perfil">
+        <img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+        <div class="header-info">
+          <span class="header-nome">Chat com a Pluma IA</span>
+          <span class="header-status">
+            <span class="ponto-online">●</span> Online
+          </span>
+        </div>
+      </div>
+
+      <button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+    </div>
+
+    <div class="chat-box" id="chat-box">
+      <div class="message bot">
+        <img class="avatar-chat" src="../assets/icons-chatbox/avatar-pluma.png">
+        <div class="conteudo-chat">
+          <div class="nome-chat"> Pluma </div>
+          <div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+        </div>
       </div>
     </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script src="../JavaScript/explorar-cursos.js"></script>
 
-
-<!-- Chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
-<div class="chat-container" id="chat-container">
-<div class="chat-header">
-<div class="header-perfil">
-<img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
-<div class="header-info">
-<span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status">
-<span class="ponto-online">●</span> Online
-</span>
-</div>
-</div>
-
-<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
-</div>
-
-<div class="chat-box" id="chat-box">
-<div class="message bot">
-<img class="avatar-chat"
-src="../assets/icons-chatbox/avatar-pluma.png">
-<div class="conteudo-chat">
-<div class="nome-chat"> Pluma </div>
-<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
-</div>
-</div>
-</div>
-
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar"> <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
-</div>
-</div>
+    <div class="input-area">
+      <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+      <button id="btn-enviar"> <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
+    </div>
+  </div>
 
 </body>
+
 </html>

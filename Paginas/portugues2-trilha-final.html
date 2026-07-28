@@ -12,13 +12,14 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet" />
 
-<script src="../JavaScript/chatbox.js" defer></script>
-<link rel="stylesheet" href="../Css/chatbox.css">
+    <script src="../JavaScript/chatbox.js" defer></script>
+    <link rel="stylesheet" href="../Css/chatbox.css">
 
     <link rel="stylesheet" href="../Css/trilha-finalizada.css" />
 
     <script src="../JavaScript/global.js"></script>
     <script src="../JavaScript/config.js"></script>
+    <script src="../JavaScript/resultado-quiz.js" defer></script>
 </head>
 
 <body>
@@ -81,118 +82,122 @@
             </button>
         </div>
     </aside>
-<main class="main-container">
+    <main class="main-container">
 
-    <section class="aula-header">
-        <p class="aula-caminho">Meus Cursos &gt; Português</p>
-        <h1>Análise de Notícias Falsas (Fake News)</h1>
-    </section>
+        <section class="aula-header">
+            <p class="aula-caminho">Meus Cursos &gt; Português</p>
+            <h1>Análise de Notícias Falsas (Fake News)</h1>
+        </section>
 
-    <nav class="abas-aula" aria-label="Navegação da aula">
-        <a href="portugues-2-aula.html" class="aba-aula">
-            <span>▶</span>
-            Leitura
-        </a>
+        <nav class="abas-aula" aria-label="Navegação da aula">
+            <a href="portugues-2-aula.html" class="aba-aula">
+                <span>▶</span>
+                Leitura
+            </a>
 
-        <a href="#" class="aba-aula active">
-            <span>▶</span>
-            Exercícios
-        </a>
-    </nav>
+            <a href="#" class="aba-aula active">
+                <span>▶</span>
+                Exercícios
+            </a>
+        </nav>
 
-    <section class="resultado-card">
+        <section class="resultado-card">
 
-        <div class="resultado-info">
+            <div class="resultado-info">
 
-            <h2>PARABÉNS!</h2>
+                <h2>PARABÉNS!</h2>
 
-            <h3>
-                Você concluiu<br>
-                mais uma trilha
-            </h3>
+                <h3>
+                    Você concluiu<br>
+                    mais uma trilha
+                </h3>
 
-            <div class="resultado-pontos">
-                <img src="../assets/icons/trofeu 2.png" alt="Troféu">
-                <span>Pontuação: 3 de 3 acertos</span>
+                <div class="resultado-pontos">
+                    <img src="../assets/icons/trofeu 2.png" alt="Troféu">
+
+                    Pontuação:
+
+                    <strong id="resultado-acertos">0</strong>
+
+                    de
+
+                    <strong id="resultado-total">0</strong>
+
+                    acertos
+                </div>
+
+                <a href="materia-portugues.html" class="btn-continuar">
+                    Continue aprendendo
+                    <span>➜</span>
+                </a>
+
+                <a href="portugues-2-exercicio1.html" class="link-refazer">
+                    Refazer Exercícios
+                </a>
+
             </div>
 
-            <a href="materia-portugues.html" class="btn-continuar">
-                Continue aprendendo
-                <span>➜</span>
-            </a>
+            <div class="resultado-imagem">
+                <img src="../assets/img-início/Pluma.png" alt="Pluma comemorando">
+            </div>
 
-            <a href="portugues-2-exercicio1.html" class="link-refazer">
-                Refazer Exercícios
-            </a>
+        </section>
 
-        </div>
-
-        <div class="resultado-imagem">
-            <img src="../assets/img-início/Pluma.png"
-                 alt="Pluma comemorando">
-        </div>
-
-    </section>
-
-</main>
+    </main>
     <section></section>
 
     <!-- JavaScript da página -->
     <script src="JavaScript/exercicio-portugues.js"></script>
-</section>
+    </section>
 
-<!-- plugin acessibiidade -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js"
-      async
-    ></script>
+    <!-- plugin acessibiidade -->
+    <script src="https://cdn.jsdelivr.net/npm/sienna-accessibility/dist/sienna-accessibility.umd.js" async></script>
     <script src="../JavaScript/explorar-cursos.js"></script>
 
     <!-- Plugin VLibras -->
 
     <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script src="../JavaScript/explorar-cursos.js"></script>
 
 
-<!-- Chatbox -->
-<div class="chat-icone" id="chat-icone">💬</div>
-<div class="chat-container" id="chat-container">
-<div class="chat-header">
-<div class="header-perfil">
-<img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
-<div class="header-info">
-<span class="header-nome">Chat com a Pluma IA</span>
-<span class="header-status">
-<span class="ponto-online">●</span> Online
-</span>
-</div>
-</div>
+    <!-- Chatbox -->
+    <div class="chat-icone" id="chat-icone">💬</div>
+    <div class="chat-container" id="chat-container">
+        <div class="chat-header">
+            <div class="header-perfil">
+                <img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+                <div class="header-info">
+                    <span class="header-nome">Chat com a Pluma IA</span>
+                    <span class="header-status">
+                        <span class="ponto-online">●</span> Online
+                    </span>
+                </div>
+            </div>
 
-<button type="button" class="btn-fechar" id="btn-fechar">✖</button>
-</div>
+            <button type="button" class="btn-fechar" id="btn-fechar">✖</button>
+        </div>
 
-<div class="chat-box" id="chat-box">
-<div class="message bot">
-<img class="avatar-chat"
-src="../assets/icons-chatbox/avatar-pluma.png">
-<div class="conteudo-chat">
-<div class="nome-chat"> Pluma </div>
-<div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
-</div>
-</div>
-</div>
+        <div class="chat-box" id="chat-box">
+            <div class="message bot">
+                <img class="avatar-chat" src="../assets/icons-chatbox/avatar-pluma.png">
+                <div class="conteudo-chat">
+                    <div class="nome-chat"> Pluma </div>
+                    <div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+                </div>
+            </div>
+        </div>
 
-<div class="input-area">
-<input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
-<button id="btn-enviar"> <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
-</div>
-</div>
+        <div class="input-area">
+            <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off">
+            <button id="btn-enviar"> <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img"></button>
+        </div>
+    </div>
 
 </body>
 

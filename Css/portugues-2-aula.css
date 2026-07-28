@@ -156,20 +156,20 @@ box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .conteudo-aula{
-max-width:900px;
+max-width:650px;
 margin:auto;
 text-align:center;
 }
 
 .conteudo-aula h2{
-font-size:3rem;
+font-size: 1rem;
 margin-bottom:20px;
 }
 
 .intro,.exemplo-box,.finalização-box{
 margin-bottom:40px;
 line-height:1.7;
-font-size:1.2rem;
+font-size:1.5rem;
 }
 
 .btn-video{
@@ -211,7 +211,7 @@ align-items:flex-start;
 
 .dica-pluma img{
   position: absolute;
-  right: 8px;
+  right: -px;
   bottom: 6px;
   width: 65px;
 }

@@ -62,3 +62,43 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+// js para o botão de video aula nas páginas de matérias
+const btnVideo = document.querySelector('.btn-video');
+const videoContainer = document.querySelector('.video-container');
+
+if (btnVideo && videoContainer) {
+  btnVideo.addEventListener('click', () => {
+    const videoId = btnVideo.dataset.videoId;
+
+    if (!videoId) return;
+
+    const btnFechar = document.createElement('button');
+    btnFechar.textContent = '✖ Fechar Vídeo';
+    btnFechar.classList.add('btn-fechar');
+
+    const iframe = document.createElement('iframe');
+    iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    iframe.title = 'YouTube video player';
+    iframe.width = '100%';
+    iframe.height = '315';
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute(
+      'allow',
+      'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+    );
+    iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    iframe.setAttribute('allowfullscreen', 'true');
+
+    btnFechar.addEventListener('click', () => {
+      videoContainer.innerHTML = '';
+      btnVideo.style.display = 'inline-block';
+    });
+
+    videoContainer.appendChild(btnFechar);
+    videoContainer.appendChild(iframe);
+
+    btnVideo.style.display = 'none';
+  });
+}

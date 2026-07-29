@@ -469,34 +469,96 @@ body {
 }
 
 @media (max-width: 640px) {
-    .aula-header {
-        padding: 28px 24px;
-    }
+  html, body {
+    overflow-x: hidden;
+  }
 
-    .aula-header h1 {
-        font-size: 1.45rem;
-    }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 16px 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    gap: 16px;
+    box-sizing: border-box;
+  }
 
-    .abas-aula {
-        height: auto;
-        padding: 18px;
-        flex-direction: column;
-    }
+  .sidebar-header {
+    margin-bottom: 0;
+    justify-content: center; 
+  }
 
-    .progresso-exercicio,
-    .card-exercicio {
-        width: calc(100% - 32px);
-    }
+  .sidebar-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .card-exercicio {
-        padding: 28px 20px;
-    }
+  .sidebar-nav a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
 
-    .imagem-exercicio {
-        height: 220px;
-    }
+  .user-perfil {
+    margin-top: 12px; 
+    width: 100%;
+    box-sizing: border-box;
+  }
 
-    .btn-confirmar {
-        align-self: stretch;
-    }
+  .main-container {
+    width: 100%;
+    height: auto;    
+    overflow-y: auto;
+    padding: 0 16px 80px 16px;
+    box-sizing: border-box;
+  }
+
+  .main-container .resultado-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 24px 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+  }
+
+  .resultado-info h2 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .resultado-info h3 {
+    font-size: 1.3rem;
+  }
+
+  .main-container .abas-aula {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
+  }
+
+  .abas-aula .aba-aula, 
+  .main-container .btn-continuar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: bold;
+    width: auto;
+    box-sizing: border-box;
+  }
 }

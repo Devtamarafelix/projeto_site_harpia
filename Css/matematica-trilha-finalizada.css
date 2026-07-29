@@ -408,7 +408,7 @@ body {
 }
 
 @media (max-width: 640px) {
-    .sidebar {
+  .sidebar {
     width: 100%;
     height: auto;
     padding: 16px;
@@ -457,19 +457,47 @@ body {
   }
 
   .resultado-card {
-        width: calc(100% - 32px);
-        padding: 28px 20px;
-    }
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .resultado-info h2 {
-        font-size: 2.2rem;
-    }
+  .resultado-card * {
+    box-sizing: border-box;
+  }
 
-    .resultado-info h3 {
-        font-size: 1.5rem;
-    }
+  .resultado-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-    .btn-continuar {
-        width: 100%;
-    }
+  .resultado-info h2,
+  .resultado-info h3 {
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .resultado-info h2 {
+    font-size: 2.2rem;
+  }
+
+  .resultado-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-continuar {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }

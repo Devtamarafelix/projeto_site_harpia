@@ -1,6 +1,3 @@
-// plugin VLibras
-new window.VLibras.Widget('https://vlibras.gov.br/app')
-
 //lógica para o input de busca
 
 const buscarCursos = document.getElementById('buscar-cursos')

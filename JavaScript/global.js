@@ -1,3 +1,6 @@
+// plugin VLibras
+ new window.VLibras.Widget('https://vlibras.gov.br/app')
+
 // integração com o backend menu lateral
 document.addEventListener('DOMContentLoaded', () => {
     //Recupera as credenciais temporárias do navegador

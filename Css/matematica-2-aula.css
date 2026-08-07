@@ -32,7 +32,7 @@ body {
   overflow-y: auto;
   scrollbar-width: none;
   border-right: 1px solid var(--cor-bordas);
-  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 4px 0 16px rgba(0, 0, 0, 0.08);
 }
 
 .sidebar::-webkit-scrollbar {
@@ -46,9 +46,10 @@ body {
   margin-bottom: 32px;
 }
 
-.sidebar-header img {
+.sidebar-header > img {
   width: 60px;
   height: auto;
+  flex-shrink: 0;
 }
 
 .logo-container {
@@ -58,6 +59,7 @@ body {
 }
 
 .logo-titulo {
+  color: var(--cor-verde-escuro);
   font-size: 1.25rem;
   font-weight: 800;
   letter-spacing: 1px;
@@ -71,7 +73,9 @@ body {
 
 .logo-subtitulo {
   margin-top: 2px;
+  color: var(--cor-verde-escuro);
   font-size: 0.65rem;
+  font-weight: 400;
   text-transform: uppercase;
   white-space: nowrap;
 }
@@ -93,12 +97,16 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.sidebar-nav a:hover,
-.sidebar-nav .active {
-  background: var(--cor-dourado);
+.sidebar-nav a:hover {
+  background-color: var(--cor-dourado);
+  transform: translateX(4px);
+}
+
+.sidebar-nav a.active {
+  background-color: var(--cor-dourado);
   font-weight: 600;
 }
 
@@ -106,18 +114,20 @@ body {
   width: 22px;
   height: 22px;
   object-fit: contain;
+  flex-shrink: 0;
 }
 
 .user-perfil {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px 12px;
+  margin-top: auto;
   padding: 16px;
-  background: color-mix(in srgb, var(--cor-dourado) 20%, transparent);
+  background-color: color-mix(in srgb, var(--cor-dourado) 20%, transparent);
   border-radius: 16px;
 }
 
-.img-avatar {
+.user-perfil .img-avatar {
   width: 44px;
   height: 44px;
   object-fit: cover;
@@ -129,6 +139,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 2px;
 }
 
 .user-nome {
@@ -141,21 +152,38 @@ body {
 }
 
 .btn-sair {
-  grid-column: span 2;
+  grid-column: 1 / -1;
+  width: 100%;
   padding: 12px 24px;
-  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
   color: var(--cor-verde-escuro);
   border: 1.5px solid var(--cor-dourado);
   border-radius: 24px;
   font-family: var(--font-family);
+  font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-sair img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
 }
 
 .btn-sair:hover {
-  background: var(--cor-dourado);
+  background-color: var(--cor-dourado);
   transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+.btn-sair:active {
+  transform: scale(0.96);
 }
 
 .main-container {

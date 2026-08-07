@@ -1,15 +1,15 @@
 :root {
-  --cor-de-fundo: #F5F1E8;
-  --cor-dourado: #D4A64F;
-  --cor-verde-escuro: #1B4332;
-  --cor-branca: #FFFFFF;
+  --cor-de-fundo: #f5f1e8;
+  --cor-dourado: #d4a64f;
+  --cor-verde-escuro: #1b4332;
+  --cor-branca: #ffffff;
   --cor-bordas: color-mix(in srgb, var(--cor-verde-escuro) 30%, transparent);
 
-  --cor-sucesso: #2E7D32;
-  --fundo-sucesso: #E8F5E9;
-  --cor-erro: #C62828;
-  --fundo-erro: #FFEBEE;
-  --fundo-selecionado: #FFF4D6;
+  --cor-sucesso: #2e7d32;
+  --fundo-sucesso: #e8f5e9;
+  --cor-erro: #c62828;
+  --fundo-erro: #ffebee;
+  --fundo-selecionado: #fff4d6;
 
   --font-family: "Inter", sans-serif;
 
@@ -191,6 +191,7 @@ body {
   font-family: var(--font-family);
   font-size: 0.9rem;
   font-weight: 700;
+  text-decoration: none;
   cursor: pointer;
   transition:
     background-color 0.2s ease,

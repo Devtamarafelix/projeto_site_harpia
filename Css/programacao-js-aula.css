@@ -183,6 +183,7 @@ body {
     font-family: var(--font-family);
     font-size: 0.9rem;
     font-weight: 700;
+    text-decoration: none;
     cursor: pointer;
     transition:
         background-color 0.2s ease,

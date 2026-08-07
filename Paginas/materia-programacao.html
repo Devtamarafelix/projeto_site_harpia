@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -10,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="../Css/materia-programacao.css" />
     <link rel="stylesheet" href="../Css/chatbox.css" />
@@ -20,169 +20,191 @@
     <link rel="stylesheet" href="../Css/acessibilidade.css" />
     <script src="../JavaScript/config.js" defer></script>
     <script src="../JavaScript/global.js" defer></script>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <aside class="sidebar">
-        <header class="sidebar-header">
-            <img src="../assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
+      <header class="sidebar-header">
+        <img src="../assets/imgs/Logo_HARPIA.png" alt="Logo H.A.R.P.I.A" />
 
-            <div class="logo-container">
-                <p class="logo-titulo">
-                    H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
-                </p>
-                <p class="logo-subtitulo">Aprenda do seu jeito</p>
-            </div>
-        </header>
-
-        <nav class="sidebar-nav">
-            <ul>
-                <li>
-                    <a href="#">
-                        <img src="../assets/icons-explorar-cursos/inicio.svg" alt="" />
-                        Início
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pg-usuario.html">
-                        <img src="../assets/icons-explorar-cursos/perfil.svg" alt="" />
-                        Meu Perfil
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <img src="../assets/icons-explorar-cursos/acessibilidade.svg" alt="" />
-                        Acessibilidade
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pg-explorar-cursos.html">
-                        <img src="../assets/icons-explorar-cursos/explorar-cursos.svg" alt="" />
-                        Explorar Cursos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="ajuda.html">
-                        <img src="../assets/icons-explorar-cursos/ajuda.svg" alt="" />
-                        Ajuda
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="user-perfil">
-            <img src="../assets/imgs/avatar-user.png" alt="Foto de Maria Silva"
-                class="img-avatar foto-perfil-dinamica" />
-
-            <div class="user-texto">
-                <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
-                <p class="user-xp">1.300 XP - Nível Iniciante</p>
-            </div>
-
-            <button type="button" class="btn-sair">
-                <img src="../assets/icons-explorar-cursos/sair.svg" alt="" />
-                Sair
-            </button>
+        <div class="logo-container">
+          <p class="logo-titulo">
+            H.<span>A</span>.R.<span>P</span>.I.<span>A</span>
+          </p>
+          <p class="logo-subtitulo">Aprenda do seu jeito</p>
         </div>
+      </header>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a href="#">
+              <img src="../assets/icons-explorar-cursos/inicio.svg" alt="" />
+              Início
+            </a>
+          </li>
+
+          <li>
+            <a href="pg-usuario.html">
+              <img src="../assets/icons-explorar-cursos/perfil.svg" alt="" />
+              Meu Perfil
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <img
+                src="../assets/icons-explorar-cursos/acessibilidade.svg"
+                alt=""
+              />
+              Acessibilidade
+            </a>
+          </li>
+
+          <li>
+            <a href="pg-explorar-cursos.html">
+              <img
+                src="../assets/icons-explorar-cursos/explorar-cursos.svg"
+                alt=""
+              />
+              Explorar Cursos
+            </a>
+          </li>
+
+          <li>
+            <a href="ajuda.html">
+              <img src="../assets/icons-explorar-cursos/ajuda.svg" alt="" />
+              Ajuda
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user-perfil">
+        <img
+          src="../assets/imgs/avatar-user.png"
+          alt="Foto de Maria Silva"
+          class="img-avatar foto-perfil-dinamica"
+        />
+
+        <div class="user-texto">
+          <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
+          <p class="user-xp">1.300 XP - Nível Iniciante</p>
+        </div>
+
+        <a href="../index.html" class="btn-sair">
+          <img src="../assets/icons-explorar-cursos/sair.svg" alt="sair" />
+          Sair
+        </a>
+      </div>
     </aside>
 
     <main class="main-container">
-        <header class="main-header">
-            <div class="textos-header">
-                <h1>Programação</h1>
-                <p>Aprenda programação de forma simples e prática.</p>
+      <header class="main-header">
+        <div class="textos-header">
+          <h1>Programação</h1>
+          <p>Aprenda programação de forma simples e prática.</p>
+        </div>
+
+        <div class="search-container">
+          <input type="search" placeholder="Buscar cursos..." />
+          <img
+            src="../assets/icons-explorar-cursos/lupa-pesquisa.svg"
+            alt="Pesquisar"
+            class="lupa-icon"
+          />
+        </div>
+      </header>
+
+      <section class="aula-atual-card">
+        <div class="aula-atual-icon">
+          <img
+            src="../assets/img-programação/dev.png"
+            alt="Um dev representa por um homem ao pc"
+          />
+        </div>
+
+        <div class="aula-atual-info">
+          <small>Programação</small>
+          <h2>Desafios de Programação</h2>
+          <p>Descubra como criar e estruturar páginas com HTML.</p>
+
+          <div class="aula-progresso">
+            <span>Aula 9 de 12</span>
+
+            <div class="mini-barra">
+              <div class="mini-preenchimento" style="width: 75%"></div>
             </div>
+          </div>
+        </div>
 
-            <div class="search-container">
-                <input type="search" placeholder="Buscar cursos..." />
-                <img src="../assets/icons-explorar-cursos/lupa-pesquisa.svg" alt="Pesquisar" class="lupa-icon" />
-            </div>
-        </header>
+        <a href="progamacao-html-aula.html" class="btn-continuar-aula">
+          ▷ Continuar aula
+        </a>
+      </section>
 
-        <section class="aula-atual-card">
-            <div class="aula-atual-icon">
-                <img src="../assets/img-programação/dev.png" alt="Um dev representa por um homem ao pc" />
-            </div>
+      <section class="modulos-grid">
+        <article class="modulo-card">
+          <div class="modulo-icon">
+            <img
+              src="../assets/img-programação/html.png"
+              alt="A PAGE representando o inicio do html"
+            />
+          </div>
 
-            <div class="aula-atual-info">
-                <small>Programação</small>
-                <h2>Desafios de Programação</h2>
-                <p>Descubra como criar e estruturar páginas com HTML.</p>
+          <h2>HTML</h2>
 
-                <div class="aula-progresso">
-                    <span>Aula 9 de 12</span>
+          <p>
+            Aprenda os conceitos básicos de HTML e CSS e descubra como criar,
+            estruturar e personalizar páginas para a web de forma simples e
+            prática.
+          </p>
 
-                    <div class="mini-barra">
-                        <div class="mini-preenchimento" style="width: 75%"></div>
-                    </div>
-                </div>
-            </div>
+          <a href="progamacao-html-aula.html" class="btn-ver-curso">
+            ▷ Ver curso
+          </a>
+        </article>
 
-            <a href="progamacao-html-aula.html" class="btn-continuar-aula">
-                ▷ Continuar aula
-            </a>
-        </section>
+        <article class="modulo-card">
+          <div class="modulo-icon">
+            <img
+              src="../assets/img-programação/ARQ-CSS.png"
+              alt="A PAGE representando o inicio do html"
+            />
+          </div>
 
-        <section class="modulos-grid">
-            <article class="modulo-card">
-                <div class="modulo-icon">
-                    <img src="../assets/img-programação/html.png" alt="A PAGE representando o inicio do html" />
-                </div>
+          <h2>CSS</h2>
 
-                <h2>HTML</h2>
+          <p>
+            Aprenda a usar cores, fontes, tamanhos e estilos para personalizar
+            páginas e criar designs mais bonitos e organizados de forma simples.
+          </p>
 
-                <p>
-                    Aprenda os conceitos básicos de HTML e CSS e descubra como criar, estruturar e personalizar páginas
-                    para a web de forma simples e prática.
-                </p>
+          <a href="programacao-css-aula.html" class="btn-ver-curso">
+            ▷ Ver curso
+          </a>
+        </article>
 
-                <a href="progamacao-html-aula.html" class="btn-ver-curso">
-                    ▷ Ver curso
-                </a>
-            </article>
+        <article class="modulo-card">
+          <div class="modulo-icon">
+            <img
+              src="../assets/img-programação/js.png"
+              alt="Balança representando regra de três"
+            />
+          </div>
 
-            <article class="modulo-card">
-                <div class="modulo-icon">
-                    <img src="../assets/img-programação/ARQ-CSS.png" alt="A PAGE representando o inicio do html" />
-                </div>
+          <h2>JAVASCRIPT</h2>
 
-                <h2>CSS</h2>
+          <p>
+            Aprenda a usar cores, fontes, tamanhos e estilos para personalizar
+            páginas e criar designs mais bonitos e organizados de forma simples.
+          </p>
 
-                <p>
-
-                    Aprenda a usar cores, fontes, tamanhos e estilos para personalizar páginas e criar designs mais
-                    bonitos e organizados de forma simples.
-
-                </p>
-
-                <a href="programacao-css-aula.html" class="btn-ver-curso">
-                    ▷ Ver curso
-                </a>
-            </article>
-
-            <article class="modulo-card">
-                <div class="modulo-icon">
-                    <img src="../assets/img-programação/js.png"
-                        alt="Balança representando regra de três" />
-                </div>
-
-                <h2>JAVASCRIPT</h2>
-
-                <p>
-                    Aprenda a usar cores, fontes, tamanhos e estilos para personalizar páginas e criar designs mais
-                    bonitos e organizados de forma simples.
-                </p>
-
-                <a href="programacao-js-aula.html" class="btn-ver-curso">
-                    ▷ Ver curso
-                </a>
-            </article>
-        </section>
+          <a href="programacao-js-aula.html" class="btn-ver-curso">
+            ▷ Ver curso
+          </a>
+        </article>
+      </section>
     </main>
 
     <!-- plugin acessibiidade -->
@@ -204,37 +226,53 @@
     <div class="chat-icone" id="chat-icone">💬</div>
 
     <div class="chat-container" id="chat-container">
-        <div class="chat-header">
-            <div class="header-perfil">
-                <img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma" />
+      <div class="chat-header">
+        <div class="header-perfil">
+          <img
+            src="../assets/icons-chatbox/avatar-pluma.png"
+            class="header-img"
+            alt="Pluma"
+          />
 
-                <div class="header-info">
-                    <span class="header-nome">Chat com a Pluma IA</span>
-                    <span class="header-status">
-                        <span class="ponto-online">●</span>
-                        Online
-                    </span>
-                </div>
-            </div>
-
-            <button type="button" class="btn-fechar" id="btn-fechar" aria-label="Fechar chat">
-                ✖
-            </button>
+          <div class="header-info">
+            <span class="header-nome">Chat com a Pluma IA</span>
+            <span class="header-status">
+              <span class="ponto-online">●</span>
+              Online
+            </span>
+          </div>
         </div>
 
-        <div class="chat-box" id="chat-box">
-            <div class="message bot">Olá! Como posso te ajudar hoje?</div>
-        </div>
+        <button
+          type="button"
+          class="btn-fechar"
+          id="btn-fechar"
+          aria-label="Fechar chat"
+        >
+          ✖
+        </button>
+      </div>
 
-        <div class="input-area">
-            <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off" />
+      <div class="chat-box" id="chat-box">
+        <div class="message bot">Olá! Como posso te ajudar hoje?</div>
+      </div>
 
-            <button type="button" id="btn-enviar" aria-label="Enviar mensagem">
-                <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" alt="" />
-            </button>
-        </div>
+      <div class="input-area">
+        <input
+          type="text"
+          id="input-usuario"
+          placeholder="Digite uma mensagem..."
+          autocomplete="off"
+        />
+
+        <button type="button" id="btn-enviar" aria-label="Enviar mensagem">
+          <img
+            src="../assets/icons-chatbox/ic-enviar.png"
+            class="btn-enviar-img"
+            alt=""
+          />
+        </button>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

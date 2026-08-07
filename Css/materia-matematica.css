@@ -1,7 +1,7 @@
 :root {
-  --cor-de-fundo: #F5F1E8;
-  --cor-dourado: #D4A64F;
-  --cor-verde-escuro: #1B4332;
+  --cor-de-fundo: #f5f1e8;
+  --cor-dourado: #d4a64f;
+  --cor-verde-escuro: #1b4332;
   --cor-bordas: color-mix(in srgb, var(--cor-verde-escuro) 30%, transparent);
   --font-family: "Inter", sans-serif;
 }
@@ -98,7 +98,9 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .sidebar-nav a:hover {
@@ -168,7 +170,11 @@ body {
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn-sair img {
@@ -304,7 +310,7 @@ body {
   width: 120px;
   height: 6px;
   overflow: hidden;
-  background-color: #E7E0CF;
+  background-color: #e7e0cf;
   border-radius: 100px;
 }
 
@@ -321,7 +327,10 @@ body {
   text-decoration: none;
   font-family: var(--font-family);
   font-weight: 800;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
 }
 
 .btn-continuar-aula {
@@ -359,7 +368,9 @@ body {
   border: 1.4px solid var(--cor-bordas);
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
 .modulo-card:hover {
@@ -374,7 +385,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: color-mix(in srgb, var(--cor-verde-escuro) 24%, transparent);
+  background-color: color-mix(
+    in srgb,
+    var(--cor-verde-escuro) 24%,
+    transparent
+  );
   border-radius: 50%;
 }
 
@@ -453,13 +468,13 @@ body {
     width: 100%;
     height: auto;
     padding: 16px;
-    box-shadow: 0 4px 16px rgba(0,0,0,.10);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
     gap: 16px;
   }
 
   .sidebar-header {
     margin-bottom: 0;
-    justify-content: center; 
+    justify-content: center;
   }
 
   .sidebar-nav ul {
@@ -477,10 +492,10 @@ body {
   }
 
   .user-perfil {
-    margin-top: 12px; 
+    margin-top: 12px;
     width: 100%;
   }
-  
+
   .main-container {
     padding: 24px;
   }

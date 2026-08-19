@@ -75,13 +75,13 @@
 
             <div class="user-texto">
                 <p class="user-nome" id="nome-menu-lateral">Maria Silva</p>
-                 <p class="user-xp">1.300 XP - Nível Iniciante</p>
+                <p class="user-xp">1.300 XP - Nível Iniciante</p>
             </div>
 
             <a href="../index.html" class="btn-sair">
-          <img src="../assets/icons-explorar-cursos/sair.svg" alt="sair" />
-          Sair
-        </a>
+                <img src="../assets/icons-explorar-cursos/sair.svg" alt="sair" />
+                Sair
+            </a>
         </div>
     </aside>
 
@@ -143,7 +143,7 @@
                         aria-pressed="false">
                         <span class="opcao-letra">(A)</span>
                         <span class="opcao-texto">
-                           Organizar a estrutura da página.
+                            Organizar a estrutura da página.
                         </span>
                     </button>
 
@@ -174,8 +174,8 @@
                         Confirmar Resposta
                     </button>
 
-                    <button type="button" class="btn-proxima" id="btn-proxima"
-                        data-proxima-pagina="js-exercicio2.html" hidden>
+                    <button type="button" class="btn-proxima" id="btn-proxima" data-proxima-pagina="js-exercicio2.html"
+                        hidden>
                         Próxima Questão
                     </button>
                 </div>
@@ -202,7 +202,7 @@
     <div class="chat-container" id="chat-container">
         <div class="chat-header">
             <div class="header-perfil">
-                <img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma">
+                <img src="../assets/icons-chatbox/avatar-pluma.png" class="header-img" alt="Pluma" />
                 <div class="header-info">
                     <span class="header-nome">Chat com a Pluma IA</span>
                     <span class="header-status">
@@ -216,14 +216,22 @@
 
         <div class="chat-box" id="chat-box">
             <div class="message bot">
-                <img class="avatar-chat" src="../assets/icons-chatbox/avatar-pluma.png">
+                <img class="avatar-chat" src="../assets/icons-chatbox/avatar-pluma.png" />
                 <div class="conteudo-chat">
-                    <div class="nome-chat"> Pluma </div>
-                    <div class="texto-chat"> Olá! Como posso te ajudar hoje? </div>
+                    <div class="nome-chat">Pluma</div>
+                    <div class="texto-chat">Olá! Como posso te ajudar hoje?</div>
                 </div>
             </div>
         </div>
-        <script src="../JavaScript/explorar-cursos.js"></script>
+
+        <div class="input-area">
+            <input type="text" id="input-usuario" placeholder="Digite uma mensagem..." autocomplete="off" />
+            <button id="btn-enviar">
+                <img src="../assets/icons-chatbox/ic-enviar.png" class="btn-enviar-img" />
+            </button>
+        </div>
+    </div>
+
 </body>
 
 </html>
